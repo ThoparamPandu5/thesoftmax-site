@@ -1,0 +1,114 @@
+[
+  {
+    "date": "2026-11-22",
+    "title": "Run Long-Context Local LLMs on 16GB GPUs with Adaptive KV Streaming",
+    "what": "A llama.cpp fork that streams KV cache data between system RAM and GPU VRAM. It lets you run 262K-context models on limited GPU memory with multi-slot inference and speculative drafting.",
+    "free": "Free & open-source (MIT license); unlimited local use on your own PC",
+    "why": "Students with 8GB-16GB laptops or lab GPUs can test very long documents and codebases locally without paying for cloud APIs.",
+    "steps": [
+      "Build llama-server from the feature/adaptive-kv-stream-v3 branch",
+      "Set up a Python venv and install ./gguf-py",
+      "Run benchmarks/find-max-arena.py with your GGUF model",
+      "Launch llama-server with flash attention and KV streaming enabled"
+    ],
+    "link": "https://github.com/RaymondHuang210129/llama.cpp-adaptive-kv-streaming/tree/feature/adaptive-kv-stream-v3",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "models",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "RaymondHuang210129 / llama.cpp fork"
+  },
+  {
+    "date": "2026-11-22",
+    "title": "MathTerm Renders LaTeX Equations Directly Inside Your Mac Terminal",
+    "what": "A macOS terminal built with Tauri and xterm.js that detects LaTeX syntax in any program's output and renders formatted math inline with KaTeX. The raw LaTeX stays editable and copyable on the cursor line.",
+    "free": "Free & open-source (MIT license); unlimited local use on macOS",
+    "why": "Math, physics, and CS students using terminal AI coding assistants or reading Markdown notes can view clean equations instead of raw LaTeX code.",
+    "steps": [
+      "Download mathterm-macos.zip from GitHub Releases and unzip it",
+      "Move mathterm.app to /Applications",
+      "Right-click and choose Open (or clear quarantine) on first launch",
+      "Press Cmd-Shift-M to toggle LaTeX rendering anytime"
+    ],
+    "link": "https://github.com/davidlai3/MathTerm",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "MathTerm (David Lai)"
+  },
+  {
+    "date": "2026-11-22",
+    "title": "Inkling 2 Mini GGUF Quantizations for Local Multimodal Inference",
+    "what": "Synthetic Minds released Q4_K_M to Q8_0 GGUF quantizations of Thinking Machines Lab's Inkling-2-Mini, a 26.4B-total (3.4B active) multimodal MoE model. The files run on standard computers using llama.cpp.",
+    "free": "Free & open-source (Apache 2.0 license); unlimited local use (18.7-27.8 GB files)",
+    "why": "Students can experiment with a compact, fast Mixture-of-Experts multimodal model locally without needing expensive enterprise GPUs.",
+    "steps": [
+      "Install llama.cpp on Windows, macOS, or Linux",
+      "Pick a quantization size from Q4_K_M (18.7 GB) to Q8_0 (27.8 GB)",
+      "Start llama-server directly with -hf synthetic-minds/Inkling-2-Mini-Infall_TT-GGUF:Q8_0"
+    ],
+    "link": "https://huggingface.co/synthetic-minds/Inkling-2-Mini-Infall_TT-GGUF",
+    "linkText": "Hugging Face page",
+    "tags": [
+      "free",
+      "models",
+      "open-source",
+      "students"
+    ],
+    "source": "Synthetic Minds"
+  },
+  {
+    "date": "2026-11-22",
+    "title": "Lory-27B v2 Open-Source Decision Model for Survey Simulations",
+    "what": "An open-source model trained to simulate survey respondents and economic choice experiments in a single forward pass. It outputs calibrated probabilities for every answer option without text generation variance.",
+    "free": "Free & open-source (Apache 2.0 license); requires ~55 GB GPU VRAM (bf16)",
+    "why": "Students working on economics, social science, or AI research projects can simulate realistic survey responses on university lab GPUs.",
+    "steps": [
+      "Clone the kev server repository from GitHub",
+      "Run kev.serve with eltokh7/lory-27b-v2 on a CUDA GPU",
+      "Send HTTP POST requests with persona traits and survey questions to /v1/systemone"
+    ],
+    "link": "https://huggingface.co/eltokh7/lory-27b-v2",
+    "linkText": "Hugging Face page",
+    "tags": [
+      "free",
+      "models",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "eltokh7"
+  },
+  {
+    "date": "2026-11-22",
+    "title": "Bridge Anything Skill Connects Coding Agents to Legacy Software",
+    "what": "An open-source skill that guides coding agents using Reverse Engineer Anything (REA) to inspect local desktop software and build a REST, MCP, or CLI bridge. It defaults to read-only access and stops at license checks.",
+    "free": "Free & open-source (MIT license); requires Node.js and a coding agent",
+    "why": "Students building college automation, internship, or hackathon projects can connect AI agents to older desktop tools that lack APIs.",
+    "steps": [
+      "Run npx rea-agents setup to connect REA to your coding agent",
+      "Install the skill with npx skills add artesiana/bridge-anything",
+      "Restart your agent and point it to a licensed test installation"
+    ],
+    "link": "https://github.com/Artesiana/bridge-anything",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "Artesiana"
+  }
+]
