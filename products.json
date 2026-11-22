@@ -1,0 +1,164 @@
+[
+  {
+    "source": "Product Hunt",
+    "name": "AlterContacts",
+    "url": "https://www.producthunt.com/products/alter-contacts-ai-client-relationships?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/P3PTYNAORNS7UV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "AI client relationship assistant that thinks and does ahead - AlterContacts is a voice-first AI assistant that helps you remember every client and never miss an important follow-up. Just talk about your meeting, and Alter organizes the details, updates the client's profile, and remembers what you promised. It n",
+    "votes": 301,
+    "thumbnail": "https://ph-files.imgix.net/046485e6-d8fe-4168-8047-978bd2b33c83.png?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "Artificial Intelligence",
+      "Virtual Assistants",
+      "CRM"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "AI Context Flow MCP",
+    "url": "https://www.producthunt.com/products/ai-context-flow?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/62GR7ZBTBONXEL?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Memory you control, synced to every agent, tool and team - Ten AI tools, ten partial memories, all drifting apart, with no record of who changed what. AI Context Flow fixes that with one shared memory over MCP. Save a client brief in Claude, and tomorrow your ChatGPT, Grok Bot and your teammate’s Cursor all ",
+    "votes": 236,
+    "thumbnail": "https://ph-files.imgix.net/4a36951e-d17a-4da4-9569-c87e9b3c7c8f.png?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "Productivity",
+      "Storage",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Glassmail",
+    "url": "https://www.producthunt.com/products/glassmail?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/AMEMZBGSYLXSVQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "A fast Mac email app with AI that never leaves your Mac - Most new email apps charge you every month and send your mail to their servers so their AI can read it. Glassmail doesn't. It's a native Mac app for Gmail, iCloud, Outlook and any IMAP account, and its AI runs on your Mac. Ask \"what needs me today?\" ",
+    "votes": 151,
+    "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/165a790f-cb14-4ecf-8188-0976f892913c/df3ba31e637be461c170f2c658214b3f622c5aba15dfb796f7ed5cf31b5a8aaf.png?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "Mac",
+      "Email",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Exa Websets V2",
+    "url": "https://www.producthunt.com/products/exa-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/VCBQ7YACKGLBQ2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Build custom datasets from the live web, 4x faster - Websets v2 is Exa’s update to its tool for building custom datasets from live web data. Describe what you want in plain language and get rows with sources and reasoning for each match. Per Exa, v2 finds 20% more matches, runs 4x faster and costs abou",
+    "votes": 140,
+    "thumbnail": "https://ph-files.imgix.net/73cc34e6-a8d6-4b26-8cad-4abcb07f3a28.jpeg?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "OpenVorld",
+    "url": "https://www.producthunt.com/products/openvorld?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/PRFDOJRZF6LOTD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Give your AI agents a home and a Vorld. - OpenVorld is an open-source harness for AI agents, with a visible world on top. Every project is a pixel-art village, and every agent has a name, a role and a brain: Claude Code, Codex or any OpenAI-compatible API. You watch the crew work, and they a",
+    "votes": 108,
+    "thumbnail": "https://ph-files.imgix.net/21766723-2ed5-428e-8814-137a48095fb9.svg?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "Open Source",
+      "Developer Tools",
+      "Artificial Intelligence",
+      "GitHub"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Shipyard",
+    "url": "https://www.producthunt.com/products/shipyard?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/APQZ54KU3JOGBN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "MCP for Claude, Cursor and Codex to Automate Integrations - Built for the vibecoding era, where anyone can build an app in a night and the slow part is everything around it. Shipyard is a local CLI and MCP server for Claude Code, Cursor and Codex. Connect your accounts once, then every new product gets its do",
+    "votes": 90,
+    "thumbnail": "https://ph-files.imgix.net/ea43bafa-577b-48c9-98d2-348904cf74d1.png?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "SaaS",
+      "Developer Tools",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Prompt Puncher",
+    "url": "https://www.producthunt.com/products/prompt-puncher?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/UF2HFP67MJWMCP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "The AI CEO Fighting Game - Prompt Puncher is a free browser fighting game where AI CEOs throw hands. Fight as Elon Musk, Sam Altman, Mark Zuckerberg, and more. No downloads or signups required.",
+    "votes": 84,
+    "thumbnail": "https://ph-files.imgix.net/ca8fc9f2-fe23-4ffe-9cfe-048012c1de71.png?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "Free Games",
+      "Artificial Intelligence",
+      "Games"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Stitch Loop",
+    "url": "https://www.producthunt.com/products/stitch-loop?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/FPBEULM4VZK4X6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Google’s AI agent that ships fixes and watches the metric - Stitch Loop is an experimental product agent from Google Labs. It connects to your GitHub repo and live product data like logs, user behavior and feedback, proposes fixes, builds them in a cloud sandbox and opens a pull request. Nothing merges withou",
+    "votes": 75,
+    "thumbnail": "https://ph-files.imgix.net/9400a4dc-1b3b-4397-80f0-ef6d204ff72e.png?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "SuperMailbox",
+    "url": "https://www.producthunt.com/products/supermailbox?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/I7TOYEDE6GL46T?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Your email in one inbox, ready for AI - Bring Gmail, iCloud Mail, Outlook, Yahoo Mail, Fastmail and other IMAP accounts into one inbox. Find emails by meaning across languages with semantic search. Create mail rules and share access with your team. Connect ChatGPT, Claude or another compat",
+    "votes": 67,
+    "thumbnail": "https://ph-files.imgix.net/0478492a-58e4-4546-8dfa-e8b769e5e1d0.png?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "Email",
+      "Productivity",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "LoudFlow",
+    "url": "https://www.producthunt.com/products/loudflow?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/ZIA3VPESLKYAS2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "We taught text to speech to think - Most voices read the letters. LoudFlow understands the sentence first, so it sounds like a person, not a machine. Watch the video to hear the difference. Then select text in any app, press two keys, and listen. In any voice, even your own. Free on Ma",
+    "votes": 65,
+    "thumbnail": "https://ph-files.imgix.net/5ebe7b79-f774-4d82-9e4a-6ba333ee747e.png?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "Productivity",
+      "Artificial Intelligence",
+      "Inclusivity"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "CROON",
+    "url": "https://www.producthunt.com/products/croon?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/EWVBY6LAV3ME2C?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Live dubbing for whatever's playing on your iPhone - CROON dubs video or audio on your iPhone into your language as it plays, in a voice close to the speaker's. It works on top of the apps you already use. Turn CROON on once, then go back to your app and keep watching. When multiple people are talking,",
+    "votes": 62,
+    "thumbnail": "https://ph-files.imgix.net/04feec85-ee1d-4441-aeb5-3872ee11b4dd.jpeg?auto=format",
+    "created": "2026-11-21",
+    "topics": [
+      "iOS",
+      "Languages",
+      "Artificial Intelligence"
+    ]
+  }
+]
