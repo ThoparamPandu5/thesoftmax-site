@@ -218,6 +218,8 @@
   let data=[];
   try{const r=await fetch('/api/updates',{cache:'no-store'}); if(r.ok&&(r.headers.get('content-type')||'').includes('json')) data=await r.json();}catch(e){}
   if(!Array.isArray(data)||!data.length) data=window.UPDATES||[];
+  // ---- news.json in the GitHub repo (synced from the Sheet by a GitHub Action) ----
+  try{const r=await fetch('news.json',{cache:'no-store'}); if(r.ok){const j=await r.json(); if(Array.isArray(j)) data=[...j,...data];}}catch(e){}
   // ---- live news from the Google Sheet that Gemini Spark fills ----
   const SHEET_CSV='https://docs.google.com/spreadsheets/d/e/2PACX-1vTZjgvJ4RYAGalux2HIusvfJH-SQ031s-G7QiKUppBIiA_XDyHPeOrf-XWKI0EI9oV4Wv9rky55Y1yY/pub?output=csv';
   function parseCSV(t){const rows=[];let row=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];
