@@ -1,8 +1,9 @@
 name: Find new AI tools (GitHub + Product Hunt)
 
-# Collects CANDIDATES only. Nothing here goes on the website directly.
-# Gemini Spark reads candidates.json, checks each item on its official page,
-# and adds the good ones to the Google Sheet with status=verified.
+# 1) candidates.json = UNVERIFIED GitHub repos + Product Hunt launches.
+#    Gemini Spark checks them and adds good ones to the Google Sheet.
+# 2) products.json   = Product Hunt AI launches (30+ upvotes) for the
+#    website's "New products" tab. Rolling list of the last 30 days.
 
 on:
   schedule:
@@ -81,7 +82,7 @@ jobs:
               after = (now - datetime.timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
               gql = """query($after: DateTime!) {
                 posts(first: 20, order: VOTES, topic: "artificial-intelligence", postedAfter: $after) {
-                  edges { node { name tagline description url website votesCount createdAt
+                  edges { node { name tagline description url website votesCount createdAt thumbnail { url }
                                  topics(first: 5) { edges { node { name } } } } } } }"""
               try:
                   res = get("https://api.producthunt.com/v2/api/graphql",
@@ -97,6 +98,7 @@ jobs:
                           "website": n.get("website") or "",
                           "description": (n.get("tagline") or "") + " - " + (n.get("description") or "")[:250],
                           "votes": n.get("votesCount", 0),
+                          "thumbnail": (n.get("thumbnail") or {}).get("url") or "",
                           "created": (n.get("createdAt") or "")[:10],
                           "topics": [t["node"]["name"] for t in n.get("topics", {}).get("edges", [])],
                       })
@@ -107,6 +109,23 @@ jobs:
           else:
               print("PH_TOKEN not set - skipping Product Hunt")
           print(f"Product Hunt: {len(ph)} candidates")
+
+          # ---------- products.json for the website's "New products" tab ----------
+          if ph:
+              try:
+                  old = json.load(open("products.json", encoding="utf-8"))
+              except Exception:
+                  old = []
+              keep = {p["url"]: p for p in old}
+              for p in ph:
+                  if p["votes"] >= 30 and p["created"]:
+                      keep[p["url"]] = {**keep.get(p["url"], {}), **p}
+              cutoff = (now - datetime.timedelta(days=30)).strftime("%Y-%m-%d")
+              prods = [p for p in keep.values() if p.get("created", "") >= cutoff]
+              prods.sort(key=lambda p: (p["created"], p["votes"]), reverse=True)
+              with open("products.json", "w", encoding="utf-8") as f:
+                  json.dump(prods[:60], f, ensure_ascii=False, indent=2)
+              print(f"products.json: {len(prods[:60])} products")
 
           if not github and not ph:
               raise SystemExit("No candidates found - keeping the old candidates.json")
@@ -119,10 +138,10 @@ jobs:
 
       - name: Commit if changed
         run: |
-          if [ -n "$(git status --porcelain candidates.json)" ]; then
+          if [ -n "$(git status --porcelain candidates.json products.json)" ]; then
             git config user.name "softmax-news-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add candidates.json
+            git add candidates.json; if [ -f products.json ]; then git add products.json; fi
             git commit -m "New tool candidates $(date -u +'%Y-%m-%d %H:%M UTC')"
             git pull --rebase
             git push
