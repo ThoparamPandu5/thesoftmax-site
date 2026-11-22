@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Softmax — Daily AI news for students</title>
+<title>softmax — Daily AI news for students</title>
 <meta name="description" content="Verified AI news every day for students: new models, free tools and how to use them.">
 <meta property="og:title" content="The Softmax — Daily AI news for students">
 <meta property="og:description" content="New AI models and free tools, verified and explained simply.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23111'/><path d='M14 44 C24 44 26 20 32 20 C38 20 40 44 50 44' stroke='%23ffd21f' stroke-width='6' fill='none' stroke-linecap='round'/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%232f8cf0'/><stop offset='1' stop-color='%239b4dea'/></linearGradient></defs><rect width='64' height='64' rx='14' fill='url(%23g)'/><text x='32' y='45' font-size='40' font-family='Arial' font-weight='600' fill='white' text-anchor='middle'>s</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@400;500&family=Instrument+Serif&display=swap" rel="stylesheet">
 <script>
   // apply saved theme before paint
   try{const t=localStorage.getItem('sm-theme'); if(t) document.documentElement.dataset.theme=t;}catch(e){}
@@ -17,17 +17,17 @@
 <style>
   :root{
     --bg:#ffffff; --bg2:#f6f6f4; --card:#ffffff; --text:#111114; --muted:#62636c; --line:#e7e7e3;
-    --accent:#f5c400; --accent-ink:#111; --chip:#f1f1ee; --green:#15803d; --green-bg:#e8f6ec; --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.04);
+    --accent:#5b6cf0; --accent-ink:#fff; --chip:#f1f1ee; --green:#15803d; --green-bg:#e8f6ec; --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.04);
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
       --bg:#0b0b0e; --bg2:#121217; --card:#141419; --text:#f1f1f3; --muted:#9a9ba6; --line:#24242c;
-      --accent:#ffd21f; --chip:#1c1c23; --green:#4ade80; --green-bg:rgba(74,222,128,.1); --shadow:none;
+      --accent:#7c7cf5; --chip:#1c1c23; --green:#4ade80; --green-bg:rgba(74,222,128,.1); --shadow:none;
     }
   }
   :root[data-theme="dark"]{
     --bg:#0b0b0e; --bg2:#121217; --card:#141419; --text:#f1f1f3; --muted:#9a9ba6; --line:#24242c;
-    --accent:#ffd21f; --chip:#1c1c23; --green:#4ade80; --green-bg:rgba(74,222,128,.1); --shadow:none;
+    --accent:#7c7cf5; --chip:#1c1c23; --green:#4ade80; --green-bg:rgba(74,222,128,.1); --shadow:none;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
@@ -45,7 +45,8 @@
   header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   .head{display:flex;align-items:center;gap:22px;height:66px}
   .brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
-  .brand svg{width:34px;height:34px}
+  .wordmark{font-family:Lexend,Inter,sans-serif;font-weight:400;font-size:30px;letter-spacing:-.035em;line-height:1;color:var(--text)}
+  .wordmark .max{background:linear-gradient(90deg,#2f8cf0 0%,#6a63ee 55%,#9b4dea 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
   .brand b{font-size:19px;font-weight:800;letter-spacing:-.02em}
   .brand small{display:block;font-size:11px;color:var(--muted);font-weight:500;margin-top:-3px}
   nav.cats{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
@@ -69,7 +70,7 @@
   /* hero */
   .hero{display:grid;grid-template-columns:1.55fr 1fr;gap:22px;margin-bottom:34px}
   .top{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;overflow:hidden}
-  .top::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--accent)}
+  .top::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,#2f8cf0,#6a63ee,#9b4dea)}
   .label{font-size:11.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
   .label.hot{color:#ef4444}
   .top h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(30px,3.6vw,44px);line-height:1.08;letter-spacing:-.01em;margin:0 0 14px}
@@ -144,9 +145,8 @@
 </div></div>
 
 <header><div class="wrap head">
-  <a class="brand" href="./" aria-label="The Softmax home">
-    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="currentColor"/><path d="M14 44 C24 44 26 20 32 20 C38 20 40 44 50 44" stroke="#ffd21f" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
-    <span><b>The Softmax</b><small>AI news for students</small></span>
+  <a class="brand" href="./" aria-label="softmax home">
+    <span class="wordmark">soft<span class="max">max</span></span>
   </a>
   <nav class="cats" id="cats" aria-label="Categories">
     <button class="cat on" data-tag="all">Latest</button>
