@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-11-23",
+    "title": "LookAtMyQuant Runs Inkling-2-Mini in 5.4 GB Memory on Apple Silicon",
+    "what": "An open-source quantization compiler and Apple Silicon runtime (lamq) that compresses Inkling-2-Mini from 18.89 GB of text weights down to 5.38 GB (5.83 GB active RAM) or 8.87 GB. It also shrinks Qwen3.8-27B to 7.2 GB and Qwen3.5-4B to 1.23 GB.",
+    "free": "Free & open-source (MIT license); unlimited local use on Apple Silicon Macs (CUDA GPU optional for compiler)",
+    "why": "Students with 8 GB or 16 GB MacBooks can run capable 26B-27B open models locally at fast speeds without paying for cloud APIs.",
+    "steps": [
+      "Install on Apple Silicon with pip install git+https://github.com/ShinMegamiBoson/lookatmyquant.git",
+      "Run lamq chat shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-5.4GB in terminal",
+      "Or load models in Python with runtime_mlx.load"
+    ],
+    "link": "https://github.com/ShinMegamiBoson/lookatmyquant",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "models",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "ShinMegamiBoson / LookAtMyQuant"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Worker 755: Browser Game Where an AI Manager Thinks You Are Its Subagent",
+    "what": "An open-source browser game where a real LLM acts as your AI manager and delegates shell tasks to you under a 90-second timer, thinking you are its automated subagent. It inspects your files, sends corrections, and writes your performance review.",
+    "free": "Free & open-source (MIT license); free shifts on worker755.com (3/day without sign-in or $0.25 starter credit with sign-in), or unlimited free when self-hosted with Ollama",
+    "why": "Students learning about agentic AI, tool calling, and Linux/SQLite CLI commands get a hands-on way to see how AI orchestrators manage and evaluate subagents.",
+    "steps": [
+      "Visit worker755.com and click Clock in for a free shift",
+      "Read the AI manager's task and run commands in the browser terminal before the 90-second timer ends",
+      "Or self-host locally with Node 24+ and Ollama"
+    ],
+    "link": "https://github.com/gulivan/worker755",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "gulivan / Worker 755"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "OpenAI Publishes \"Perplexity and Intelligence\" Research Post",
+    "what": "OpenAI Chief Scientist Jakub Pachocki explains how tracking pretraining perplexity (cross-entropy loss) predicts emergent AI capabilities from GPT-2 to modern reasoning models. He proposes using perplexity as a shared industry metric for AI safety limits.",
+    "free": "Free to read online on OpenAI's official website; no account required",
+    "why": "CS and AI students can learn why next-token prediction (\"compression\") leads to reasoning and math breakthroughs, and how frontier labs measure model progress.",
+    "steps": [
+      "Open the Perplexity and Intelligence post on openai.com",
+      "Read how log-perplexity drops from ~0.99 (GPT-3.5) to ~0.76 unlocked math and coding leaps",
+      "Review the four challenges of using perplexity across labs"
+    ],
+    "link": "https://openai.com/index/perplexity-and-intelligence/",
+    "linkText": "OpenAI post",
+    "tags": [
+      "free",
+      "models",
+      "students",
+      "learning"
+    ],
+    "source": "OpenAI"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Omi CLI: Terminal AI Coding Agent That Auto-Picks From 13 Models",
+    "what": "A terminal AI coding agent by Indian startup BuildItOmi (SahooTek) that plans edits, shows diffs for your approval, and runs tests until they pass. It auto-picks from 13 models (DeepSeek, Gemini, Gemma, gpt-oss, GLM) or local Ollama models, with /undo even without git.",
+    "free": "Free plan to try it (and free with your own API key or local Ollama via -m ollama:<model>); paid plans from $19/month",
+    "why": "Indian students can test an AI coding agent in their terminal for free, switch between cheap or local models for small edits, and safely roll back changes with /undo.",
+    "steps": [
+      "Install globally with npm i -g @builditomi/cli on macOS, Linux, or WSL",
+      "Run omi in any project folder and approve or reject proposed code diffs",
+      "Use -m ollama:<model> for local models or /undo to revert changes"
+    ],
+    "link": "https://builditomi.com/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "students"
+    ],
+    "source": "BuildItOmi (SahooTek)"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Resurf: Local Knowledge Library for Apple Devices with MCP Support",
+    "what": "A native app for Mac, iPhone, and iPad that saves notes, bookmarks, screenshots, and PDFs locally and hands that context to AI coding tools like Claude, Cursor, or Codex via MCP or CLI. It supports local semantic search and custom AI actions with Ollama.",
+    "free": "Free and unlimited on iPhone and iPad (no account needed); 7-day full free trial on Mac (then $39 once or $79 lifetime)",
+    "why": "Students on iPhone, iPad, or Mac can organize research PDFs and notes offline and feed them directly to AI assistants instead of copy-pasting.",
+    "steps": [
+      "Download Resurf from resurf.so on Mac, iPhone, or iPad",
+      "Save study PDFs, links, and Markdown notes to your local library",
+      "Connect Ollama or your AI key and expose your library to coding agents via MCP"
+    ],
+    "link": "https://resurf.so/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "tools",
+      "students",
+      "learning"
+    ],
+    "source": "Resurf"
+  },
+  {
     "date": "2026-11-22",
     "title": "Run Long-Context Local LLMs on 16GB GPUs with Adaptive KV Streaming",
     "what": "A llama.cpp fork that streams KV cache data between system RAM and GPU VRAM. It lets you run 262K-context models on limited GPU memory with multi-slot inference and speculative drafting.",
