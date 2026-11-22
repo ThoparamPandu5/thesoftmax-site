@@ -54,7 +54,8 @@
   .tab b{font-weight:900;font-style:italic;text-transform:uppercase;font-size:13.5px}
   .tab:hover{transform:translateY(0)}
   .tab.on{transform:translateY(-3px);padding-bottom:12px}
-  .t1{background:#fff8ec}.t2{background:var(--yellow)}.t3{background:var(--blue)}.t4{background:var(--green)}.t5{background:var(--orange)}.t6{background:var(--purple)}.t7{background:#ffc2dc}
+  .t1{background:#fff8ec}.t2{background:var(--yellow)}.t3{background:var(--blue)}.t4{background:var(--green)}.t5{background:var(--orange)}.t6{background:var(--purple)}.t7{background:#ffc2dc}.t8{background:#9fe8e0}
+  .votes{margin-left:auto;font-weight:900;font-size:12px}
   .band{background-color:var(--blue);background-image:radial-gradient(rgba(26,16,38,.18) 1.3px,transparent 1.5px);background-size:10px 10px;border-top:2.5px solid var(--line);border-bottom:2.5px solid var(--line)}
   .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;padding:34px 20px 40px;align-items:start}
   .edition{display:inline-block;background:var(--card);color:var(--ink);border:2px solid var(--line);font-size:12.5px;font-weight:700;padding:6px 10px;margin:12px 0 18px;box-shadow:var(--shadow-sm)}
@@ -163,6 +164,7 @@
       <button class="tab t5" data-tag="tools"><small>Nº 05</small><b>Tools</b></button>
       <button class="tab t6" data-tag="students"><small>Nº 06</small><b>Students</b></button>
       <button class="tab t7" data-tag="open-source"><small>Nº 07</small><b>Open source</b></button>
+      <button class="tab t8" data-tag="products"><small>Nº 08</small><b>New products</b></button>
     </nav>
   </div>
 </header>
@@ -240,6 +242,14 @@
     }
   }catch(e){}
   data=data.slice().sort((a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||'')));
+  // ---- Product Hunt launches (products.json, written by the find-tools GitHub Action) ----
+  try{const r=await fetch('products.json',{cache:'no-store'}); if(r.ok){const j=await r.json(); if(Array.isArray(j)){
+    const prods=j.filter(p=>p&&p.name&&/^https?:\/\//.test(p.website||p.url||'')).map(p=>({
+      date:(p.created||'').slice(0,10), title:p.name, what:p.description||'', product:true, votes:p.votes||0,
+      free:'Check the website for pricing. Many launches have a free plan or trial.',
+      why:`Launched on Product Hunt with ${p.votes||0} upvotes.`,
+      link:p.website||p.url, linkText:'Visit website', phUrl:p.url, source:'Product Hunt', logo:p.thumbnail||'', tags:['products']}));
+    data=[...data,...prods];}}}catch(e){}
   const $=id=>document.getElementById(id);
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const NAMES={'github.blog':'GitHub','github.com':'GitHub','developers.cloudflare.com':'Cloudflare','cloudflare.com':'Cloudflare','portal.nousresearch.com':'Nous Research','microsoft.ai':'Microsoft AI','openai.com':'OpenAI','anthropic.com':'Anthropic','huggingface.co':'Hugging Face','blog.google':'Google','deepmind.google':'Google DeepMind'};
@@ -255,13 +265,13 @@
   const card=u=>`<article class="box card" data-i="${idx(u)}">
       <div class="cap" style="background:${colOf(u)}">${img(u)}<span>${esc(src(u))}</span><span class="when">${esc(ago(u.date))}</span></div>
       <div class="body"><h4>${esc(u.title)}</h4><p>${esc(u.what)}</p>
-      <div class="foot"><div class="tags">${tags(u)}</div><span class="go">Read →</span></div></div></article>`;
+      <div class="foot"><div class="tags">${u.product?`<span class="tag">▲ ${esc(u.votes)} upvotes</span>`:tags(u)}</div><span class="go">Read →</span></div></div></article>`;
   let tag='all';
   const filtered=()=>{const q=($('q')?.value||'').trim().toLowerCase();
-    return data.filter(u=>(tag==='all'||(u.tags||[]).includes(tag))&&(!q||[u.title,u.what,u.free,u.why,src(u),(u.tags||[]).join(' ')].join(' ').toLowerCase().includes(q)));};
+    return data.filter(u=>(tag==='products'?u.product:(!u.product&&(tag==='all'||(u.tags||[]).includes(tag))))&&(!q||[u.title,u.what,u.free,u.why,src(u),(u.tags||[]).join(' ')].join(' ').toLowerCase().includes(q)));};
   function renderHero(){
-    const top=data[0]; if(!top) return;
-    const free=data.filter(u=>u!==top&&(u.tags||[]).includes('free')).slice(0,3);
+    const top=data.find(u=>!u.product); if(!top) return;
+    const free=data.filter(u=>!u.product&&u!==top&&(u.tags||[]).includes('free')).slice(0,3);
     const ed=new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'});
     $('hero').innerHTML=`
       <div>
@@ -295,9 +305,9 @@
   }
   function renderGrid(){
     const list=filtered();
-    $('grid').innerHTML=list.length?list.map(card).join(''):'<p class="empty">Nothing here yet. Try another word or tab.</p>';
+    $('grid').innerHTML=list.length?list.map(card).join(''):(tag==='products'?'<p class="empty">New AI products from Product Hunt will appear here soon.</p>':'<p class="empty">Nothing here yet. Try another word or tab.</p>');
     $('gridTitle').textContent= tag==='all' ? (($('q')?.value)?'Search results':'Latest updates') : document.querySelector('.tab.on b').textContent;
-    const fr=data.filter(u=>(u.tags||[]).includes('free'));
+    const fr=data.filter(u=>!u.product&&(u.tags||[]).includes('free'));
     $('freeGrid').innerHTML=fr.length?fr.map(card).join(''):'<p class="empty">No free offers right now.</p>';
   }
   function openItem(i){const u=data[i];if(!u)return;
@@ -314,6 +324,7 @@
         <div class="box"><div class="cap" style="background:var(--orange)">Why it matters</div><div class="in">${esc(u.why)}</div></div>
         ${(u.steps||[]).length?`<div class="box"><div class="cap" style="background:var(--yellow)">How to use it</div><div class="in"><ol>${u.steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol></div></div>`:''}
         ${u.link?`<a class="btn dark" href="${esc(u.link)}" target="_blank" rel="noopener">${esc(u.linkText||'Official source')} ↗</a>`:''}
+        ${u.phUrl?`<a class="btn" href="${esc(u.phUrl)}" target="_blank" rel="noopener">See it on Product Hunt ↗</a>`:''}
       </div>`;
     $('drawer').classList.add('open');$('ov').classList.add('open');$('drawer').setAttribute('aria-hidden','false');$('cl').onclick=closeItem;}
   function closeItem(){$('drawer').classList.remove('open');$('ov').classList.remove('open');$('drawer').setAttribute('aria-hidden','true');}
