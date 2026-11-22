@@ -218,6 +218,25 @@
   let data=[];
   try{const r=await fetch('/api/updates',{cache:'no-store'}); if(r.ok&&(r.headers.get('content-type')||'').includes('json')) data=await r.json();}catch(e){}
   if(!Array.isArray(data)||!data.length) data=window.UPDATES||[];
+  // ---- live news from the Google Sheet that Gemini Spark fills ----
+  const SHEET_CSV='https://docs.google.com/spreadsheets/d/e/2PACX-1vTZjgvJ4RYAGalux2HIusvfJH-SQ031s-G7QiKUppBIiA_XDyHPeOrf-XWKI0EI9oV4Wv9rky55Y1yY/pub?output=csv';
+  function parseCSV(t){const rows=[];let row=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];
+    if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++;}else q=false;}else f+=c;}
+    else if(c==='"')q=true;else if(c===','){row.push(f);f='';}else if(c==='\n'||c==='\r'){if(c==='\r'&&t[i+1]==='\n')i++;row.push(f);rows.push(row);row=[];f='';}else f+=c;}
+    if(f!==''||row.length){row.push(f);rows.push(row);}return rows;}
+  try{
+    const ctl=new AbortController(); setTimeout(()=>ctl.abort(),6000);
+    const r=await fetch(SHEET_CSV,{signal:ctl.signal,cache:'no-store'});
+    if(r.ok){const rows=parseCSV(await r.text()); const h=(rows.shift()||[]).map(x=>x.trim().toLowerCase());
+      const col=n=>h.indexOf(n.toLowerCase());
+      const sheet=rows.filter(r=>r.some(x=>x.trim())).map(r=>{const g=n=>(r[col(n)]??'').trim();
+        return {date:g('date').slice(0,10),title:g('title'),what:g('what'),free:g('free'),why:g('why'),
+          steps:g('steps').split('|').map(s=>s.trim()).filter(Boolean),link:g('link'),linkText:g('linkText')||'Official source',
+          tags:g('tags').split(/[,;]/).map(s=>s.trim().toLowerCase()).filter(Boolean),source:g('source')||undefined,status:g('status').toLowerCase()};})
+        .filter(u=>u.title&&/^\d{4}-\d{2}-\d{2}$/.test(u.date)&&u.status==='verified'&&/^https?:\/\//.test(u.link));
+      const seen=new Set(); data=[...sheet,...data].filter(u=>{const k=(u.link||u.title).toLowerCase();if(seen.has(k))return false;seen.add(k);return true;});
+    }
+  }catch(e){}
   data=data.slice().sort((a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||'')));
   const $=id=>document.getElementById(id);
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
