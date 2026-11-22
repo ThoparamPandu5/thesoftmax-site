@@ -56,7 +56,7 @@
   .tab.on{transform:translateY(-3px);padding-bottom:12px}
   .t1{background:#fff8ec}.t2{background:var(--yellow)}.t3{background:var(--blue)}.t4{background:var(--green)}.t5{background:var(--orange)}.t6{background:var(--purple)}.t7{background:#ffc2dc}.t8{background:#9fe8e0}
   .votes{margin-left:auto;font-weight:900;font-size:12px}
-  .band{background-color:var(--blue);background-image:radial-gradient(rgba(26,16,38,.18) 1.3px,transparent 1.5px);background-size:10px 10px;border-top:2.5px solid var(--line);border-bottom:2.5px solid var(--line)}
+  .band{min-height:420px;background-color:var(--blue);background-image:radial-gradient(rgba(26,16,38,.18) 1.3px,transparent 1.5px);background-size:10px 10px;border-top:2.5px solid var(--line);border-bottom:2.5px solid var(--line)}
   .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;padding:34px 20px 40px;align-items:start}
   .edition{display:inline-block;background:var(--card);color:var(--ink);border:2px solid var(--line);font-size:12.5px;font-weight:700;padding:6px 10px;margin:12px 0 18px;box-shadow:var(--shadow-sm)}
   .edition .live{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:6px;animation:p 1.6s infinite}
@@ -216,40 +216,19 @@
 
 <script src="updates.js"></script>
 <script>
-(async function(){
-  let data=[];
-  try{const r=await fetch('/api/updates',{cache:'no-store'}); if(r.ok&&(r.headers.get('content-type')||'').includes('json')) data=await r.json();}catch(e){}
-  if(!Array.isArray(data)||!data.length) data=window.UPDATES||[];
-  // ---- news.json in the GitHub repo (synced from the Sheet by a GitHub Action) ----
-  try{const r=await fetch('news.json',{cache:'no-store'}); if(r.ok){const j=await r.json(); if(Array.isArray(j)) data=[...j,...data];}}catch(e){}
-  // ---- live news from the Google Sheet that Gemini Spark fills ----
+(function(){
+  const BASE=window.UPDATES||[];
+  let news=[], sheet=[], prods=[];
+  const byDate=(a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||''));
+  let data=BASE.slice().sort(byDate);
   const SHEET_CSV='https://docs.google.com/spreadsheets/d/e/2PACX-1vTZjgvJ4RYAGalux2HIusvfJH-SQ031s-G7QiKUppBIiA_XDyHPeOrf-XWKI0EI9oV4Wv9rky55Y1yY/pub?output=csv';
   function parseCSV(t){const rows=[];let row=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];
     if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++;}else q=false;}else f+=c;}
     else if(c==='"')q=true;else if(c===','){row.push(f);f='';}else if(c==='\n'||c==='\r'){if(c==='\r'&&t[i+1]==='\n')i++;row.push(f);rows.push(row);row=[];f='';}else f+=c;}
     if(f!==''||row.length){row.push(f);rows.push(row);}return rows;}
-  try{
-    const ctl=new AbortController(); setTimeout(()=>ctl.abort(),6000);
-    const r=await fetch(SHEET_CSV,{signal:ctl.signal,cache:'no-store'});
-    if(r.ok){const rows=parseCSV(await r.text()); const h=(rows.shift()||[]).map(x=>x.trim().toLowerCase());
-      const col=n=>h.indexOf(n.toLowerCase());
-      const sheet=rows.filter(r=>r.some(x=>x.trim())).map(r=>{const g=n=>(r[col(n)]??'').trim();
-        return {date:g('date').slice(0,10),title:g('title'),what:g('what'),free:g('free'),why:g('why'),
-          steps:g('steps').split('|').map(s=>s.trim()).filter(Boolean),link:g('link'),linkText:g('linkText')||'Official source',
-          tags:g('tags').split(/[,;]/).map(s=>s.trim().toLowerCase()).filter(Boolean),source:g('source')||undefined,status:g('status').toLowerCase()};})
-        .filter(u=>u.title&&/^\d{4}-\d{2}-\d{2}$/.test(u.date)&&u.status==='verified'&&/^https?:\/\//.test(u.link));
-      const seen=new Set(); data=[...sheet,...data].filter(u=>{const k=(u.link||u.title).toLowerCase();if(seen.has(k))return false;seen.add(k);return true;});
-    }
-  }catch(e){}
-  data=data.slice().sort((a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||'')));
-  // ---- Product Hunt launches (products.json, written by the find-tools GitHub Action) ----
-  try{const r=await fetch('products.json',{cache:'no-store'}); if(r.ok){const j=await r.json(); if(Array.isArray(j)){
-    const prods=j.filter(p=>p&&p.name&&/^https?:\/\//.test(p.website||p.url||'')).map(p=>({
-      date:(p.created||'').slice(0,10), title:p.name, what:p.description||'', product:true, votes:p.votes||0,
-      free:'Check the website for pricing. Many launches have a free plan or trial.',
-      why:`Launched on Product Hunt with ${p.votes||0} upvotes.`,
-      link:p.website||p.url, linkText:'Visit website', phUrl:p.url, source:'Product Hunt', logo:p.thumbnail||'', tags:['products']}));
-    data=[...data,...prods];}}}catch(e){}
+  function rebuild(){const seen=new Set();
+    const m=[...sheet,...news,...BASE].filter(u=>{const k=(u.link||u.title||'').toLowerCase();if(seen.has(k))return false;seen.add(k);return true;}).sort(byDate);
+    data=[...m,...prods];}
   const $=id=>document.getElementById(id);
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const NAMES={'github.blog':'GitHub','github.com':'GitHub','developers.cloudflare.com':'Cloudflare','cloudflare.com':'Cloudflare','portal.nousresearch.com':'Nous Research','microsoft.ai':'Microsoft AI','openai.com':'OpenAI','anthropic.com':'Anthropic','huggingface.co':'Hugging Face','blog.google':'Google','deepmind.google':'Google DeepMind'};
@@ -337,7 +316,28 @@
   const paint=()=>$('themeBtn').innerHTML=dark()?SUN:MOON;
   $('themeBtn').onclick=()=>{const n=dark()?'light':'dark';document.documentElement.dataset.theme=n;try{localStorage.setItem('sm-theme',n)}catch(e){}paint();};
   paint(); $('yr').textContent=new Date().getFullYear();
+  // 1) draw instantly with the built-in cards
   renderHero(); renderGrid();
+  // 2) load the rest in parallel and redraw as each arrives (keeps what the user typed)
+  function refresh(){const q=$('q')?.value||'';rebuild();renderHero();if(q)$('q').value=q;renderGrid();}
+  const getJSON=u=>fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
+  getJSON('news.json').then(j=>{if(Array.isArray(j)&&j.length){news=j;refresh();}});
+  getJSON('products.json').then(j=>{if(!Array.isArray(j))return;
+    prods=j.filter(p=>p&&p.name&&/^https?:\/\//.test(p.website||p.url||'')).map(p=>({
+      date:(p.created||'').slice(0,10), title:p.name, what:p.description||'', product:true, votes:p.votes||0,
+      free:'Check the website for pricing. Many launches have a free plan or trial.',
+      why:`Launched on Product Hunt with ${p.votes||0} upvotes.`,
+      link:p.website||p.url, linkText:'Visit website', phUrl:p.url, source:'Product Hunt', logo:p.thumbnail||'', tags:['products']}));
+    if(prods.length) refresh();});
+  (async()=>{try{const ctl=new AbortController();setTimeout(()=>ctl.abort(),8000);
+    const r=await fetch(SHEET_CSV,{signal:ctl.signal,cache:'no-store'}); if(!r.ok) return;
+    const rows=parseCSV(await r.text()); const h=(rows.shift()||[]).map(x=>x.trim().toLowerCase()); const col=n=>h.indexOf(n.toLowerCase());
+    sheet=rows.filter(r=>r.some(x=>x.trim())).map(r=>{const g=n=>(r[col(n)]??'').trim();
+      return {date:g('date').slice(0,10),title:g('title'),what:g('what'),free:g('free'),why:g('why'),
+        steps:g('steps').split('|').map(s=>s.trim()).filter(Boolean),link:g('link'),linkText:g('linkText')||'Official source',
+        tags:g('tags').split(/[,;]/).map(s=>s.trim().toLowerCase()).filter(Boolean),source:g('source')||undefined,status:g('status').toLowerCase()};})
+      .filter(u=>u.title&&/^\d{4}-\d{2}-\d{2}$/.test(u.date)&&u.status==='verified'&&/^https?:\/\//.test(u.link));
+    if(sheet.length) refresh();}catch(e){}})();
 })();
 </script>
 </body>
