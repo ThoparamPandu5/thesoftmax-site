@@ -7,4 +7,4 @@ Live site: https://thesoftmax-site.thesoftmax.workers.dev
 - `wrangler.jsonc` — Cloudflare settings (Worker name: thesoftmax-site)
 - `.assetsignore` — files Cloudflare should not publish
 
-Any change committed to `main` is deployed automatically by Cloudflare.
+Any change committed to `main` is built and deployed automatically by Cloudflare (Workers Builds).
