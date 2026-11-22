@@ -54,7 +54,7 @@
   .tab b{font-weight:900;font-style:italic;text-transform:uppercase;font-size:13.5px}
   .tab:hover{transform:translateY(0)}
   .tab.on{transform:translateY(-3px);padding-bottom:12px}
-  .t1{background:#fff8ec}.t2{background:var(--yellow)}.t3{background:var(--blue)}.t4{background:var(--green)}.t5{background:var(--orange)}.t6{background:var(--purple)}.t7{background:#ffc2dc}.t8{background:#9fe8e0}
+  .t1{background:#fff8ec}.t2{background:var(--yellow)}.t3{background:var(--blue)}.t4{background:var(--green)}.t5{background:var(--orange)}.t6{background:var(--purple)}.t7{background:#ffc2dc}.t8{background:#9fe8e0}.t9{background:#ffb38a}
   .votes{margin-left:auto;font-weight:900;font-size:12px}
   .band{min-height:420px;background-color:var(--blue);background-image:radial-gradient(rgba(26,16,38,.18) 1.3px,transparent 1.5px);background-size:10px 10px;border-top:2.5px solid var(--line);border-bottom:2.5px solid var(--line)}
   .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;padding:34px 20px 40px;align-items:start}
@@ -165,6 +165,7 @@
       <button class="tab t6" data-tag="students"><small>Nº 06</small><b>Students</b></button>
       <button class="tab t7" data-tag="open-source"><small>Nº 07</small><b>Open source</b></button>
       <button class="tab t8" data-tag="products"><small>Nº 08</small><b>New products</b></button>
+      <button class="tab t9" data-tag="ainews"><small>Nº 09</small><b>AI news</b></button>
     </nav>
   </div>
 </header>
@@ -218,7 +219,7 @@
 <script>
 (function(){
   const BASE=window.UPDATES||[];
-  let news=[], sheet=[], prods=[];
+  let news=[], sheet=[], prods=[], hn=[];
   const byDate=(a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||''));
   let data=BASE.slice().sort(byDate);
   const SHEET_CSV='https://docs.google.com/spreadsheets/d/e/2PACX-1vTZjgvJ4RYAGalux2HIusvfJH-SQ031s-G7QiKUppBIiA_XDyHPeOrf-XWKI0EI9oV4Wv9rky55Y1yY/pub?output=csv';
@@ -228,7 +229,7 @@
     if(f!==''||row.length){row.push(f);rows.push(row);}return rows;}
   function rebuild(){const seen=new Set();
     const m=[...sheet,...news,...BASE].filter(u=>{const k=(u.link||u.title||'').toLowerCase();if(seen.has(k))return false;seen.add(k);return true;}).sort(byDate);
-    data=[...m,...prods];}
+    data=[...m,...prods,...hn];}
   const $=id=>document.getElementById(id);
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const NAMES={'github.blog':'GitHub','github.com':'GitHub','developers.cloudflare.com':'Cloudflare','cloudflare.com':'Cloudflare','portal.nousresearch.com':'Nous Research','microsoft.ai':'Microsoft AI','openai.com':'OpenAI','anthropic.com':'Anthropic','huggingface.co':'Hugging Face','blog.google':'Google','deepmind.google':'Google DeepMind'};
@@ -244,13 +245,30 @@
   const card=u=>`<article class="box card" data-i="${idx(u)}">
       <div class="cap" style="background:${colOf(u)}">${img(u)}<span>${esc(src(u))}</span><span class="when">${esc(ago(u.date))}</span></div>
       <div class="body"><h4>${esc(u.title)}</h4><p>${esc(u.what)}</p>
-      <div class="foot"><div class="tags">${u.product?`<span class="tag">▲ ${esc(u.votes)} upvotes</span>`:tags(u)}</div><span class="go">Read →</span></div></div></article>`;
+      <div class="foot"><div class="tags">${u.product?`<span class="tag">▲ ${esc(u.votes)} upvotes</span>`:u.hn?`<span class="tag">▲ ${esc(u.points)} points</span><span class="tag">${esc(u.comments)} comments</span>`:tags(u)}</div><span class="go">Read →</span></div></div></article>`;
   let tag='all';
-  const filtered=()=>{const q=($('q')?.value||'').trim().toLowerCase();
-    return data.filter(u=>(tag==='products'?u.product:(!u.product&&(tag==='all'||(u.tags||[]).includes(tag))))&&(!q||[u.title,u.what,u.free,u.why,src(u),(u.tags||[]).join(' ')].join(' ').toLowerCase().includes(q)));};
+  // ---- forgiving search: word-by-word, partial words, small typos, ranked ----
+  const norm=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+  function lev(a,b){if(Math.abs(a.length-b.length)>2)return 9;const d=Array.from({length:a.length+1},(_,i)=>[i]);for(let j=1;j<=b.length;j++)d[0][j]=j;
+    for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));return d[a.length][b.length];}
+  function score(u,toks){const title=norm(u.title), body=norm([u.what,u.free,u.why,src(u),(u.tags||[]).join(' '),host(u.link)].join(' '));
+    const tw=title.split(' '), bw=body.split(' '); let sc=0, hit=0;
+    for(const t of toks){let best=0;
+      const m=(w)=>w===t?3:(w.startsWith(t)||(t.length>=3&&w.includes(t)))?2:(t.length>=4&&lev(t,w)<=(t.length>6?2:1))?1:0;
+      for(const w of tw){best=Math.max(best,m(w)*1.6);} for(const w of bw){best=Math.max(best,m(w));}
+      if(!best&&title.replace(/ /g,'').includes(t))best=1.5;
+      if(best){hit++;sc+=best;}}
+    const need=toks.length<=2?1:Math.ceil(toks.length*0.5);
+    return hit>=need?sc+hit*2:0;}
+  const inTab=u=>tag==='products'?u.product:tag==='ainews'?u.hn:(!u.product&&!u.hn&&(tag==='all'||(u.tags||[]).includes(tag)));
+  const filtered=()=>{const q=norm($('q')?.value);
+    if(!q) return data.filter(inTab);
+    const toks=q.split(' ').filter(t=>t.length>1||/\d/.test(t));
+    const pool=tag==='all'?data:data.filter(inTab);
+    return pool.map(u=>[u,score(u,toks)]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]).map(x=>x[0]);};
   function renderHero(){
-    const top=data.find(u=>!u.product); if(!top) return;
-    const free=data.filter(u=>!u.product&&u!==top&&(u.tags||[]).includes('free')).slice(0,3);
+    const top=data.find(u=>!u.product&&!u.hn); if(!top) return;
+    const free=data.filter(u=>!u.product&&!u.hn&&u!==top&&(u.tags||[]).includes('free')).slice(0,3);
     const ed=new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'});
     $('hero').innerHTML=`
       <div>
@@ -278,15 +296,15 @@
           ${free.map((u,i)=>`<div class="frow" data-i="${idx(u)}"><span class="rank">Nº ${i+1}</span>${img(u)}<b>${esc(u.title)}</b></div>`).join('')}
         </div>
       </div>`;
-    $('q').addEventListener('input',renderGrid);
+    $('q').addEventListener('input',renderGrid); $('q').addEventListener('keydown',e=>{if(e.key==='Enter'){renderGrid();$('latest').scrollIntoView({behavior:'smooth'});}});
     $('qbtn').onclick=()=>{renderGrid();$('latest').scrollIntoView({behavior:'smooth'});};
     document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{$('q').value=c.dataset.q;renderGrid();$('latest').scrollIntoView({behavior:'smooth'});});
   }
   function renderGrid(){
     const list=filtered();
-    $('grid').innerHTML=list.length?list.map(card).join(''):(tag==='products'?'<p class="empty">New AI products from Product Hunt will appear here soon.</p>':'<p class="empty">Nothing here yet. Try another word or tab.</p>');
+    $('grid').innerHTML=list.length?list.map(card).join(''):(($('q')?.value||'').trim()?'<p class="empty">No match yet. Try fewer or different words, e.g. a company or model name.</p>':tag==='products'?'<p class="empty">New AI products from Product Hunt will appear here soon.</p>':tag==='ainews'?'<p class="empty">Loading the latest AI news…</p>':'<p class="empty">Nothing here yet. Try another tab.</p>');
     $('gridTitle').textContent= tag==='all' ? (($('q')?.value)?'Search results':'Latest updates') : document.querySelector('.tab.on b').textContent;
-    const fr=data.filter(u=>!u.product&&(u.tags||[]).includes('free'));
+    const fr=data.filter(u=>!u.product&&!u.hn&&(u.tags||[]).includes('free'));
     $('freeGrid').innerHTML=fr.length?fr.map(card).join(''):'<p class="empty">No free offers right now.</p>';
   }
   function openItem(i){const u=data[i];if(!u)return;
@@ -298,18 +316,19 @@
       </div>
       <div class="dbody">
         <div class="tags">${tags(u)}</div>
-        <div class="box"><div class="cap" style="background:var(--blue)">What is it</div><div class="in">${esc(u.what)}</div></div>
-        <div class="box"><div class="cap" style="background:var(--green)">Is it free?</div><div class="in">${esc(u.free)}</div></div>
-        <div class="box"><div class="cap" style="background:var(--orange)">Why it matters</div><div class="in">${esc(u.why)}</div></div>
+        ${u.what?`<div class="box"><div class="cap" style="background:var(--blue)">What is it</div><div class="in">${esc(u.what)}</div></div>`:''}
+        ${u.free?`<div class="box"><div class="cap" style="background:var(--green)">Is it free?</div><div class="in">${esc(u.free)}</div></div>`:''}
+        ${u.why?`<div class="box"><div class="cap" style="background:var(--orange)">Why it matters</div><div class="in">${esc(u.why)}</div></div>`:''}
         ${(u.steps||[]).length?`<div class="box"><div class="cap" style="background:var(--yellow)">How to use it</div><div class="in"><ol>${u.steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol></div></div>`:''}
         ${u.link?`<a class="btn dark" href="${esc(u.link)}" target="_blank" rel="noopener">${esc(u.linkText||'Official source')} ↗</a>`:''}
         ${u.phUrl?`<a class="btn" href="${esc(u.phUrl)}" target="_blank" rel="noopener">See it on Product Hunt ↗</a>`:''}
+        ${u.hnUrl?`<a class="btn" href="${esc(u.hnUrl)}" target="_blank" rel="noopener">Discussion on Hacker News ↗</a>`:''}
       </div>`;
     $('drawer').classList.add('open');$('ov').classList.add('open');$('drawer').setAttribute('aria-hidden','false');$('cl').onclick=closeItem;}
   function closeItem(){$('drawer').classList.remove('open');$('ov').classList.remove('open');$('drawer').setAttribute('aria-hidden','true');}
   document.addEventListener('click',e=>{const el=e.target.closest('[data-i]');if(el&&!e.target.closest('a,button'))openItem(+el.dataset.i);});
   $('ov').onclick=closeItem; document.addEventListener('keydown',e=>{if(e.key==='Escape')closeItem();});
-  document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');tag=b.dataset.tag;renderGrid();});
+  document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');tag=b.dataset.tag;renderGrid();if(window.scrollY<300)$('latest').scrollIntoView({behavior:'smooth'});});
   const SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
   const MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
   const dark=()=>document.documentElement.dataset.theme==='dark';
@@ -329,6 +348,20 @@
       why:`Launched on Product Hunt with ${p.votes||0} upvotes.`,
       link:p.website||p.url, linkText:'Visit website', phUrl:p.url, source:'Product Hunt', logo:p.thumbnail||'', tags:['products']}));
     if(prods.length) refresh();});
+  // ---- AI news from Hacker News (live, public API, top AI stories of the last 2 days) ----
+  (async()=>{try{
+    const since=Math.floor(Date.now()/1000)-172800, seen=new Set(), out=[];
+    const qs=['AI','LLM','OpenAI','Anthropic','Gemini','GPT','Claude','DeepSeek','Qwen','machine learning'];
+    const res=await Promise.all(qs.map(q=>fetch(`https://hn.algolia.com/api/v1/search?tags=story&query=${encodeURIComponent(q)}&numericFilters=${encodeURIComponent('created_at_i>'+since+',points>30')}&hitsPerPage=30`).then(r=>r.ok?r.json():{hits:[]}).catch(()=>({hits:[]}))));
+    const AIRX=/\b(ai|a\.i\.|llms?|gpt|chatgpt|openai|anthropic|claude|gemini|deepseek|qwen|kimi|mistral|llama|ollama|models?|agents?|agentic|ml|machine learning|neural|chatbot|copilot|inference|transformers?|diffusion|nvidia|hugging ?face|rag|mcp|token|prompt|inkling|grok|xai|deepmind|codex|cursor)\b/i;
+    for(const r of res) for(const h of (r.hits||[])){ if(seen.has(h.objectID)||!h.title||/^ask hn/i.test(h.title)||!AIRX.test(h.title)) continue; seen.add(h.objectID);
+      const hnUrl='https://news.ycombinator.com/item?id='+h.objectID; const link=h.url||hnUrl;
+      out.push({date:new Date(h.created_at_i*1000).toLocaleDateString('en-CA',{timeZone:'Asia/Kolkata'}), title:h.title,
+        what:`Trending on Hacker News with ${h.points} points and ${h.num_comments||0} comments. Source: ${host(link)||'news.ycombinator.com'}.`,
+        link, linkText:'Read the article', hnUrl, source:host(link)||'Hacker News', hn:true, points:h.points, comments:h.num_comments||0, tags:['ai-news']});}
+    hn=out.sort((a,b)=>b.points-a.points).slice(0,40);
+    if(hn.length) refresh();
+  }catch(e){}})();
   (async()=>{try{const ctl=new AbortController();setTimeout(()=>ctl.abort(),8000);
     const r=await fetch(SHEET_CSV,{signal:ctl.signal,cache:'no-store'}); if(!r.ok) return;
     const rows=parseCSV(await r.text()); const h=(rows.shift()||[]).map(x=>x.trim().toLowerCase()); const col=n=>h.indexOf(n.toLowerCase());
