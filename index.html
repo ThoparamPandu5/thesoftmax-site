@@ -107,6 +107,23 @@
   .tag{font-size:10.5px;font-weight:900;font-style:italic;text-transform:uppercase;border:2px solid var(--line);padding:1px 7px;background:var(--card);color:var(--ink)}
   .tag.free{background:var(--green);color:#1a1026}
   .go{font-weight:900;font-style:italic;text-transform:uppercase;font-size:12.5px;text-decoration:underline;text-underline-offset:3px}
+  .newtag{background:var(--red);color:#fff8ec;border-color:var(--line)}
+  .newcount{display:inline-block;margin-left:8px;background:var(--red);color:#fff8ec;border:2px solid var(--line);padding:1px 7px;font-weight:900;font-style:italic;font-size:11.5px;text-transform:uppercase}
+  .sharebtn{border:2px solid var(--line);background:var(--card);color:var(--ink);width:32px;height:32px;display:inline-grid;place-items:center;cursor:pointer;padding:0;box-shadow:2px 2px 0 var(--line)}
+  .sharebtn svg{width:16px;height:16px}
+  .footr{display:flex;align-items:center;gap:10px}
+  .sharerow{display:flex;gap:10px;flex-wrap:wrap}
+  .btn.wa{background:#25D366;color:#0b2b17}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(30px);background:#1a1026;color:#fff8ec;border:2.5px solid var(--line);padding:10px 16px;font-weight:800;opacity:0;transition:.2s;z-index:40;pointer-events:none}
+  .toast.on{opacity:1;transform:translateX(-50%)}
+  .reels{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+  .reel{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);transition:transform .12s}
+  .reel:hover{transform:translate(-2px,-2px)}
+  .reel .thumb{position:relative;aspect-ratio:9/16;border:2.5px solid var(--line);box-shadow:5px 5px 0 var(--line);overflow:hidden;background:linear-gradient(160deg,#2f8cf0,#6a63ee 55%,#9b4dea)}
+  .reel .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .reel .play{position:absolute;inset:auto auto 10px 10px;background:var(--yellow);color:#1a1026;border:2px solid var(--line);font-weight:900;font-size:11px;font-style:italic;text-transform:uppercase;padding:3px 8px}
+  .reel b{font-weight:900;font-style:italic;font-size:13.5px;line-height:1.25;margin-top:12px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .reel span.d{font-size:12px;font-weight:700;color:var(--muted);margin-top:4px}
   .empty{grid-column:1/-1;text-align:center;font-weight:700;color:var(--muted);padding:40px 0}
   .how{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
   .how .box{padding:18px}
@@ -131,9 +148,10 @@
   .dbody .in{padding:14px;font-weight:500;font-size:15px}
   .dbody ol{margin:0;padding-left:20px}
   .x{float:right}
-  @media (max-width:980px){ .hero{grid-template-columns:1fr} .grid,.how{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:980px){ .hero{grid-template-columns:1fr} .grid,.how{grid-template-columns:repeat(2,1fr)} .reels{grid-template-columns:repeat(3,1fr)} }
   @media (max-width:620px){
     .grid,.how{grid-template-columns:1fr}
+    .reels{grid-template-columns:repeat(2,1fr)}
     .ig{display:none}
     .wordmark{font-size:24px}
     .logo-circle{width:44px;height:44px}.logo-circle span{font-size:25px}
@@ -176,7 +194,8 @@
   <nav class="strip">
     <a href="#latest"><span class="num">01</span> Latest updates</a>
     <a href="#free"><span class="num">02</span> Free right now</a>
-    <a href="#how"><span class="num">03</span> How we check</a>
+    <a href="#reels"><span class="num">03</span> Our Reels</a>
+    <a href="#how"><span class="num">04</span> How we check</a>
   </nav>
 
   <section class="sec" id="latest">
@@ -191,8 +210,14 @@
     <div class="grid" id="freeGrid"></div>
   </section>
 
+  <section class="sec" id="reels">
+    <div class="sh"><span class="num">03</span><h3 class="bold">From our Reels</h3></div>
+    <p class="sdesc">The biggest updates, explained in 30 seconds on Instagram <b>@thesoftmax</b>.</p>
+    <div class="reels" id="reelGrid"></div>
+  </section>
+
   <section class="sec" id="how">
-    <div class="sh"><span class="num">03</span><h3 class="bold">How we check</h3></div>
+    <div class="sh"><span class="num">04</span><h3 class="bold">How we check</h3></div>
     <p class="sdesc">Every update is checked against official sources before it goes live.</p>
     <div class="how">
       <div class="box"><div class="n">1</div><b>Official source</b><p>Each update must be confirmed on the company's own blog, docs, pricing page or GitHub.</p></div>
@@ -216,6 +241,8 @@
 <aside class="drawer" id="drawer" aria-hidden="true"></aside>
 
 <script src="updates.js"></script>
+<script src="reels.js"></script>
+<div class="toast" id="toast"></div>
 <script>
 (function(){
   const BASE=window.UPDATES||[];
@@ -242,10 +269,20 @@
   const colOf=u=>{const t=(u.tags||[]).find(t=>t!=='free')||(u.tags||[])[0];return COL[t]||'var(--yellow)'};
   const tags=u=>(u.tags||[]).slice(0,3).map(t=>`<span class="tag ${t==='free'?'free':''}">${esc(t.replace('-',' '))}</span>`).join('');
   const idx=u=>data.indexOf(u);
+  const TODAY=()=>new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Kolkata'});
+  const isNew=u=>u.date===TODAY();
+  const slug=u=>String(u.title||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60);
+  const SITE=location.origin+location.pathname;
+  const shareUrl=u=>SITE+'#s='+slug(u);
+  const SHARE_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>';
+  function toast(t){const e=$('toast');e.textContent=t;e.classList.add('on');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('on'),1800);}
+  async function share(u){const url=shareUrl(u), text=u.title+' — free AI news for students on softmax';
+    if(navigator.share){try{await navigator.share({title:u.title,text,url});return;}catch(e){if(e&&e.name==='AbortError')return;}}
+    try{await navigator.clipboard.writeText(url);toast('Link copied ✓');}catch(e){prompt('Copy this link:',url);}}
   const card=u=>`<article class="box card" data-i="${idx(u)}">
       <div class="cap" style="background:${colOf(u)}">${img(u)}<span>${esc(src(u))}</span><span class="when">${esc(ago(u.date))}</span></div>
       <div class="body"><h4>${esc(u.title)}</h4><p>${esc(u.what)}</p>
-      <div class="foot"><div class="tags">${u.product?`<span class="tag">▲ ${esc(u.votes)} upvotes</span>`:u.hn?`<span class="tag">▲ ${esc(u.points)} points</span><span class="tag">${esc(u.comments)} comments</span>`:tags(u)}</div><span class="go">Read →</span></div></div></article>`;
+      <div class="foot"><div class="tags">${isNew(u)?'<span class="tag newtag">New</span>':''}${u.product?`<span class="tag">▲ ${esc(u.votes)} upvotes</span>`:u.hn?`<span class="tag">▲ ${esc(u.points)} points</span><span class="tag">${esc(u.comments)} comments</span>`:tags(u)}</div><span class="footr"><button class="sharebtn" data-share="${idx(u)}" aria-label="Share" title="Share">${SHARE_SVG}</button><span class="go">Read →</span></span></div></div></article>`;
   let tag='all';
   // ---- forgiving search: word-by-word, partial words, small typos, ranked ----
   const norm=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
@@ -270,10 +307,11 @@
     const top=data.find(u=>!u.product&&!u.hn); if(!top) return;
     const free=data.filter(u=>!u.product&&!u.hn&&u!==top&&(u.tags||[]).includes('free')).slice(0,3);
     const ed=new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'});
+    const newN=data.filter(u=>!u.product&&!u.hn&&isNew(u)).length;
     $('hero').innerHTML=`
       <div>
         <span class="sticker">Today's AI news, explained</span><br>
-        <span class="edition"><span class="live"></span>Edition of ${ed} · updated morning, midday &amp; night</span>
+        <span class="edition"><span class="live"></span>Edition of ${ed} · updated morning, midday &amp; night${newN?`<span class="newcount">🔥 ${newN} new today</span>`:''}</span>
         <h1 class="bold">New AI every day, made simple.</h1>
         <p class="lead">What launched, what's free, and exactly how to use it, checked against the official source before it goes live.</p>
         <div class="searchbox"><input id="q" type="search" placeholder="A model, a tool, a company…" aria-label="Search"><button class="btn dark" id="qbtn">Search →</button></div>
@@ -323,9 +361,14 @@
         ${u.link?`<a class="btn dark" href="${esc(u.link)}" target="_blank" rel="noopener">${esc(u.linkText||'Official source')} ↗</a>`:''}
         ${u.phUrl?`<a class="btn" href="${esc(u.phUrl)}" target="_blank" rel="noopener">See it on Product Hunt ↗</a>`:''}
         ${u.hnUrl?`<a class="btn" href="${esc(u.hnUrl)}" target="_blank" rel="noopener">Discussion on Hacker News ↗</a>`:''}
+        <div class="sharerow"><a class="btn wa" href="https://wa.me/?text=${encodeURIComponent(u.title+' — '+shareUrl(u))}" target="_blank" rel="noopener">Share on WhatsApp</a><button class="btn" id="cp">Copy link</button><button class="btn" id="sh">Share…</button></div>
       </div>`;
-    $('drawer').classList.add('open');$('ov').classList.add('open');$('drawer').setAttribute('aria-hidden','false');$('cl').onclick=closeItem;}
-  function closeItem(){$('drawer').classList.remove('open');$('ov').classList.remove('open');$('drawer').setAttribute('aria-hidden','true');}
+    $('drawer').classList.add('open');$('ov').classList.add('open');$('drawer').setAttribute('aria-hidden','false');$('cl').onclick=closeItem;
+    $('cp').onclick=async()=>{try{await navigator.clipboard.writeText(shareUrl(u));toast('Link copied ✓');}catch(e){prompt('Copy this link:',shareUrl(u));}};
+    $('sh').onclick=()=>share(u);
+    try{history.replaceState(null,'','#s='+slug(u));}catch(e){}}
+  function closeItem(){try{if(location.hash.startsWith('#s='))history.replaceState(null,'',location.pathname);}catch(e){}$('drawer').classList.remove('open');$('ov').classList.remove('open');$('drawer').setAttribute('aria-hidden','true');}
+  document.addEventListener('click',e=>{const sb=e.target.closest('[data-share]');if(sb){e.stopPropagation();const u=data[+sb.dataset.share];if(u)share(u);}},true);
   document.addEventListener('click',e=>{const el=e.target.closest('[data-i]');if(el&&!e.target.closest('a,button'))openItem(+el.dataset.i);});
   $('ov').onclick=closeItem; document.addEventListener('keydown',e=>{if(e.key==='Escape')closeItem();});
   document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');tag=b.dataset.tag;renderGrid();if(window.scrollY<300)$('latest').scrollIntoView({behavior:'smooth'});});
@@ -335,10 +378,16 @@
   const paint=()=>$('themeBtn').innerHTML=dark()?SUN:MOON;
   $('themeBtn').onclick=()=>{const n=dark()?'light':'dark';document.documentElement.dataset.theme=n;try{localStorage.setItem('sm-theme',n)}catch(e){}paint();};
   paint(); $('yr').textContent=new Date().getFullYear();
+  function renderReels(){const R=(window.REELS||[]).slice(0,6);
+    $('reelGrid').innerHTML=R.map(r=>`<a class="reel" href="${esc(r.url)}" target="_blank" rel="noopener"><div class="thumb"><img src="${esc(r.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"><span class="play">▶ Watch</span></div><b>${esc(r.title)}</b><span class="d">${esc(ago(r.date))}</span></a>`).join('');}
+  let deepDone=false;
+  function deepLink(){if(deepDone)return;const m=location.hash.match(/^#s=(.+)$/);if(!m){deepDone=true;return;}
+    const i=data.findIndex(u=>slug(u)===decodeURIComponent(m[1]));if(i>=0){deepDone=true;openItem(i);}}
   // 1) draw instantly with the built-in cards
-  renderHero(); renderGrid();
+  renderHero(); renderGrid(); renderReels(); deepLink();
+  window.addEventListener('hashchange',()=>{deepDone=false;deepLink();});
   // 2) load the rest in parallel and redraw as each arrives (keeps what the user typed)
-  function refresh(){const q=$('q')?.value||'';rebuild();renderHero();if(q)$('q').value=q;renderGrid();}
+  function refresh(){const q=$('q')?.value||'';rebuild();renderHero();if(q)$('q').value=q;renderGrid();deepLink();}
   const getJSON=u=>fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
   getJSON('news.json').then(j=>{if(Array.isArray(j)&&j.length){news=j;refresh();}});
   getJSON('products.json').then(j=>{if(!Array.isArray(j))return;
