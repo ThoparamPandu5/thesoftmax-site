@@ -1,0 +1,520 @@
+{
+  "updated": "2026-11-22 11:10 UTC",
+  "note": "UNVERIFIED candidates. Check each on its official page before adding to the Sheet.",
+  "github": [
+    {
+      "source": "GitHub",
+      "name": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "homepage": "",
+      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "stars": 2726,
+      "language": "",
+      "license": "MIT",
+      "created": "2026-11-19",
+      "topics": [
+        "ai-agents",
+        "ai-assistant",
+        "blender",
+        "blender-addon",
+        "blender-ai",
+        "blender-automation",
+        "blender-mcp",
+        "blender-plugin"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "iamajmeena/neonclipping",
+      "url": "https://github.com/iamajmeena/neonclipping",
+      "homepage": "",
+      "description": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
+      "stars": 1925,
+      "language": "Python",
+      "license": "MIT",
+      "created": "2026-11-19",
+      "topics": [
+        "ai-video-clipper",
+        "clipping",
+        "faster-whisper",
+        "ffmpeg",
+        "gameplay-clipper",
+        "local-llm",
+        "ollama",
+        "open-source-video-editor"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "sybil-solutions/inference-optimisation-skill",
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "homepage": "",
+      "description": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+      "stars": 1825,
+      "language": "Python",
+      "license": "MIT",
+      "created": "2026-11-16",
+      "topics": [
+        "agent-skill",
+        "benchmarking",
+        "claude-code",
+        "inference",
+        "llm",
+        "speculative-decoding"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "boringmarketer/boring-marketing-skills",
+      "url": "https://github.com/boringmarketer/boring-marketing-skills",
+      "homepage": "https://boringmarketing.com",
+      "description": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
+      "stars": 788,
+      "language": "Python",
+      "license": "MIT",
+      "created": "2026-11-16",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude-code",
+        "codex",
+        "copywriting",
+        "local-seo",
+        "marketing",
+        "seo"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "EL4CTEO/fast-anything",
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "homepage": "https://www.npmjs.com/package/@el4cteo/fast-anything",
+      "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+      "stars": 616,
+      "language": "Rust",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "codex",
+        "developer-tools",
+        "ffi",
+        "mcp"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "sybil-solutions/skill-distill",
+      "url": "https://github.com/sybil-solutions/skill-distill",
+      "homepage": "",
+      "description": "Distill a good Claude Code / Codex session into a skill an open-weight model can follow to reproduce the task",
+      "stars": 423,
+      "language": "Python",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": []
+    },
+    {
+      "source": "GitHub",
+      "name": "danielwh2/sprite-stacking",
+      "url": "https://github.com/danielwh2/sprite-stacking",
+      "homepage": "",
+      "description": "Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.",
+      "stars": 413,
+      "language": "HTML",
+      "license": "MIT",
+      "created": "2026-11-20",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "codex",
+        "cursor",
+        "fake-3d",
+        "gamedev",
+        "pixel-art",
+        "sprite-stacking"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "staryone/motlab",
+      "url": "https://github.com/staryone/motlab",
+      "homepage": "",
+      "description": "Video as code: canvas scenes rendered with WebCodecs in headless Chrome, a review viewer, and agent skills that build the video from your references.",
+      "stars": 370,
+      "language": "JavaScript",
+      "license": "MIT",
+      "created": "2026-11-16",
+      "topics": [
+        "agent-skills",
+        "canvas",
+        "claude-code",
+        "headless-chrome",
+        "motion-graphics",
+        "video",
+        "webcodecs"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po",
+      "url": "https://github.com/antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po",
+      "homepage": "https://antonhall-x91s9.github.io/discord-local-uncensored-ai-activity-utility-quest-auto-po/",
+      "description": "Discord & Local Uncensored AI Discord Activity serial-utility, Quest Auto-Completer & Badge Booster: native 64-bit Windows 10/11 portable x64 build with hot-reloadable JSON configuration, low-overhead runtime, and prebuilt portable release.",
+      "stars": 342,
+      "language": "Jupyter Notebook",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "activity",
+        "auto",
+        "badge",
+        "booster",
+        "completer",
+        "cuda-portable",
+        "deep-live-cam",
+        "discord-activity"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "youssefco1999-hash/aiseesoft-launch-pro",
+      "url": "https://github.com/youssefco1999-hash/aiseesoft-launch-pro",
+      "homepage": "",
+      "description": "Aiseesoft Launch Pro: Desktop Utility for Aiseesoft Unlocker Operations",
+      "stars": 338,
+      "language": "HTML",
+      "license": "none",
+      "created": "2026-11-21",
+      "topics": [
+        "aiseesoft-fonelab-for-ios",
+        "aiseesoft-fonelab-for-whatsapp-recovery",
+        "automation",
+        "desktop",
+        "detector-de-silencio-en-radioboss",
+        "developer-tools",
+        "glarysoft-malware-hunter-recommendations",
+        "open-source"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "praseesh369/youtube-ai-video-editing-system",
+      "url": "https://github.com/praseesh369/youtube-ai-video-editing-system",
+      "homepage": "",
+      "description": "Storyboard, capture, and animate: an AI editing workflow for YouTube",
+      "stars": 337,
+      "language": "HTML",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": [
+        "ai-agents",
+        "ai-video-editing",
+        "animation",
+        "claude-design",
+        "design",
+        "motion-graphics",
+        "open-source",
+        "teleprompter"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "ali7080/adobe-air-sdk",
+      "url": "https://github.com/ali7080/adobe-air-sdk",
+      "homepage": "",
+      "description": "Adobe AIR SDK: Cross-Platform Desktop App Development with AJAX, HTML, and Flash",
+      "stars": 337,
+      "language": "HTML",
+      "license": "none",
+      "created": "2026-11-21",
+      "topics": [
+        "adobe-air-installer",
+        "adobe-air-setup",
+        "adobe-air-windows",
+        "ajax",
+        "download-adobe-air",
+        "flash",
+        "tools",
+        "windows"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "lebrowndnasty-hash/ai-app-builder",
+      "url": "https://github.com/lebrowndnasty-hash/ai-app-builder",
+      "homepage": "",
+      "description": "AI App Builder: Prompt to Full-Stack Next.js Apps with Hosting, Database, Auth, and Multitenancy",
+      "stars": 337,
+      "language": "HTML",
+      "license": "none",
+      "created": "2026-11-21",
+      "topics": [
+        "ai-app-builder",
+        "ai-code-generation",
+        "ai-web-app-builder",
+        "ai-web-builder",
+        "app-builder",
+        "auth",
+        "bolt-alternative",
+        "database"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "rafiiiakmall-cpu/aida-64-extreme",
+      "url": "https://github.com/rafiiiakmall-cpu/aida-64-extreme",
+      "homepage": "",
+      "description": "Aida 64 Extreme: Desktop Hardware Diagnostics and System Profiling Suite",
+      "stars": 337,
+      "language": "HTML",
+      "license": "none",
+      "created": "2026-11-21",
+      "topics": [
+        "aida64",
+        "aida64-extreme-compatibility-check",
+        "aida64-extreme-detailed-reporting",
+        "aida64-extreme-hardware-diagnostics",
+        "aida64-extreme-setup",
+        "aida64-extreme-system-information",
+        "aida64-free-setup",
+        "automation"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "rcgaming265-afk/claude-prompt-studio",
+      "url": "https://github.com/rcgaming265-afk/claude-prompt-studio",
+      "homepage": "",
+      "description": "Claude Prompt Studio: Desktop Environment for Structured AI Prompt Engineering",
+      "stars": 336,
+      "language": "HTML",
+      "license": "none",
+      "created": "2026-11-21",
+      "topics": [
+        "automation",
+        "claude-jailbreak-2026",
+        "claude-jailbreak-3-5-sonnet",
+        "claude-jailbreak-opus",
+        "claude-jailbreak-sonnet",
+        "desktop",
+        "developer-tools",
+        "get-claude-jailbreak-free"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "younggeelyfmichael-dev/claude-ai-prompt-utility",
+      "url": "https://github.com/younggeelyfmichael-dev/claude-ai-prompt-utility",
+      "homepage": "",
+      "description": "Claude AI Prompt Utility: Technical Alternative Access Framework",
+      "stars": 335,
+      "language": "HTML",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": [
+        "automation",
+        "claude-jailbreak-2026",
+        "claude-jailbreak-3-5-sonnet",
+        "claude-jailbreak-opus",
+        "claude-jailbreak-sonnet",
+        "desktop",
+        "developer-tools",
+        "get-claude-jailbreak-free"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "Makarios695/autocad-desktop-edition",
+      "url": "https://github.com/Makarios695/autocad-desktop-edition",
+      "homepage": "",
+      "description": "AutoCad Desktop Edition: Professional CAD Modeling and Drafting Software",
+      "stars": 335,
+      "language": "HTML",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": [
+        "autocad",
+        "automation",
+        "cad-automation",
+        "desktop",
+        "developer-tools",
+        "fsharp-interactive",
+        "open-source",
+        "python"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "crobyskigh/izotope-ozone-11-mastering-suite",
+      "url": "https://github.com/crobyskigh/izotope-ozone-11-mastering-suite",
+      "homepage": "",
+      "description": "AI-Assisted Mastering Workflow with Spectral Shaping and Codec Preview",
+      "stars": 335,
+      "language": "HTML",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": [
+        "audio-mastering",
+        "audio-plugin",
+        "izotope",
+        "izotope-ozone",
+        "loudness",
+        "mastering",
+        "mastering-suite",
+        "mastering-tools"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "pusparajpaudel155/aion-2-trainer-tool",
+      "url": "https://github.com/pusparajpaudel155/aion-2-trainer-tool",
+      "homepage": "",
+      "description": "Aion 2 Trainer Tool: Ready-to-Run AI Prompt Engineering Setup",
+      "stars": 334,
+      "language": "HTML",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": [
+        "aion-2",
+        "aion-2-2026",
+        "aion-2-game",
+        "aion-2-optimizer",
+        "aion-2-trainer",
+        "aion-2-trainer-tool",
+        "aion2-combat-analysis",
+        "aion2-meter"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "111000333/autodesk-inventor-utility",
+      "url": "https://github.com/111000333/autodesk-inventor-utility",
+      "homepage": "",
+      "description": "Autodesk Inventor Utility: Desktop CAD Workflow and Model Management",
+      "stars": 334,
+      "language": "HTML",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": [
+        "autodesk-inventor-pro",
+        "autodesk-inventor-pro-pc",
+        "automation",
+        "developer-tools",
+        "inventor",
+        "inventor-automation",
+        "inventor-design",
+        "inventor-parts"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "mortatha9329-AI/honkai-star-rail-trainer",
+      "url": "https://github.com/mortatha9329-AI/honkai-star-rail-trainer",
+      "homepage": "",
+      "description": "Honkai Star Rail Trainer: Complete Standalone Setup, All Features Pre-Enabled",
+      "stars": 334,
+      "language": "HTML",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": [
+        "automation",
+        "desktop",
+        "developer-tools",
+        "open-source",
+        "python",
+        "scripts",
+        "software-engineering",
+        "star-rail-bot"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "jake-j-19d3/discord-local-uncensored-ai-deep-live-cam-v2-portable-x64",
+      "url": "https://github.com/jake-j-19d3/discord-local-uncensored-ai-deep-live-cam-v2-portable-x64",
+      "homepage": "https://jake-j-19d3.github.io/discord-local-uncensored-ai-deep-live-cam-v2-portable-x64/",
+      "description": "Discord & Local Uncensored AI Deep-Live-Cam v2.1 1-Click Realtime Webcam FaceSwap CUDA Portable: native 64-bit Windows 10/11 portable x64 build with hot-reloadable JSON configuration, low-overhead runtime, and prebuilt portable release.",
+      "stars": 332,
+      "language": "Jupyter Notebook",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "cam",
+        "click",
+        "cuda-portable",
+        "deep",
+        "deep-live-cam",
+        "discord-cam",
+        "discord-click",
+        "discord-deep"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "RaphGames/aion-2-enhancer",
+      "url": "https://github.com/RaphGames/aion-2-enhancer",
+      "homepage": "",
+      "description": "AION 2 Enhancer: Prompt Engineering for Desktop",
+      "stars": 331,
+      "language": "HTML",
+      "license": "MIT",
+      "created": "2026-11-21",
+      "topics": [
+        "aion-2",
+        "aion-2-2026",
+        "aion-2-cheats",
+        "aion-2-game",
+        "aion-2-optimizer",
+        "aion-2-trainer",
+        "aion2-combat-analysis",
+        "aion2-meter"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "antonlopezeng2093z4/ai-ide-system-utilities-windsurf-pro-jetbrains-2026-portab",
+      "url": "https://github.com/antonlopezeng2093z4/ai-ide-system-utilities-windsurf-pro-jetbrains-2026-portab",
+      "homepage": "https://antonlopezeng2093z4.github.io/ai-ide-system-utilities-windsurf-pro-jetbrains-2026-portab/",
+      "description": "AI IDE & System Utilities Windsurf Pro & JetBrains 2026.1 Local network-daemon Helper: native 64-bit Windows 10/11 portable x64 build with hot-reloadable JSON configuration, low-overhead runtime, and prebuilt portable release.",
+      "stars": 326,
+      "language": "Jupyter Notebook",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "2026",
+        "ai-2026",
+        "ai-config",
+        "ai-jetbrains",
+        "ai-local",
+        "ai-pro",
+        "ai-server",
+        "ai-windsurf"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "andrey-wilson-lab95d5/ai-ide-system-utilities-cursor-pro-v0-47-portable-x64",
+      "url": "https://github.com/andrey-wilson-lab95d5/ai-ide-system-utilities-cursor-pro-v0-47-portable-x64",
+      "homepage": "https://andrey-wilson-lab95d5.github.io/ai-ide-system-utilities-cursor-pro-v0-47-portable-x64/",
+      "description": "AI IDE & System Utilities Cursor Pro v0.47 Machine-ID, Telemetry & quota Quota manager: native 64-bit Windows 10/11 portable x64 build with hot-reloadable JSON configuration, low-overhead runtime, and prebuilt portable release.",
+      "stars": 319,
+      "language": "Jupyter Notebook",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "ai-cursor",
+        "ai-machine",
+        "ai-manager",
+        "ai-pro",
+        "ai-quota",
+        "ai-telemetry",
+        "cursor",
+        "cursor-pro"
+      ]
+    }
+  ],
+  "producthunt": []
+}
