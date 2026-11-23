@@ -1,6 +1,183 @@
 [
   {
     "date": "2026-11-23",
+    "title": "Muru: Open-Source Rust Server for Python Apps with AI Agent MCP Support",
+    "what": "An open-source Rust edge server, control plane, and Python runtime by mod_wsgi creator Graham Dumpleton for running WSGI and ASGI web apps with zero-downtime blue/green and canary releases. It includes a built-in MCP server so AI coding agents can deploy changes, observe failures, and roll back automatically.",
+    "free": "Free & open-source (Apache-2.0 license); unlimited local and self-hosted use, plus free browser workshops on Binder and GitHub Codespaces",
+    "why": "CS and Python web-dev students can run Flask, FastAPI, or Django apps with zero-downtime rollbacks and connect AI coding agents to test and debug deployments via MCP.",
+    "steps": [
+      "Install with uv tool install muructl",
+      "Run muructl run app:application to serve locally on http://127.0.0.1:8080",
+      "Or try the guided JupyterLab workshops on Binder or GitHub Codespaces with nothing to install"
+    ],
+    "link": "https://github.com/muruhq/muru",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "muruhq / Muru (Graham Dumpleton)"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Ulika: Free Visual Editor for Websites Built with AI Coding Tools",
+    "what": "A visual editor for React, Vite, and Next.js websites built with Claude Code, Codex, Cursor, or v0. You connect your site through GitHub and hosts like Vercel or Netlify so anyone can edit text, images, and links on the live page without touching code.",
+    "free": "Free forever plan ($0 / free forever, no credit card required) with unlimited editing of text, images, and links, full version history, SEO titles/descriptions, and Meta Pixel / Google Analytics support",
+    "why": "Students building hackathon, club, or portfolio sites with AI coding tools can let non-coding teammates update copy and images safely without breaking the codebase.",
+    "steps": [
+      "Build a React, Vite, or Next.js site with Claude Code, Codex, or Cursor",
+      "Connect your site on ulika.co via GitHub and Vercel (or run npx ulika connect)",
+      "Click any text, image, or link on your live page to edit and publish"
+    ],
+    "link": "https://www.ulika.co/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "students"
+    ],
+    "source": "Ulika"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Pandex: Official European Law API and MCP Server for AI Agents",
+    "what": "A legal API and MCP server (https://api.pandex.io/mcp) that gives AI agents like Claude, Cursor, GitHub Copilot, and Gemini direct access to 2.8 million official EU and European court and legislation documents with 37 million linked citations, updated nightly.",
+    "free": "Free beta plan (€0 while in beta) with 1,000 requests per day across the REST API and MCP server for all jurisdictions; paid Usage plan is €1 per 1,000 requests",
+    "why": "Law, policy, and CS students building legal-tech or compliance AI agents can ground answers in real, versioned statutes and court rulings instead of hallucinated citations.",
+    "steps": [
+      "Get a free API key on pandex.io (or connect the MCP server at https://api.pandex.io/mcp)",
+      "Add Pandex to Claude, Cursor, Copilot, or Gemini",
+      "Run keyword, semantic, or hybrid searches across EU and European court law"
+    ],
+    "link": "https://www.pandex.io/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "students",
+      "learning"
+    ],
+    "source": "Pandex"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "LocalCode: One-Command Open-Source Coding Agent for Apple Silicon Macs",
+    "what": "An open-source terminal coding agent that runs 12 local models (including Gemma 4, Qwen 3.8, and Inkling 2 Mini) on Apple Silicon Macs with automatic memory sizing and speculative drafting. It edits project files, runs tests and git commands, reads pasted screenshots, and works offline.",
+    "free": "Free & open-source (Apache 2.0 license); no cloud, subscription, or API keys needed; requires Apple Silicon Mac (macOS 13+), 16 GB+ unified memory, and Python 3.10+",
+    "why": "Students with 16 GB+ MacBooks get a fast, private coding agent and an OpenAI-compatible local API (/server) without paying for cloud tokens.",
+    "steps": [
+      "Install with uv pip install localcode",
+      "Run cd your-project && localcode and pick a starred model with /models",
+      "Use /server or localcode api to share the model with other local apps"
+    ],
+    "link": "https://github.com/mjwsolo/localcode",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "models",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "mjwsolo / LocalCode"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Beginner's Guide to Running Local AI with Inkling, Qwen, and Unsloth",
+    "what": "A step-by-step guide to setting up a private local ChatGPT alternative using Unsloth Desktop and open-weight models like Qwen3.8-27B and Inkling 2 Mini. It includes GPU VRAM sizing tables from 8 GB to 32 GB+ and instructions to share the chat over home Wi-Fi.",
+    "free": "Free to read online (no account required); uses Unsloth Desktop, a free, open-source app for macOS, Windows, and Linux",
+    "why": "Beginners can match quantized models to their laptop or lab GPU (even 8–12 GB VRAM) and host a shared local AI chat server in 10–15 minutes.",
+    "steps": [
+      "Install Unsloth Desktop and check the VRAM table (e.g., Qwen3.5-9B for 8–12 GB or Qwen3.8-27B for 24–32 GB+)",
+      "Download a quantized model such as UD-Q4_K_XL and set your context size",
+      "Turn on LAN access in Settings > Remote & LAN to share on your local network"
+    ],
+    "link": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+    "linkText": "Official guide",
+    "tags": [
+      "free",
+      "models",
+      "tools",
+      "students",
+      "learning"
+    ],
+    "source": "GPU Partner"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "tensorViz: Interactive PyTorch Model Visualizer for VS Code and Coding Agents",
+    "what": "An open-source PyTorch visualizer that runs one eager forward pass on your Python nn.Module to draw an interactive layer graph with measured tensor shapes, without torch.export or ONNX conversion. It also includes plugins for Claude Code, Codex, and Cursor.",
+    "free": "Free & open-source (MIT license); free VS Code / Cursor / VSCodium extension and coding-agent plugin; core graph tools need no AI key",
+    "why": "ML and deep learning students can visually trace tensor shape mismatches to the exact line of Python and explore Hugging Face models like SmolLM2-135M.",
+    "steps": [
+      "Install the extension via code --install-extension tensorviz.tensorviz-vscode (VS Code 1.106+, Python 3.10+)",
+      "Open your Python file and click Open as Graph above an nn.Module class",
+      "Run one forward pass to inspect tensor shapes or browse saved models in Model Explorer"
+    ],
+    "link": "https://tensorviz.dev/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "tensorViz"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Exa Websets V2: Build Custom Web Research Datasets 4x Faster",
+    "what": "Exa released Websets V2, an AI search tool that turns plain-language criteria into structured datasets from the live web and 500M+ research papers, 4x faster and 2x cheaper. It removes the monthly subscription fee and opens Websets API access to all users.",
+    "free": "Free Starter plan includes $10 credits every month plus a $10 onboarding bonus (no card required); Education Grants offer up to $1,000 in free credits (usage-based at $0.10/ACU + $5/1k searches)",
+    "why": "Students doing literature reviews, thesis research, or hackathon projects can gather verified lists of papers, labs, or repos with custom enrichment columns.",
+    "steps": [
+      "Sign up for the free Exa Starter plan ($10 onboarding bonus + $10/month credits)",
+      "Describe your research criteria in Websets to search live web data and 500M+ papers",
+      "Add custom enrichment columns (like repo links) and export the dataset"
+    ],
+    "link": "https://exa.ai/blog/websets-v2",
+    "linkText": "Exa blog",
+    "tags": [
+      "free",
+      "tools",
+      "students",
+      "learning"
+    ],
+    "source": "Exa"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "ClawDOS: Open-Source AI Coding Agent Built for 1981 IBM PC DOS",
+    "what": "An open-source AI chat and coding harness (HARNESS.EXE, 176 KB) written in C/C++ that runs on FreeDOS with an 8088 CPU, 640 KB RAM, and CGA graphics. It gives the model 18 tools to edit files, compile Turbo C programs, and encode CGA screenshots.",
+    "free": "Free & open-source (GPLv3 license); includes an offline mock API (tunnel/mockapi.py) to test without an API key, or connects to Claude Messages API via a TLS tunnel",
+    "why": "CS and systems students can study how a full 13,000-line agent loop, prompt caching, and tool-calling harness operate under extreme 640 KB memory limits in 86Box or DOSBox-X.",
+    "steps": [
+      "Clone Ricapar/ClawDOS and run python3 scripts/setup-tools.py to fetch compilers, FreeDOS, and emulators",
+      "Run python3 scripts/build.py to build the bootable CLAWDOS.IMG disk image",
+      "Boot in 86Box with python3 scripts/run86box.py and tunnel/mockapi.py (no key needed) and type CLAWDOS"
+    ],
+    "link": "http://ricapar.net/ClawDOS/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "Ricapar / ClawDOS"
+  },
+  {
+    "date": "2026-11-23",
     "title": "LookAtMyQuant Runs Inkling-2-Mini in 5.4 GB Memory on Apple Silicon",
     "what": "An open-source quantization compiler and Apple Silicon runtime (lamq) that compresses Inkling-2-Mini from 18.89 GB of text weights down to 5.38 GB (5.83 GB active RAM) or 8.87 GB. It also shrinks Qwen3.8-27B to 7.2 GB and Qwen3.5-4B to 1.23 GB.",
     "free": "Free & open-source (MIT license); unlimited local use on Apple Silicon Macs (CUDA GPU optional for compiler)",
