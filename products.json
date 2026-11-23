@@ -1,26 +1,11 @@
 [
   {
     "source": "Product Hunt",
-    "name": "Rankhog",
-    "url": "https://www.producthunt.com/products/rankhog?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-    "website": "https://www.producthunt.com/r/HVFQNHONLRBAJZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-    "description": "Get customers from Reddit on autopilot - Rankhog finds people on Reddit asking for what you sell. It reads each subreddit's rules, writes a reply that helps, and posts it from your own account at a human pace. Say yes to each reply, or turn on autopilot. No Reddit account? Rankhog warms up ",
-    "votes": 265,
-    "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/b5eca185-268a-48d1-9cd4-a0d061891a10/bb44cb44f4b48ec1daccb69e7f364dd0d0a4f8895e69b015774c178fbdbc309d.png?auto=format",
-    "created": "2026-11-22",
-    "topics": [
-      "Marketing",
-      "Artificial Intelligence",
-      "reddit"
-    ]
-  },
-  {
-    "source": "Product Hunt",
     "name": "Yoroll",
     "url": "https://www.producthunt.com/products/yoroll?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/XKLWN5SDJ5RSLW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Build playable stories without a game engine - Yoroll lets anyone turn stories into playable, cinematic games without coding or a game engine. Start with a script, image, or video clip, then direct the scenes, add player choices, and create branching storylines with different outcomes. AI helps b",
-    "votes": 248,
+    "votes": 351,
     "thumbnail": "https://ph-files.imgix.net/61792e90-6f7d-4d6e-bcc2-b0c885011149.jpeg?auto=format",
     "created": "2026-11-22",
     "topics": [
@@ -31,11 +16,26 @@
   },
   {
     "source": "Product Hunt",
+    "name": "Rankhog",
+    "url": "https://www.producthunt.com/products/rankhog?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/HVFQNHONLRBAJZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Get customers from Reddit on autopilot - Rankhog finds people on Reddit asking for what you sell. It reads each subreddit's rules, writes a reply that helps, and posts it from your own account at a human pace. Say yes to each reply, or turn on autopilot. No Reddit account? Rankhog warms up ",
+    "votes": 327,
+    "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/b5eca185-268a-48d1-9cd4-a0d061891a10/bb44cb44f4b48ec1daccb69e7f364dd0d0a4f8895e69b015774c178fbdbc309d.png?auto=format",
+    "created": "2026-11-22",
+    "topics": [
+      "Marketing",
+      "Artificial Intelligence",
+      "reddit"
+    ]
+  },
+  {
+    "source": "Product Hunt",
     "name": "Resurf",
     "url": "https://www.producthunt.com/products/resurf-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/VXIIBY4W6WDWZU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Personal Knowledge Base & Bookmark Manager for Mac - A fully local personal context library for Mac, iPhone, and iPad. Save notes, links, images, and documents. Hand off context to AI through MCP or the CLI on Mac.",
-    "votes": 155,
+    "votes": 179,
     "thumbnail": "https://ph-files.imgix.net/d9662a0a-5512-40f7-bd79-c1848c646257.png?auto=format",
     "created": "2026-11-22",
     "topics": [
@@ -50,7 +50,7 @@
     "url": "https://www.producthunt.com/products/oovi?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/YLKKXHEBGSFA4O?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Your own team of AI on your desktop - Hand oovi a job and a team of AI bots does it: a leader plans, a researcher digs, a writer drafts, a critic checks. Watch each bot work, and approve anything before it goes out. Free with your own AI key, or from $10/mo with credits that never expire",
-    "votes": 109,
+    "votes": 132,
     "thumbnail": "https://ph-files.imgix.net/4aa45e6d-d58b-4ca2-88f8-e3162074e7fc.png?auto=format",
     "created": "2026-11-22",
     "topics": [
@@ -63,7 +63,7 @@
     "url": "https://www.producthunt.com/products/webless?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/VH6EKEDCE4QLCA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Agents you want to put in front of customers - You wouldn’t put most website chatbots in front of a customer. Webless Agents are different: you describe the outcome you want in plain English, and Webless builds the agent on your published content, so it answers only from what you’ve said. You rev",
-    "votes": 99,
+    "votes": 119,
     "thumbnail": "https://ph-files.imgix.net/33285ed9-82cb-4611-9ec5-6122369d566f.png?auto=format",
     "created": "2026-11-22",
     "topics": [
@@ -78,7 +78,7 @@
     "url": "https://www.producthunt.com/products/omi-cli?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/GWUUBKQHSYM563?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "AI coding agents that work while you're away. - Omi can build anything. Give Omi a coding task and let it get to work: it reads your repo, fixes bugs, runs tests, and uses a real browser to check your app. Parallel subagents tackle tasks in separate worktrees. Background agents keep going after yo",
-    "votes": 90,
+    "votes": 97,
     "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/876438c1-ed5a-41c0-b934-a0ac068bd306/5247f55bf7c974951ca11f11113bddbd854141e6003cd87e943433d6f79ce445.png?auto=format",
     "created": "2026-11-22",
     "topics": [
@@ -93,7 +93,7 @@
     "url": "https://www.producthunt.com/products/ulika?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/RMUGMIHZYR2MRX?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Visual editor for sites built with Claude, Cursor, or Codex - AI can ship a React, Vite, or Next site in a weekend. Then marketing wants a headline change and opens a ticket. Ulika connects the site so anyone can edit copy and images on the page and publish, without touching code. Open beta, free to try at ulik",
-    "votes": 89,
+    "votes": 93,
     "thumbnail": "https://ph-files.imgix.net/997ba1cf-1902-49e0-87bb-a9ea271fa516.png?auto=format",
     "created": "2026-11-22",
     "topics": [
@@ -108,7 +108,7 @@
     "url": "https://www.producthunt.com/products/teaserkit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/Z7T4PLU64AYRCX?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "your coding agent directs your launch video - TeaserKit is the director for your coding agent's videos. Installed in one line, it makes Claude Code, Codex, Cursor and other coding agents direct a launch video, ad or explainer from your repo or website: a concept, a house style, a human-made song",
-    "votes": 73,
+    "votes": 77,
     "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/4261c461-586c-4920-a9f4-f45637388056/7a752738f5ce9ef119d7898374fc82dac9ebc3a4f902056afbb36a9c01bb3e4b.gif?auto=format",
     "created": "2026-11-22",
     "topics": [
@@ -123,7 +123,7 @@
     "url": "https://www.producthunt.com/products/zapyso?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/4IF373ZI2ZYN7T?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Free meeting notes and dictation that stay on your Mac - Zapyso records your calls on the Mac itself, with no bot joining, and writes a transcript and a summary with decisions and next steps. It notices calls in Zoom, Teams, Google Meet, Slack and more. Hold the right ⌘ key to dictate into any app. Speech ",
-    "votes": 69,
+    "votes": 71,
     "thumbnail": "https://ph-files.imgix.net/c9e1f724-1acf-4598-8186-b3da08d65d2e.png?auto=format",
     "created": "2026-11-22",
     "topics": [
