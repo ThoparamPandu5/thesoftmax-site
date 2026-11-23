@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22 19:39 UTC",
+  "updated": "2026-11-23 00:52 UTC",
   "note": "UNVERIFIED candidates. Check each on its official page before adding to the Sheet.",
   "github": [
     {
@@ -8,7 +8,7 @@
       "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
       "homepage": "",
       "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
-      "stars": 2744,
+      "stars": 2746,
       "language": "",
       "license": "MIT",
       "created": "2026-11-19",
@@ -29,7 +29,7 @@
       "url": "https://github.com/iamajmeena/neonclipping",
       "homepage": "",
       "description": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
-      "stars": 2065,
+      "stars": 2095,
       "language": "Python",
       "license": "MIT",
       "created": "2026-11-19",
@@ -46,30 +46,11 @@
     },
     {
       "source": "GitHub",
-      "name": "sybil-solutions/inference-optimisation-skill",
-      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-      "homepage": "",
-      "description": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
-      "stars": 1925,
-      "language": "Python",
-      "license": "MIT",
-      "created": "2026-11-16",
-      "topics": [
-        "agent-skill",
-        "benchmarking",
-        "claude-code",
-        "inference",
-        "llm",
-        "speculative-decoding"
-      ]
-    },
-    {
-      "source": "GitHub",
       "name": "EL4CTEO/fast-anything",
       "url": "https://github.com/EL4CTEO/fast-anything",
       "homepage": "https://www.npmjs.com/package/@el4cteo/fast-anything",
       "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
-      "stars": 1652,
+      "stars": 1902,
       "language": "Rust",
       "license": "MIT",
       "created": "2026-11-21",
@@ -86,32 +67,11 @@
     },
     {
       "source": "GitHub",
-      "name": "boringmarketer/boring-marketing-skills",
-      "url": "https://github.com/boringmarketer/boring-marketing-skills",
-      "homepage": "https://boringmarketing.com",
-      "description": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
-      "stars": 792,
-      "language": "Python",
-      "license": "MIT",
-      "created": "2026-11-16",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "claude-code",
-        "codex",
-        "copywriting",
-        "local-seo",
-        "marketing",
-        "seo"
-      ]
-    },
-    {
-      "source": "GitHub",
       "name": "INK-Q/agy-fast",
       "url": "https://github.com/INK-Q/agy-fast",
       "homepage": "",
       "description": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affecting native UI or diffs.",
-      "stars": 482,
+      "stars": 517,
       "language": "TypeScript",
       "license": "MIT",
       "created": "2026-11-19",
@@ -128,23 +88,11 @@
     },
     {
       "source": "GitHub",
-      "name": "sybil-solutions/skill-distill",
-      "url": "https://github.com/sybil-solutions/skill-distill",
-      "homepage": "",
-      "description": "Distill a good Claude Code / Codex session into a skill an open-weight model can follow to reproduce the task",
-      "stars": 447,
-      "language": "Python",
-      "license": "MIT",
-      "created": "2026-11-21",
-      "topics": []
-    },
-    {
-      "source": "GitHub",
       "name": "danielwh2/sprite-stacking",
       "url": "https://github.com/danielwh2/sprite-stacking",
       "homepage": "",
       "description": "Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.",
-      "stars": 436,
+      "stars": 456,
       "language": "HTML",
       "license": "MIT",
       "created": "2026-11-20",
@@ -161,44 +109,15 @@
     },
     {
       "source": "GitHub",
-      "name": "staryone/motlab",
-      "url": "https://github.com/staryone/motlab",
+      "name": "sybil-solutions/skill-distill",
+      "url": "https://github.com/sybil-solutions/skill-distill",
       "homepage": "",
-      "description": "Video as code: canvas scenes rendered with WebCodecs in headless Chrome, a review viewer, and agent skills that build the video from your references.",
-      "stars": 393,
-      "language": "JavaScript",
+      "description": "Distill a good Claude Code / Codex session into a skill an open-weight model can follow to reproduce the task",
+      "stars": 455,
+      "language": "Python",
       "license": "MIT",
-      "created": "2026-11-16",
-      "topics": [
-        "agent-skills",
-        "canvas",
-        "claude-code",
-        "headless-chrome",
-        "motion-graphics",
-        "video",
-        "webcodecs"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "birddebug/cinema-4d-win",
-      "url": "https://github.com/birddebug/cinema-4d-win",
-      "homepage": "https://birddebug.github.io/cinema-4d-win/",
-      "description": "Maxon Cinema 4D - 3D modeling and animation suite for motion graphics, procedural modeling and render pipeline integration on Windows 10/11",
-      "stars": 354,
-      "language": "",
-      "license": "NOASSERTION",
       "created": "2026-11-21",
-      "topics": [
-        "3d",
-        "3d-animation",
-        "3d-graphics",
-        "3d-modeling",
-        "4d",
-        "cgi",
-        "cinema",
-        "cinema-3d"
-      ]
+      "topics": []
     },
     {
       "source": "GitHub",
@@ -206,7 +125,7 @@
       "url": "https://github.com/ThreatDefence/agentic-attack-detections",
       "homepage": "https://threatdefence.com/article/artex-agentic-attack-framework-detection-hunting",
       "description": "Detection rules and IOCs for AI agent attack frameworks: ARTEX, Cairn, PentAGI, HexStrike, CyberStrikeAI, Strix, Hermes Agent, Agent Zero. KQL hunts for Microsoft Sentinel and Defender XDR, Sigma, Suricata, Zeek, YARA, Splunk, Elastic, STIX 2.1.",
-      "stars": 353,
+      "stars": 393,
       "language": "Python",
       "license": "MIT",
       "created": "2026-11-20",
@@ -227,7 +146,7 @@
       "url": "https://github.com/w01fb0ss/PiBot",
       "homepage": "https://pibot.space",
       "description": "Open-source, local-first AI agent team for your desktop: multi-agent group chats, computer use, browser, MCP, routines and approvals. macOS, Windows, Linux + Android. Built on pi.",
-      "stars": 351,
+      "stars": 382,
       "language": "TypeScript",
       "license": "Apache-2.0",
       "created": "2026-11-21",
@@ -244,11 +163,32 @@
     },
     {
       "source": "GitHub",
+      "name": "birddebug/cinema-4d-win",
+      "url": "https://github.com/birddebug/cinema-4d-win",
+      "homepage": "https://birddebug.github.io/cinema-4d-win/",
+      "description": "Maxon Cinema 4D - 3D modeling and animation suite for motion graphics, procedural modeling and render pipeline integration on Windows 10/11",
+      "stars": 366,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "3d",
+        "3d-animation",
+        "3d-graphics",
+        "3d-modeling",
+        "4d",
+        "cgi",
+        "cinema",
+        "cinema-3d"
+      ]
+    },
+    {
+      "source": "GitHub",
       "name": "castro-vivek-31/rhino-8-win",
       "url": "https://github.com/castro-vivek-31/rhino-8-win",
       "homepage": "https://castro-vivek-31.github.io/rhino-8-win/",
       "description": "McNeel Rhinoceros 3D - NURBS-based 3D modeling software for surface modeling, subdivision geometry and CAD interoperability on Windows 10/11",
-      "stars": 350,
+      "stars": 365,
       "language": "",
       "license": "NOASSERTION",
       "created": "2026-11-21",
@@ -265,116 +205,11 @@
     },
     {
       "source": "GitHub",
-      "name": "debugdigital677/descript-pro-win",
-      "url": "https://github.com/debugdigital677/descript-pro-win",
-      "homepage": "https://debugdigital677.github.io/descript-pro-win/",
-      "description": "Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11",
-      "stars": 349,
-      "language": "",
-      "license": "NOASSERTION",
-      "created": "2026-11-21",
-      "topics": [
-        "ai",
-        "ai-art",
-        "ai-tools",
-        "ai-writing",
-        "artificial-intelligence",
-        "descript",
-        "descript-desktop",
-        "descript-free"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "FadiHarris80/fusion-360-win",
-      "url": "https://github.com/FadiHarris80/fusion-360-win",
-      "homepage": "https://fadiharris80.github.io/fusion-360-win/",
-      "description": "Autodesk Fusion 360 - cloud-based CAD/CAM platform for parametric modeling, simulation and CNC machining on Windows 10/11",
-      "stars": 349,
-      "language": "",
-      "license": "NOASSERTION",
-      "created": "2026-11-21",
-      "topics": [
-        "2d-cad",
-        "360",
-        "architecture",
-        "bim",
-        "cad",
-        "drafting",
-        "engineering",
-        "fusion"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "Juanlabs1989/descript-pro-win",
-      "url": "https://github.com/Juanlabs1989/descript-pro-win",
-      "homepage": "https://juanlabs1989.github.io/descript-pro-win/",
-      "description": "Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11",
-      "stars": 348,
-      "language": "",
-      "license": "NOASSERTION",
-      "created": "2026-11-21",
-      "topics": [
-        "ai",
-        "ai-art",
-        "ai-tools",
-        "ai-writing",
-        "artificial-intelligence",
-        "descript",
-        "descript-ai",
-        "descript-free"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "Morriswawan05/elevenlabs-pro-win",
-      "url": "https://github.com/Morriswawan05/elevenlabs-pro-win",
-      "homepage": "https://morriswawan05.github.io/elevenlabs-pro-win/",
-      "description": "ElevenLabs - AI voice synthesis platform for text-to-speech generation, voice cloning and multilingual dubbing on Windows 10/11",
-      "stars": 347,
-      "language": "",
-      "license": "NOASSERTION",
-      "created": "2026-11-21",
-      "topics": [
-        "ai",
-        "ai-art",
-        "ai-tools",
-        "ai-writing",
-        "artificial-intelligence",
-        "elevenlabs",
-        "elevenlabs-2025",
-        "elevenlabs-2026"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "JimLiu/open-artifact",
-      "url": "https://github.com/JimLiu/open-artifact",
-      "homepage": "",
-      "description": "Open, agent- and model-agnostic artifacts, all saved locally as plain files — edit, comment on, and export slides, UI designs, design systems, whiteboards, sheets, dashboards, docs, and motion.",
-      "stars": 347,
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "created": "2026-11-17",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "artifacts",
-        "claude-artifacts",
-        "claude-code",
-        "claude-design",
-        "codex",
-        "coding-agent"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "aslanabigail/autocad-2026-win",
-      "url": "https://github.com/aslanabigail/autocad-2026-win",
-      "homepage": "https://aslanabigail.github.io/autocad-2026-win/",
+      "name": "kofistudio/autocad-2026-win",
+      "url": "https://github.com/kofistudio/autocad-2026-win",
+      "homepage": "https://kofistudio.github.io/autocad-2026-win/",
       "description": "Autodesk AutoCAD - computer-aided design software for 2D drafting, 3D modeling and BIM documentation on Windows 10/11",
-      "stars": 347,
+      "stars": 364,
       "language": "",
       "license": "NOASSERTION",
       "created": "2026-11-21",
@@ -391,11 +226,74 @@
     },
     {
       "source": "GitHub",
+      "name": "Morriswawan05/elevenlabs-pro-win",
+      "url": "https://github.com/Morriswawan05/elevenlabs-pro-win",
+      "homepage": "https://morriswawan05.github.io/elevenlabs-pro-win/",
+      "description": "ElevenLabs - AI voice synthesis platform for text-to-speech generation, voice cloning and multilingual dubbing on Windows 10/11",
+      "stars": 363,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "ai",
+        "ai-art",
+        "ai-tools",
+        "ai-writing",
+        "artificial-intelligence",
+        "elevenlabs",
+        "elevenlabs-2025",
+        "elevenlabs-2026"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "Juanlabs1989/descript-pro-win",
+      "url": "https://github.com/Juanlabs1989/descript-pro-win",
+      "homepage": "https://juanlabs1989.github.io/descript-pro-win/",
+      "description": "Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11",
+      "stars": 363,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "ai",
+        "ai-art",
+        "ai-tools",
+        "ai-writing",
+        "artificial-intelligence",
+        "descript",
+        "descript-ai",
+        "descript-free"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "FadiHarris80/fusion-360-win",
+      "url": "https://github.com/FadiHarris80/fusion-360-win",
+      "homepage": "https://fadiharris80.github.io/fusion-360-win/",
+      "description": "Autodesk Fusion 360 - cloud-based CAD/CAM platform for parametric modeling, simulation and CNC machining on Windows 10/11",
+      "stars": 363,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "2d-cad",
+        "360",
+        "architecture",
+        "bim",
+        "cad",
+        "drafting",
+        "engineering",
+        "fusion"
+      ]
+    },
+    {
+      "source": "GitHub",
       "name": "G4rdner26/luminar-neo-win",
       "url": "https://github.com/G4rdner26/luminar-neo-win",
       "homepage": "https://g4rdner26.github.io/luminar-neo-win/",
       "description": "Skylum Luminar Neo - photo editing software for AI-powered enhancements, layer editing and raw file processing on Windows 10/11",
-      "stars": 346,
+      "stars": 363,
       "language": "",
       "license": "NOASSERTION",
       "created": "2026-11-21",
@@ -412,44 +310,11 @@
     },
     {
       "source": "GitHub",
-      "name": "PatriciaIo/topaz-denoise-ai-win",
-      "url": "https://github.com/PatriciaIo/topaz-denoise-ai-win",
-      "homepage": "https://patriciaio.github.io/topaz-denoise-ai-win/",
-      "description": "Topaz Labs Topaz Denoise AI - image noise reduction software for AI-based denoising, detail preservation and batch processing on Windows 10/11",
-      "stars": 345,
-      "language": "",
-      "license": "NOASSERTION",
-      "created": "2026-11-21",
-      "topics": []
-    },
-    {
-      "source": "GitHub",
-      "name": "hub-bear-blue/revit-2026-win",
-      "url": "https://github.com/hub-bear-blue/revit-2026-win",
-      "homepage": "https://hub-bear-blue.github.io/revit-2026-win/",
-      "description": "Autodesk Revit 2026 - building information modeling software for architectural design, structural engineering and MEP coordination on Windows 10/11",
-      "stars": 345,
-      "language": "",
-      "license": "NOASSERTION",
-      "created": "2026-11-21",
-      "topics": [
-        "2026",
-        "2026-revit",
-        "2d-cad",
-        "architecture",
-        "bim",
-        "cad",
-        "drafting",
-        "engineering"
-      ]
-    },
-    {
-      "source": "GitHub",
       "name": "alexeytarasov8/filmora-win",
       "url": "https://github.com/alexeytarasov8/filmora-win",
       "homepage": "https://alexeytarasov8.github.io/filmora-win/",
       "description": "Wondershare Filmora - video editing software for timeline editing, AI-assisted effects and audio mixing on Windows 10/11",
-      "stars": 345,
+      "stars": 362,
       "language": "",
       "license": "NOASSERTION",
       "created": "2026-11-21",
@@ -466,23 +331,98 @@
     },
     {
       "source": "GitHub",
-      "name": "Fast-black-tech5681/archicad-win",
-      "url": "https://github.com/Fast-black-tech5681/archicad-win",
-      "homepage": "https://fast-black-tech5681.github.io/archicad-win/",
-      "description": "Graphisoft Archicad - building information modeling software for architectural design, BIM collaboration and construction documentation on Windows 10/11",
-      "stars": 344,
+      "name": "bo-design8152/filmora-win",
+      "url": "https://github.com/bo-design8152/filmora-win",
+      "homepage": "https://bo-design8152.github.io/filmora-win/",
+      "description": "Wondershare Filmora - video editing software for timeline editing, AI-assisted effects and audio mixing on Windows 10/11",
+      "stars": 362,
       "language": "",
       "license": "NOASSERTION",
       "created": "2026-11-21",
       "topics": [
+        "content-creation",
+        "cursor",
+        "desktop-app",
+        "filmora-ai",
+        "filmora-windows-2026",
+        "filmora-windows-download",
+        "lombok",
+        "maven"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "PatriciaIo/topaz-denoise-ai-win",
+      "url": "https://github.com/PatriciaIo/topaz-denoise-ai-win",
+      "homepage": "https://patriciaio.github.io/topaz-denoise-ai-win/",
+      "description": "Topaz Labs Topaz Denoise AI - image noise reduction software for AI-based denoising, detail preservation and batch processing on Windows 10/11",
+      "stars": 361,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": []
+    },
+    {
+      "source": "GitHub",
+      "name": "aslanabigail/autocad-2026-win",
+      "url": "https://github.com/aslanabigail/autocad-2026-win",
+      "homepage": "https://aslanabigail.github.io/autocad-2026-win/",
+      "description": "Autodesk AutoCAD - computer-aided design software for 2D drafting, 3D modeling and BIM documentation on Windows 10/11",
+      "stars": 361,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "2026",
+        "2026-maya",
+        "2026-revit",
+        "2026-serum",
+        "2026-zbrush",
         "2d-cad",
-        "archicad",
-        "archicad-2025",
-        "archicad-2026",
-        "archicad-28",
-        "archicad-29",
-        "archicad-api",
-        "archicad-cad"
+        "architecture",
+        "autocad"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "GuzmanJacqueline93/copy-ai-pro-win",
+      "url": "https://github.com/GuzmanJacqueline93/copy-ai-pro-win",
+      "homepage": "https://guzmanjacqueline93.github.io/copy-ai-pro-win/",
+      "description": "Copy Ai Pro - AI copywriting assistant for content generation, tone rewriting and SEO text optimization on Windows 10/11",
+      "stars": 360,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "ai",
+        "ai-art",
+        "ai-tools",
+        "ai-writing",
+        "artificial-intelligence",
+        "copy",
+        "copy-detection",
+        "copy-files"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "LuisDesai/trimble-sketchup-win",
+      "url": "https://github.com/LuisDesai/trimble-sketchup-win",
+      "homepage": "https://luisdesai.github.io/trimble-sketchup-win/",
+      "description": "Trimble SketchUp - 3D modeling application for architectural design, interior planning and landscape visualization on Windows 10/11",
+      "stars": 360,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "addon",
+        "bim",
+        "cad",
+        "openstudio",
+        "sketchup",
+        "sketchup-pc",
+        "sketchup-tool",
+        "trimble"
       ]
     },
     {
@@ -491,7 +431,7 @@
       "url": "https://github.com/Roagu1lar/autodesk-fusion-360-win",
       "homepage": "https://roagu1lar.github.io/autodesk-fusion-360-win/",
       "description": "Autodesk Fusion 360 - cloud-based CAD/CAM platform for parametric modeling, simulation and CNC toolpath generation on Windows 10/11",
-      "stars": 344,
+      "stars": 360,
       "language": "",
       "license": "NOASSERTION",
       "created": "2026-11-21",
@@ -504,6 +444,69 @@
         "cad",
         "fusion",
         "fusion-360"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "debugdigital677/descript-pro-win",
+      "url": "https://github.com/debugdigital677/descript-pro-win",
+      "homepage": "https://debugdigital677.github.io/descript-pro-win/",
+      "description": "Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11",
+      "stars": 359,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "ai",
+        "ai-art",
+        "ai-tools",
+        "ai-writing",
+        "artificial-intelligence",
+        "descript",
+        "descript-desktop",
+        "descript-free"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "igwei/topaz-video-ai-win",
+      "url": "https://github.com/igwei/topaz-video-ai-win",
+      "homepage": "https://igwei.github.io/topaz-video-ai-win/",
+      "description": "Topaz Labs Topaz Video AI - video enhancement and upscaling software for noise reduction, frame interpolation and resolution upscaling on Windows 10/11",
+      "stars": 359,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "ai-tools",
+        "daemon",
+        "desktop-app",
+        "media",
+        "nas",
+        "pc",
+        "plex",
+        "productivity"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "hub-bear-blue/revit-2026-win",
+      "url": "https://github.com/hub-bear-blue/revit-2026-win",
+      "homepage": "https://hub-bear-blue.github.io/revit-2026-win/",
+      "description": "Autodesk Revit 2026 - building information modeling software for architectural design, structural engineering and MEP coordination on Windows 10/11",
+      "stars": 359,
+      "language": "",
+      "license": "NOASSERTION",
+      "created": "2026-11-21",
+      "topics": [
+        "2026",
+        "2026-revit",
+        "2d-cad",
+        "architecture",
+        "bim",
+        "cad",
+        "drafting",
+        "engineering"
       ]
     }
   ],
@@ -525,6 +528,36 @@
     },
     {
       "source": "Product Hunt",
+      "name": "Rankhog",
+      "url": "https://www.producthunt.com/products/rankhog?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/HVFQNHONLRBAJZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "Get customers from Reddit on autopilot - Rankhog finds people on Reddit asking for what you sell. It reads each subreddit's rules, writes a reply that helps, and posts it from your own account at a human pace. Say yes to each reply, or turn on autopilot. No Reddit account? Rankhog warms up ",
+      "votes": 265,
+      "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/b5eca185-268a-48d1-9cd4-a0d061891a10/bb44cb44f4b48ec1daccb69e7f364dd0d0a4f8895e69b015774c178fbdbc309d.png?auto=format",
+      "created": "2026-11-22",
+      "topics": [
+        "Marketing",
+        "Artificial Intelligence",
+        "reddit"
+      ]
+    },
+    {
+      "source": "Product Hunt",
+      "name": "Yoroll",
+      "url": "https://www.producthunt.com/products/yoroll?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/XKLWN5SDJ5RSLW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "Build playable stories without a game engine - Yoroll lets anyone turn stories into playable, cinematic games without coding or a game engine. Start with a script, image, or video clip, then direct the scenes, add player choices, and create branching storylines with different outcomes. AI helps b",
+      "votes": 248,
+      "thumbnail": "https://ph-files.imgix.net/61792e90-6f7d-4d6e-bcc2-b0c885011149.jpeg?auto=format",
+      "created": "2026-11-22",
+      "topics": [
+        "Artificial Intelligence",
+        "Games",
+        "No-Code"
+      ]
+    },
+    {
+      "source": "Product Hunt",
       "name": "AI Context Flow MCP",
       "url": "https://www.producthunt.com/products/ai-context-flow?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/62GR7ZBTBONXEL?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
@@ -540,41 +573,11 @@
     },
     {
       "source": "Product Hunt",
-      "name": "Rankhog",
-      "url": "https://www.producthunt.com/products/rankhog?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/HVFQNHONLRBAJZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "Get customers from Reddit on autopilot - Rankhog finds people on Reddit asking for what you sell. It reads each subreddit's rules, writes a reply that helps, and posts it from your own account at a human pace. Say yes to each reply, or turn on autopilot. No Reddit account? Rankhog warms up ",
-      "votes": 226,
-      "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/b5eca185-268a-48d1-9cd4-a0d061891a10/bb44cb44f4b48ec1daccb69e7f364dd0d0a4f8895e69b015774c178fbdbc309d.png?auto=format",
-      "created": "2026-11-22",
-      "topics": [
-        "Marketing",
-        "Artificial Intelligence",
-        "reddit"
-      ]
-    },
-    {
-      "source": "Product Hunt",
-      "name": "Yoroll",
-      "url": "https://www.producthunt.com/products/yoroll?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/XKLWN5SDJ5RSLW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "Build playable stories without a game engine - Yoroll lets anyone turn stories into playable, cinematic games without coding or a game engine. Start with a script, image, or video clip, then direct the scenes, add player choices, and create branching storylines with different outcomes. AI helps b",
-      "votes": 222,
-      "thumbnail": "https://ph-files.imgix.net/61792e90-6f7d-4d6e-bcc2-b0c885011149.jpeg?auto=format",
-      "created": "2026-11-22",
-      "topics": [
-        "Artificial Intelligence",
-        "Games",
-        "No-Code"
-      ]
-    },
-    {
-      "source": "Product Hunt",
       "name": "Glassmail",
       "url": "https://www.producthunt.com/products/glassmail?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/AMEMZBGSYLXSVQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "A fast Mac email app with AI that never leaves your Mac - Most new email apps charge you every month and send your mail to their servers so their AI can read it. Glassmail doesn't. It's a native Mac app for Gmail, iCloud, Outlook and any IMAP account, and its AI runs on your Mac. Ask \"what needs me today?\" ",
-      "votes": 156,
+      "votes": 158,
       "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/165a790f-cb14-4ecf-8188-0976f892913c/df3ba31e637be461c170f2c658214b3f622c5aba15dfb796f7ed5cf31b5a8aaf.png?auto=format",
       "created": "2026-11-21",
       "topics": [
@@ -589,7 +592,7 @@
       "url": "https://www.producthunt.com/products/resurf-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/VXIIBY4W6WDWZU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Personal Knowledge Base & Bookmark Manager for Mac - A fully local personal context library for Mac, iPhone, and iPad. Save notes, links, images, and documents. Hand off context to AI through MCP or the CLI on Mac.",
-      "votes": 140,
+      "votes": 155,
       "thumbnail": "https://ph-files.imgix.net/d9662a0a-5512-40f7-bd79-c1848c646257.png?auto=format",
       "created": "2026-11-22",
       "topics": [
@@ -604,7 +607,7 @@
       "url": "https://www.producthunt.com/products/exa-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/VCBQ7YACKGLBQ2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Build custom datasets from the live web, 4x faster - Websets v2 is Exa’s update to its tool for building custom datasets from live web data. Describe what you want in plain language and get rows with sources and reasoning for each match. Per Exa, v2 finds 20% more matches, runs 4x faster and costs abou",
-      "votes": 140,
+      "votes": 143,
       "thumbnail": "https://ph-files.imgix.net/73cc34e6-a8d6-4b26-8cad-4abcb07f3a28.jpeg?auto=format",
       "created": "2026-11-21",
       "topics": [
@@ -617,7 +620,7 @@
       "url": "https://www.producthunt.com/products/openvorld?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/PRFDOJRZF6LOTD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Give your AI agents a home and a Vorld. - OpenVorld is an open-source harness for AI agents, with a visible world on top. Every project is a pixel-art village, and every agent has a name, a role and a brain: Claude Code, Codex or any OpenAI-compatible API. You watch the crew work, and they a",
-      "votes": 108,
+      "votes": 109,
       "thumbnail": "https://ph-files.imgix.net/21766723-2ed5-428e-8814-137a48095fb9.svg?auto=format",
       "created": "2026-11-21",
       "topics": [
@@ -633,7 +636,7 @@
       "url": "https://www.producthunt.com/products/oovi?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/YLKKXHEBGSFA4O?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Your own team of AI on your desktop - Hand oovi a job and a team of AI bots does it: a leader plans, a researcher digs, a writer drafts, a critic checks. Watch each bot work, and approve anything before it goes out. Free with your own AI key, or from $10/mo with credits that never expire",
-      "votes": 105,
+      "votes": 109,
       "thumbnail": "https://ph-files.imgix.net/4aa45e6d-d58b-4ca2-88f8-e3162074e7fc.png?auto=format",
       "created": "2026-11-22",
       "topics": [
@@ -646,7 +649,7 @@
       "url": "https://www.producthunt.com/products/webless?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/VH6EKEDCE4QLCA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Agents you want to put in front of customers - You wouldn’t put most website chatbots in front of a customer. Webless Agents are different: you describe the outcome you want in plain English, and Webless builds the agent on your published content, so it answers only from what you’ve said. You rev",
-      "votes": 97,
+      "votes": 99,
       "thumbnail": "https://ph-files.imgix.net/33285ed9-82cb-4611-9ec5-6122369d566f.png?auto=format",
       "created": "2026-11-22",
       "topics": [
@@ -691,7 +694,7 @@
       "url": "https://www.producthunt.com/products/ulika?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/RMUGMIHZYR2MRX?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Visual editor for sites built with Claude, Cursor, or Codex - AI can ship a React, Vite, or Next site in a weekend. Then marketing wants a headline change and opens a ticket. Ulika connects the site so anyone can edit copy and images on the page and publish, without touching code. Open beta, free to try at ulik",
-      "votes": 88,
+      "votes": 89,
       "thumbnail": "https://ph-files.imgix.net/997ba1cf-1902-49e0-87bb-a9ea271fa516.png?auto=format",
       "created": "2026-11-22",
       "topics": [
@@ -721,7 +724,7 @@
       "url": "https://www.producthunt.com/products/stitch-loop?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/FPBEULM4VZK4X6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Google’s AI agent that ships fixes and watches the metric - Stitch Loop is an experimental product agent from Google Labs. It connects to your GitHub repo and live product data like logs, user behavior and feedback, proposes fixes, builds them in a cloud sandbox and opens a pull request. Nothing merges withou",
-      "votes": 76,
+      "votes": 77,
       "thumbnail": "https://ph-files.imgix.net/9400a4dc-1b3b-4397-80f0-ef6d204ff72e.png?auto=format",
       "created": "2026-11-21",
       "topics": [
@@ -749,7 +752,7 @@
       "url": "https://www.producthunt.com/products/zapyso?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/4IF373ZI2ZYN7T?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Free meeting notes and dictation that stay on your Mac - Zapyso records your calls on the Mac itself, with no bot joining, and writes a transcript and a summary with decisions and next steps. It notices calls in Zoom, Teams, Google Meet, Slack and more. Hold the right ⌘ key to dictate into any app. Speech ",
-      "votes": 68,
+      "votes": 69,
       "thumbnail": "https://ph-files.imgix.net/c9e1f724-1acf-4598-8186-b3da08d65d2e.png?auto=format",
       "created": "2026-11-22",
       "topics": [
@@ -794,7 +797,7 @@
       "url": "https://www.producthunt.com/products/squint?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/HWTEFOUJ6RVPVZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Explains whatever you're looking at, now on Mac - Now on Mac. Press a hotkey, drag a box around anything on your screen, and the answer starts streaming in beside it within moments. No switching apps, no chat window. Also new since the first launch: answers in your own language, one-press copy to ha",
-      "votes": 63,
+      "votes": 66,
       "thumbnail": "https://ph-files.imgix.net/7e4e1dee-1394-420f-849d-602c242b41e3.png?auto=format",
       "created": "2026-11-22",
       "topics": [
