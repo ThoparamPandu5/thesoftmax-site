@@ -1,6 +1,156 @@
 [
   {
     "date": "2026-11-24",
+    "title": "Latent Introspection: Research Shows Qwen-32B Can Detect Concept Injections",
+    "what": "Researchers published an arXiv paper showing that an open-weight Qwen-32B model can detect when concepts are injected into its earlier hidden states, even when its text output denies it. Using logit lens analysis and introspection prompting, injection sensitivity jumped from 0.3% to 39.9% with only a 0.6% false-positive increase.",
+    "free": "Free to read on arXiv (28-page paper); code and samples released for community replication on open-weight Qwen-32B models",
+    "why": "ML and AI-safety students can learn how logit lens probing works on open-weight models and study how LLMs represent internal steering and latent reasoning.",
+    "steps": [
+      "Open the paper on arxiv.org/abs/2602.20031",
+      "Read how logit lens analysis uncovers detection signals in middle layers (layers 58–62) before final-layer attenuation",
+      "Check Appendix A of the HTML/PDF version for the released code and sample prompts to test on Qwen-32B"
+    ],
+    "link": "https://arxiv.org/abs/2602.20031",
+    "linkText": "arXiv paper",
+    "tags": [
+      "free",
+      "models",
+      "students",
+      "learning"
+    ],
+    "source": "arXiv (Pearson-Vogel et al.)"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Replit Missions: Budget-Capped AI Agent Swarms for Complex Software Builds",
+    "what": "Replit launched Missions, a cloud workflow where you define a goal, approval rules, and a strict spending cap, and a swarm of AI agents plans, codes, tests, and iterates toward it. An independent AI judge checks the output against your criteria, and Replit also open-sourced a self-hostable version of its DataCat monitoring app built by Missions.",
+    "free": "Usage-based with a user-set maximum budget cap (paid credits required per mission; no standalone free tier for Missions is listed, though self-hostable DataCat is open-sourced)",
+    "why": "CS and hackathon students interested in multi-agent orchestration can study how agent swarms coordinate with an independent AI evaluator and strict cost guardrails.",
+    "steps": [
+      "Open replit.com/missions and review the mission agreement workflow",
+      "Define an outcome, approval boundaries, and a hard USD spending cap (or type /mission in a Replit workspace)",
+      "Track step-by-step spend and inspect pull requests or test evidence before approving release"
+    ],
+    "link": "https://replit.com/missions",
+    "linkText": "Official site",
+    "tags": [
+      "coding",
+      "tools",
+      "students"
+    ],
+    "source": "Replit"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "NariQ: Run Qwen3.8-27B in a 10 GB File at BF16-Level Agentic Accuracy",
+    "what": "Nari Labs released NariQ v1 GGUFs of Qwen3.8-27B at 3-bit (10.12 GB), 2.5-bit (8.44 GB), and 2-bit (6.75 GB), plus a 0.93 GB vision projector. The 3-bit and 2.5-bit files match the full 53.8 GB BF16 model on long-horizon coding-agent tasks, math, and image understanding.",
+    "free": "Free & open-source (Apache-2.0 license); requires the nari-llama.cpp fork (tested on NVIDIA RTX PRO 6000, H100, L4, A10; Apple M-series Metal is slow/experimental)",
+    "why": "Students with access to 16–24 GB lab or cloud GPUs can run a 27B coding and vision model locally at full BF16 agentic quality in a 10 GB download.",
+    "steps": [
+      "Download and run on Linux + NVIDIA GPU (driver 570+) with curl -fsSLO https://github.com/nari-labs/nari-llama.cpp/releases/download/b12431-nariv0/run.sh",
+      "Run bash run.sh 3.0 (or 2.5 for 8.44 GB) to auto-fit context to your GPU",
+      "Or download Qwen3.8-27B-NariQ-3.0bpw.gguf from Hugging Face and serve with nari-llama.cpp"
+    ],
+    "link": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+    "linkText": "Hugging Face page",
+    "tags": [
+      "free",
+      "models",
+      "coding",
+      "open-source",
+      "students"
+    ],
+    "source": "Nari Labs"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Mobile Agent Testers: 20 Free AI Agents Beta-Testing Your Mobile App",
+    "what": "An open-source GitHub Actions template that spins up to 20 parallel Claude Code agents on iOS Simulators and Android emulators to beta-test your app like real users. Each agent tests a different language, font size, or dark-mode persona and outputs encrypted bug reports with screenshots.",
+    "free": "Free & open-source (MIT license); GitHub Actions runners are free for public repos (~20 jobs at once, 5 on macOS); you only pay for your Claude or Anthropic-compatible API usage (~$0.15–$0.55 per phone)",
+    "why": "Student app developers building Flutter, React Native, Expo, Kotlin, or Swift projects can catch layout, accessibility, and translation bugs across 20 devices without owning them.",
+    "steps": [
+      "Create a repo from the pierridotite/mobile-agent-testers template on GitHub",
+      "Run ./setup.sh (or .\\setup.ps1 on Windows) to add your keys and Claude/API token",
+      "Run gh workflow run agent-testers.yml and decrypt the grouped SUMMARY.md with scripts/collect.sh"
+    ],
+    "link": "https://github.com/pierridotite/mobile-agent-testers",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "pierridotite / Mobile Agent Testers"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "OpenAI and Cisco Introduce Shirudo: Open-Source Linux Security Runtime",
+    "what": "OpenAI and Cisco open-sourced Shirudo, an eBPF-based runtime that lets teams test and deploy temporary security shields on running Linux services without restarts while permanent patches roll out. In a test, a Codex-generated shield blocked a Java4Shell exploit on a live Elasticsearch server.",
+    "free": "Free & open-source (BSD 2-Clause license; BPF programs dual-licensed BSD/GPL); includes a free VM quickstart and Isovalent self-guided lab",
+    "why": "Cybersecurity, DevOps, and systems students can learn how eBPF kernel shields and AI agents defend live Linux servers before patches are ready.",
+    "steps": [
+      "Read the Shirudo announcement on openai.com/index/introducing-shirudo/",
+      "Follow the VM quickstart to sign, load, and verify a test protection",
+      "Try Isovalent's self-guided hands-on lab or inspect the GitHub code"
+    ],
+    "link": "https://openai.com/index/introducing-shirudo/",
+    "linkText": "OpenAI post",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "OpenAI & Cisco"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Anthropic Releases Formal Lean 4 Proof for VP ≠ VNP Over Every Field",
+    "what": "Anthropic published a paper and machine-checked Lean 4 formalization proving VP ≠ VNP over every field inside its open-source formal-math repository. The repo also hosts Lean 4 proofs for complexity theory and number theory results checked by an independent kernel.",
+    "free": "Free & open-source (Apache-2.0 license); paper PDF and Lean 4 source code available on GitHub",
+    "why": "CS theory, math, and AI-for-math students can study how frontier AI labs formalize major complexity theory proofs in Lean 4 and Mathlib.",
+    "steps": [
+      "Open anthropics/formal-math on GitHub and browse the vp-vnp/ folder",
+      "Read vp-vnp/paper.pdf and Statement.lean to see the formal theorem statements",
+      "Run lake build and comparator-check.sh locally inside vp-vnp/ to verify the proof"
+    ],
+    "link": "https://github.com/anthropics/formal-math",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "Anthropic"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Gauth Personal Study Agent: AI Study Planner That Tracks Your Weak Spots",
+    "what": "Gauth launched Personal Study Agent, an AI study helper on Android, iOS, and web that connects the homework questions you snap, quizzes you take, and topics you study to spot gaps. It builds a daily study plan toward your exam date and adapts when you miss a review or master a topic early.",
+    "free": "Free to download on Android, iOS, and web with unlimited free AI step-by-step math and STEM solutions; optional Gauth PLUS subscription and live tutor purchases available",
+    "why": "School and college students preparing for exams can get a personalized daily drill and flashcard plan focused on the exact concepts they keep getting wrong.",
+    "steps": [
+      "Download the Gauth app on Android or iOS (or open gauth.com in your browser)",
+      "Snap a math or STEM question to get step-by-step explanations",
+      "Set your exam date in Personal Study Agent to get daily adaptive flashcards and drills"
+    ],
+    "link": "https://www.gauth.com/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "tools",
+      "students",
+      "learning"
+    ],
+    "source": "Gauth"
+  },
+  {
+    "date": "2026-11-24",
     "title": "GLM-5.4: Z.ai's First Loop Transformer Model for Generalized Coding and Vision",
     "what": "Z.ai released GLM-5.4, a 750B flagship model that loops 28 layers of GLM-5 twice with a 1M context window and vision input. It targets generalized coding across software, video generation, games, and 3D CAD modeling.",
     "free": "Free tier available on Z.ai Chat (chat.z.ai) with rate limits (vision requests use 1.5x tokens); GLM Coding Plan users get 1.5x weekly quota vs. GLM-5.3; open-weight release planned after safety hardening",
