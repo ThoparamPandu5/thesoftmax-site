@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-11-25",
+    "title": "Ternary Bonsai 2.5 27B: 5.93 GB Agentic Model Matching FP16 Tool Calling",
+    "what": "PrismML released Ternary Bonsai 2.5 27B, an Apache-2.0 ternary (1.76 bits/weight) upgrade of Qwen3.8-27B that fits in 5.93 GB (vs. 53.8 GB at FP16) with a 262K-token context window. It matches FP16 tool calling (77.2 vs. 77.7 across 5 benchmarks) and reaches 90% of FP16 agentic coding (SWE-bench Verified 75.6).",
+    "free": "Free & open-source (Apache-2.0 license); 5.93 GB GGUF (PTQ1_0/PQ2_0 via PrismML llama.cpp fork, or Q2_0 via stock llama.cpp b11556+)",
+    "why": "Indian students with 8 GB or 16 GB laptops can run a frontier-class 27B agentic coding and tool-calling model locally without cloud API bills.",
+    "steps": [
+      "Download Ternary-Bonsai-2.5-27B-Q2_0.gguf with hf download prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+      "Install stock llama.cpp (b11556 or newer) or PrismML's llama.cpp fork",
+      "Run llama-cli -m Ternary-Bonsai-2.5-27B-Q2_0.gguf -ngl 99 -fa on -c 32768 --min-p 0"
+    ],
+    "link": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+    "linkText": "Hugging Face page",
+    "tags": [
+      "free",
+      "models",
+      "coding",
+      "open-source",
+      "students"
+    ],
+    "source": "PrismML"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Songe: Open-Source Continual Learning Engine Using Your Idle Compute",
+    "what": "Songe (sous-labs/songe) is an Apache-2.0 continual learning engine that runs beside local model servers (Ollama, LM Studio, vLLM, llama.cpp, mlx-lm) and records your corrections and tool errors. When your machine is idle, it trains a small adapter on Apple Silicon (MLX) or NVIDIA/AMD GPUs (PyTorch) and only keeps the update if checks pass.",
+    "free": "Free & open-source (Apache-2.0 license); unlimited private local use with no cloud or telemetry (requires Python 3.11+ and Apple Silicon or NVIDIA/AMD GPU for training)",
+    "why": "Students building personal coding workflows with local LLMs can let their model learn their repo habits and fix repeated mistakes overnight using idle compute.",
+    "steps": [
+      "Install with uv tool install songe (or brew install sous-labs/tap/songe on macOS)",
+      "Run songe init to connect your local model server and opencode or pi",
+      "Use your agent normally and let Songe run Quick or Deep Dreams when idle"
+    ],
+    "link": "https://github.com/sous-labs/songe",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "models",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "Sous Labs / Songe"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "OpenAI: Amateur Astronomers Use Codex and Astra to Hunt Exoplanets",
+    "what": "OpenAI shared how two amateur astronomers used Codex and Astra to scan public NASA Kepler (100,000 stars) and TESS (19 million stars) telescope archives for recurring dips in starlight, surfacing new exoplanet candidates for SETI and NASA review. The post also links to free citizen-science programs like NASA Exoplanet Watch.",
+    "free": "Free to read on OpenAI's blog; NASA Exoplanet Watch and public Kepler/TESS light-curve archives are free for anyone with no telescope required",
+    "why": "Physics, data science, and CS students can see how AI coding agents automate real scientific discovery on open datasets and join NASA's free exoplanet citizen-science projects.",
+    "steps": [
+      "Read the OpenAI Science story at openai.com/index/searching-for-distant-planets-with-astra/",
+      "Visit NASA's Exoplanet Watch linked under Taking part in the search",
+      "Request public telescope data and plot your own starlight curves"
+    ],
+    "link": "https://openai.com/index/searching-for-distant-planets-with-astra/",
+    "linkText": "OpenAI post",
+    "tags": [
+      "free",
+      "coding",
+      "students",
+      "learning"
+    ],
+    "source": "OpenAI"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "The KL Divergence Is Never Negative, Except in PyTorch (Study & Fix)",
+    "what": "Researchers from Yale, Oxford, Cambridge, and Fudan tested 8.5 million inputs across PyTorch's kl_divergence and F.kl_div and found widespread floating-point errors—over 85% of FP32 values near KL 10^-7 had >=1% error and ~30% turned negative. They released stablekl code that removes over 97% of significant errors.",
+    "free": "Free to read on arXiv (CC BY 4.0 license); open-source reference code and benchmarks at github.com/xi-xiaoran/stablekl",
+    "why": "ML students doing knowledge distillation, RLHF/policy optimization, or quantization evals can avoid silent PyTorch loss bugs instead of blindly clamping negative KL values to zero.",
+    "steps": [
+      "Read the paper at arxiv.org/html/2611.30835",
+      "Check Section 3 to see how clamping negative F.kl_div zeroes out gradients",
+      "Explore the repaired decompositions and code at github.com/xi-xiaoran/stablekl"
+    ],
+    "link": "https://arxiv.org/html/2611.30835",
+    "linkText": "arXiv paper",
+    "tags": [
+      "free",
+      "coding",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "arXiv (Yang et al.)"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Anthropic \"Working with AI\": What 66 Interviews Reveal About AI & Jobs",
+    "what": "Anthropic interviewed 66 workers and leaders across 58 US companies to study how AI agents are changing workflows, hiring, and offshore contracting. Most firms reported hiring less (and cutting modular offshore contractor roles) while shifting interns and staff toward broader workflow ownership and domain judgment.",
+    "free": "Free to read online (with full PDF) on Anthropic's research site; no account required",
+    "why": "Indian college students preparing for software, consulting, or offshored tech roles get firsthand evidence on which skills (system judgment, product taste, end-to-end ownership) stay valuable as coding agents spread.",
+    "steps": [
+      "Open anthropic.com/research/working-with-ai",
+      "Read the Summary and Top-down automation sections on hiring and offshore contracting",
+      "Review Reorganizing around AI to see how roles and internships are broadening"
+    ],
+    "link": "https://www.anthropic.com/research/working-with-ai",
+    "linkText": "Anthropic research",
+    "tags": [
+      "free",
+      "students",
+      "learning"
+    ],
+    "source": "Anthropic"
+  },
+  {
     "date": "2026-11-24",
     "title": "Latent Introspection: Research Shows Qwen-32B Can Detect Concept Injections",
     "what": "Researchers published an arXiv paper showing that an open-weight Qwen-32B model can detect when concepts are injected into its earlier hidden states, even when its text output denies it. Using logit lens analysis and introspection prompting, injection sensitivity jumped from 0.3% to 39.9% with only a 0.6% false-positive increase.",
