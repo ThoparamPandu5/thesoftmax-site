@@ -1,5 +1,114 @@
 [
   {
+    "date": "2026-11-24",
+    "title": "GLM-5.4: Z.ai's First Loop Transformer Model for Generalized Coding and Vision",
+    "what": "Z.ai released GLM-5.4, a 750B flagship model that loops 28 layers of GLM-5 twice with a 1M context window and vision input. It targets generalized coding across software, video generation, games, and 3D CAD modeling.",
+    "free": "Free tier available on Z.ai Chat (chat.z.ai) with rate limits (vision requests use 1.5x tokens); GLM Coding Plan users get 1.5x weekly quota vs. GLM-5.3; open-weight release planned after safety hardening",
+    "why": "CS and engineering students can test a 1M-context multimodal Loop Transformer for coding, 3D shaders, and CAD scripts, and study how looped layers boost reasoning without adding parameters.",
+    "steps": [
+      "Open chat.z.ai and sign in to try GLM-5.4 on the free tier",
+      "Upload UI screenshots or describe a coding, game, or 3D task in the prompt",
+      "Or read the technical blog at z.ai/blog/glm-5.4 to learn the Loop Transformer architecture"
+    ],
+    "link": "https://z.ai/blog/glm-5.4",
+    "linkText": "Z.ai blog",
+    "tags": [
+      "free",
+      "coding",
+      "models",
+      "students",
+      "learning"
+    ],
+    "source": "Z.ai (Zhipu)"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Google DeepMind: Faster Quantum Algorithms Found with AI Agents and Lean",
+    "what": "Google DeepMind and Google Quantum AI used teams of Gemini 4 agents paired with the Lean theorem prover to discover faster, mathematically verified quantum circuits, cutting fusion simulation cost by 11.8x and speeding up arcsin by 290x. They are open-sourcing the Lean library, problem specs, and verified solutions on GitHub.",
+    "free": "Free to read on Google DeepMind's blog; open-source Lean library, problem specs, and verified solutions on GitHub",
+    "why": "Quantum computing, math, and CS students can study real formally verified quantum circuits in Lean and see how multi-agent AI teams collaborate on scientific algorithm design.",
+    "steps": [
+      "Read the Google DeepMind blog post and linked paper",
+      "Click Access the Lean framework to explore the open-source Lean library and problem specs",
+      "Run the verified quantum circuit proofs locally in Lean"
+    ],
+    "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "linkText": "DeepMind blog",
+    "tags": [
+      "free",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "Google DeepMind"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Google Research: DeepCrossAttention Supercharges Transformer Residual Connections",
+    "what": "Google Research detailed DeepCrossAttention (DCA), which replaces equal-weight residual additions with learnable depth-wise cross-attention across prior layers. It matches standard transformer quality with 30-40% fewer parameters (or up to 5x fewer training steps on C4/LM1B) while adding under 0.2% parameters.",
+    "free": "Free to read online on Google Research's official blog; no account required",
+    "why": "ML and deep learning students can learn why standard residual connections dilute early-layer features and how dynamic layer routing (used by models like Inkling 2) speeds up transformer training.",
+    "steps": [
+      "Open the Google Research blog post on DeepCrossAttention",
+      "Compare standard additive residuals with DCA's depth-wise Q/K/V routing diagram",
+      "Review the LM1B and C4 perplexity benchmarks and Attention Residuals comparison"
+    ],
+    "link": "https://research.google/blog/supercharging-transformer-residual-connections/",
+    "linkText": "Google Research",
+    "tags": [
+      "free",
+      "models",
+      "students",
+      "learning"
+    ],
+    "source": "Google Research"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Splash 1.7.1: Open-Source Apple Silicon LLM Engine with Neural Engine Prefill",
+    "what": "Splash 1.7.1 is an open-source local inference engine for Apple Silicon Macs (M3+ on macOS 26.4+) combining DFlash 2 speculative decoding, custom Metal kernels, and Neural Engine prefill. Version 1.7.1 cuts time-to-first-token by up to 23% on M6 (6-13% on M5 Pro) and supports up to 8 concurrent requests.",
+    "free": "Free & open-source (Apache-2.0 license); unlimited local use on Apple Silicon Macs (M3 or newer, macOS 26.4+)",
+    "why": "Students with Apple Silicon Macs can run local coding models like Qwen3.8-27B 2.5-5.3x faster than llama.cpp and serve OpenAI/Anthropic-compatible APIs to local coding agents.",
+    "steps": [
+      "Install on Apple Silicon via brew install incoai/tap/splash (or download the macOS DMG)",
+      "Run splash serve --model unsloth/Qwen3.8-27B-GGUF:UD-Q4_K_M",
+      "Open http://127.0.0.1:8000 or run splash claude / splash opencode"
+    ],
+    "link": "https://github.com/incoai/splash",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "models",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "incoai / Splash"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Beacon: Open-Source Self-Improving Memory for AI Coding Agents",
+    "what": "Beacon (agent-beacon) is an open-source, local-first memory layer that captures coding agent sessions across 20+ tools (Claude Code, Cursor, Codex, Gemini CLI, OpenCode, Cline) into local JSONL traces. It turns working commands, debugging fixes, and repo conventions into reusable knowledge for future agents.",
+    "free": "Free & open-source (MIT license); unlimited local-first use on macOS, Linux, and Windows (optional hosted Beacon Cloud available)",
+    "why": "Students using multiple AI coding tools on semester projects or hackathons can share learned project context across tools locally instead of re-explaining their codebase every session.",
+    "steps": [
+      "Install via Homebrew (brew install beacon), Linux install.sh, or Windows MSI",
+      "Choose Local mode in setup to keep all traces on your machine",
+      "Run beacon traces or beacon endpoint dashboard to inspect sessions and connect MCP"
+    ],
+    "link": "https://github.com/Asymptote-Labs/agent-beacon",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "Asymptote Labs / Beacon"
+  },
+  {
     "date": "2026-11-23",
     "title": "Muru: Open-Source Rust Server for Python Apps with AI Agent MCP Support",
     "what": "An open-source Rust edge server, control plane, and Python runtime by mod_wsgi creator Graham Dumpleton for running WSGI and ASGI web apps with zero-downtime blue/green and canary releases. It includes a built-in MCP server so AI coding agents can deploy changes, observe failures, and roll back automatically.",
