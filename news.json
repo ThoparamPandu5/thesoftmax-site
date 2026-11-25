@@ -1,6 +1,73 @@
 [
   {
     "date": "2026-11-25",
+    "title": "Fleetify: Open-Source Desktop Command Center for AI Coding Agents",
+    "what": "Fleetify is an Apache-2.0 Tauri/Rust desktop app that runs Claude Code, Codex, OpenCode, Cursor CLI, GitHub Copilot CLI, and local Ollama models side by side in separate git worktrees. It includes a live dev-server preview, built-in browser, and MCP sidecars.",
+    "free": "Free & open-source (Apache-2.0 license); release builds use a free Fleetify account, or run npm run dev:tauri:wt from source to skip sign-in; requires macOS 11+, Windows 10/11, or Linux",
+    "why": "Students juggling multiple AI coding CLIs or local Ollama models on hackathons and semester projects can keep every agent isolated in its own git branch from one window.",
+    "steps": [
+      "Install on macOS/Linux with curl -fsSL https://fleetify.dev/install.sh",
+      "sh (or irm https://fleetify.dev/install.ps1",
+      "iex on Windows)",
+      "Sign in with a free Fleetify account (or build from source with npm run dev:tauri:wt)",
+      "Connect Claude Code, Codex, OpenCode, or local Ollama and start a session in its own git worktree"
+    ],
+    "link": "https://github.com/fleetifydev/fleetify",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "Fleetify"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "OpenAI: GPT-6 Models Design Proteins Using Reasoning and Code Alone",
+    "what": "OpenAI published research showing that GPT-6 models can design 3D protein minibinders, antibody loops, and amino acid sequences directly through reasoning and general coding tools without calling specialized biology models. Wet-lab tests with Onava confirmed binding across five targets, including PD-L1 and IL-17A.",
+    "free": "Free to read online (with linked research preprint) on OpenAI's official website; no account required",
+    "why": "Biotech, bioinformatics, and AI students can see how general-purpose reasoning models use math, chemistry, and Python code to tackle programmable molecular design and ligand docking.",
+    "steps": [
+      "Open the OpenAI Science post at openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+      "Read the linked preprint and Laboratory Experiment 1 and 2 results",
+      "Review the MotifBench, CATH fold, and PoseBusters docking benchmarks and limitations"
+    ],
+    "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+    "linkText": "OpenAI post",
+    "tags": [
+      "free",
+      "models",
+      "students",
+      "learning"
+    ],
+    "source": "OpenAI"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Bento Terminal: Open-Source Multi-Pane Workspace for Coding & AI Agents",
+    "what": "Bento Terminal is an MIT-licensed Go TUI that combines a syntax-highlighted file editor, git diff tree, build runner, shell, and an AI coding-agent launcher in one keyboard-first terminal layout. Pressing ctrl+a lets you start Claude Code, OpenCode, Gemini CLI, Codex CLI, Copilot, Crush, Aider, or Cursor beside your code.",
+    "free": "Free & open-source (MIT license); unlimited local use on macOS, Linux, and Windows with no telemetry",
+    "why": "Students coding in the terminal on laptops or SSH servers get a lightweight, zero-config workspace that keeps their editor, git diffs, build output, and AI agent side by side.",
+    "steps": [
+      "Install via npx bento-terminal, brew install StarkDroid/tap/bento, or scoop install bento",
+      "Run bento inside any project folder",
+      "Press ctrl+a to launch an AI coding agent alongside the file preview and git diff panes"
+    ],
+    "link": "https://github.com/StarkDroid/Bento-Terminal",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "StarkDroid / Bento Terminal"
+  },
+  {
+    "date": "2026-11-25",
     "title": "Ternary Bonsai 2.5 27B: 5.93 GB Agentic Model Matching FP16 Tool Calling",
     "what": "PrismML released Ternary Bonsai 2.5 27B, an Apache-2.0 ternary (1.76 bits/weight) upgrade of Qwen3.8-27B that fits in 5.93 GB (vs. 53.8 GB at FP16) with a 262K-token context window. It matches FP16 tool calling (77.2 vs. 77.7 across 5 benchmarks) and reaches 90% of FP16 agentic coding (SWE-bench Verified 75.6).",
     "free": "Free & open-source (Apache-2.0 license); 5.93 GB GGUF (PTQ1_0/PQ2_0 via PrismML llama.cpp fork, or Q2_0 via stock llama.cpp b11556+)",
