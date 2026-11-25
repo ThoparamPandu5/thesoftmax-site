@@ -1,11 +1,116 @@
 [
   {
     "source": "Product Hunt",
+    "name": "MyClaw 3.0",
+    "url": "https://www.producthunt.com/products/myclaw-3-0?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/I5P5AWTAYY2JLB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Build an always-on AI team with shared memory - MyClaw lets you build your own AI team with OpenClaw, Claude Code, Codex, Hermes Agent, Pi, and more. Give each teammate its own role, tools, skills, and choice of 50+ models, with shared memory across your team. Your agents run on always-on cloud co",
+    "votes": 228,
+    "thumbnail": "https://ph-files.imgix.net/28fd2484-882a-4dbe-a782-fa034197fa78.gif?auto=format",
+    "created": "2026-11-25",
+    "topics": [
+      "Productivity",
+      "Artificial Intelligence",
+      "Business"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Airbot",
+    "url": "https://www.producthunt.com/products/airbots?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/EGSFSGAVXJ7PGU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "The AI chief of staff that texts you first - Most AI assistants wait for you to ask. Airbot texts you first. It checks the conversations, meetings, and customer updates spread across email, Slack, your calendar, and CRM, then brings you only the priorities that matter. Behind every message is w",
+    "votes": 192,
+    "thumbnail": "https://ph-files.imgix.net/7c7d25c7-eb92-4e83-8f25-67b78db12372.png?auto=format",
+    "created": "2026-11-25",
+    "topics": [
+      "Productivity",
+      "Sales",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Snag by Parallel",
+    "url": "https://www.producthunt.com/products/snag?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/MANSMUJQCJ47AN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Find the best deals on products from your agents - Find the best deals on the products you've been asking ChatGPT, Claude, and other agents about. Snag turns those conversations into a wishlist you import in one click, matches each item to the exact product, and checks prices across stores. Lists are",
+    "votes": 126,
+    "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/832da890-6475-4f02-9f32-b237e6dc9b82/744db3c5f14aa50734d51b4a4028fee61d6a72ae20076ee3b609ebf855130e6f.png?auto=format",
+    "created": "2026-11-25",
+    "topics": [
+      "Artificial Intelligence",
+      "E-Commerce",
+      "Shopping"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Hiring Right Now",
+    "url": "https://www.producthunt.com/products/hiring-right-now?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/PX2A4HLUDBWHZK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Which startups would hire you? - Paste your LinkedIn. Backdoor reads your work, searches growing startups and shows you the ones that fit, the founder to write to, and the email to send them. Free, no signup required, takes about two minutes.",
+    "votes": 109,
+    "thumbnail": "https://ph-files.imgix.net/b7ded7ec-8309-48d6-a8d8-0931c7c2085a.png?auto=format",
+    "created": "2026-11-25",
+    "topics": [
+      "Hiring",
+      "Artificial Intelligence",
+      "Career"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Koed",
+    "url": "https://www.producthunt.com/products/koed?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/RNK2UCV5BQK2TR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Supercharged Agents! - Koed gives each coding project its own Kin: a customisable assistant that remembers how you like to work, the decisions you’ve made and what you’ve already tried. Your Kin reasons over that context to give Claude Code, Codex and Pi guidance shaped by",
+    "votes": 100,
+    "thumbnail": "https://ph-files.imgix.net/59585547-f7a4-48b3-8062-0ebcf26b50f4.png?auto=format",
+    "created": "2026-11-25",
+    "topics": [
+      "Open Source",
+      "Artificial Intelligence",
+      "Tech"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Hai",
+    "url": "https://www.producthunt.com/products/hai-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/UXWKKW5IL44KD4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Your AI assistant that actually makes the phone call - Some bookings still only happen by phone, and plenty of us dread making that call. For people who are deaf, hard of hearing, or have speech or anxiety barriers, that call can be impossible. Hai makes it for you. Tell your assistant what you need, app",
+    "votes": 96,
+    "thumbnail": "https://ph-files.imgix.net/6bc37dc6-13df-4f31-884b-86aee2151317.png?auto=format",
+    "created": "2026-11-25",
+    "topics": [
+      "Productivity",
+      "Artificial Intelligence",
+      "Virtual Assistants"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Omi X 2.0",
+    "url": "https://www.producthunt.com/products/omi-x?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/Z3QZI4LDUROIBE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Omi can build anything. Your $1B idea, live in production - Omi can build anything. Omi X 2.0 is the desktop app for Mac and Windows that builds a production AI SaaS on your own Google Cloud and Firebase. New in 2.0: Point and edit lets you click any part of your running app and tell Omi what to change. Open ",
+    "votes": 90,
+    "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/125721fd-c3f6-4980-bd84-39101f0fcf9f/09849dd6198967218acc69f0fc8512857965dcbfdb285fcc617f78c9e2424b7e.png?auto=format",
+    "created": "2026-11-25",
+    "topics": [
+      "SaaS",
+      "Developer Tools",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
     "name": "Granular.Build",
     "url": "https://www.producthunt.com/products/granular-build?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/WWPJRVRNRSEYXS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Put your AI agents to work in a visual workspace - Big ideas shouldn't require a dozen AI tools or a programming background. Granular brings your models, agents, files, and project context into one visual workspace. Give a boss agent your goal, let it coordinate specialists in parallel, and watch app",
-    "votes": 205,
+    "votes": 230,
     "thumbnail": "https://ph-files.imgix.net/e171c526-c3db-4c20-b658-3c88d11873a0.png?auto=format",
     "created": "2026-11-24",
     "topics": [
@@ -16,26 +121,11 @@
   },
   {
     "source": "Product Hunt",
-    "name": "Clam AI",
-    "url": "https://www.producthunt.com/products/clam-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-    "website": "https://www.producthunt.com/r/Y4C2MX2E5DS3E5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-    "description": "Your inbox, safely shared with AI agents - Your inbox is a master key: password resets, bank alerts and health reports all run through it. Clam lets AI agents work in your email without holding that key. You write the rules in plain English, like \"Read travel email. Draft replies. Never send.",
-    "votes": 172,
-    "thumbnail": "https://ph-files.imgix.net/49307ed7-afcc-459e-aad0-f5f6f1ee8e6b.png?auto=format",
-    "created": "2026-11-24",
-    "topics": [
-      "Email",
-      "Privacy",
-      "Artificial Intelligence"
-    ]
-  },
-  {
-    "source": "Product Hunt",
     "name": "Viktor Code",
     "url": "https://www.producthunt.com/products/viktor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/PN7G3CJSNEP2H7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Coding agents know your repo. Viktor knows your company. - Coding agents know your repository. Viktor knows your company: your customers, your metrics and the decisions behind the work. So you give him a business outcome, not a ticket. He splits it into the technical and the non-technical work. He opens pull",
-    "votes": 169,
+    "votes": 186,
     "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/2bfe1778-633c-4765-8e09-bc023871dfcf/10e27f21dc4ab6544dd2d740e5d26c3839ff4e199af371fdc23a098beeaca07d.gif?auto=format",
     "created": "2026-11-24",
     "topics": [
@@ -47,11 +137,26 @@
   },
   {
     "source": "Product Hunt",
+    "name": "Clam AI",
+    "url": "https://www.producthunt.com/products/clam-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/Y4C2MX2E5DS3E5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Your inbox, safely shared with AI agents - Your inbox is a master key: password resets, bank alerts and health reports all run through it. Clam lets AI agents work in your email without holding that key. You write the rules in plain English, like \"Read travel email. Draft replies. Never send.",
+    "votes": 184,
+    "thumbnail": "https://ph-files.imgix.net/49307ed7-afcc-459e-aad0-f5f6f1ee8e6b.png?auto=format",
+    "created": "2026-11-24",
+    "topics": [
+      "Email",
+      "Privacy",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
     "name": "Claude Ship",
     "url": "https://www.producthunt.com/products/claude-code?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/3ENQV4OYKF2LDA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Ship code as fast as you can write it - Ship code as fast as you can write it: Claude Ship reviews, fixes, and approves pull requests, taking each one from opened to ready to merge. Code Review posts verified findings on each PR. PR Steward (beta) fixes failing CI, conflicts, and review fe",
-    "votes": 138,
+    "votes": 153,
     "thumbnail": "https://ph-files.imgix.net/f4f24816-4406-4763-b093-f46fc3b8c0e6.png?auto=format",
     "created": "2026-11-24",
     "topics": [
@@ -66,7 +171,7 @@
     "url": "https://www.producthunt.com/products/frwrd-to?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/WXNOFU2KUUJDSV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Your link in bio, sorted by your AI in one message - Send your AI assistant your current link in bio or your website. It keeps what matters, matches your brand and publishes the page in every language you need. Campaigns end on their own, and you can edit everything by hand too.",
-    "votes": 132,
+    "votes": 145,
     "thumbnail": "https://ph-files.imgix.net/a91ee638-c984-4b87-bce9-87dc192e99e1.png?auto=format",
     "created": "2026-11-24",
     "topics": [
@@ -81,7 +186,7 @@
     "url": "https://www.producthunt.com/products/tday?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/XR4BWOLUZFCM5O?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "AI-recorded Screen Studio style editable demos - Most features ship without a demo video. A good one takes hours to script, record, retake, voice and edit. Ask for a demo in one line from Claude Code, Cursor or Codex. Your coding agent records your real app on your machine, localhost included, and ",
-    "votes": 118,
+    "votes": 121,
     "thumbnail": "https://ph-files.imgix.net/25c687e3-b9e8-44a8-9a3a-e973d70467aa.png?auto=format",
     "created": "2026-11-24",
     "topics": [
@@ -111,7 +216,7 @@
     "url": "https://www.producthunt.com/products/valley-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/HWUZY7SWS43SXN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Outbound system to find people most likely to buy from you - Valley finds the people most likely to buy from you, from live buying signals, plain-English search or your own lists. It checks each one against your ICP, researches them, and writes a personal message across LinkedIn and email. You approve every me",
-    "votes": 109,
+    "votes": 111,
     "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/0b0ebd36-68b8-48b5-94d7-9e8e76c1a75f/9a52b06b37d86844636831bcb99c1139c5434de38c08b8d72c42b4457bccdeca.jpeg?auto=format",
     "created": "2026-11-24",
     "topics": [
@@ -126,7 +231,7 @@
     "url": "https://www.producthunt.com/products/doola-mcp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/ANWA4JZ6SFPXRU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Start and run your US company from your AI assistant - The doola MCP lets founders start and run a US company from ChatGPT, Claude, and any tool that supports MCP. Form an LLC or C-Corp in any of the 50 states in one chat, from account setup to submission. Already a doola customer? Connect your account a",
-    "votes": 97,
+    "votes": 100,
     "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/03c0739c-9779-4a37-9d53-447332180058/e0c81e367ef7257abd72aa73705afa7bf6daefd286439665b2589a9061decdc7.png?auto=format",
     "created": "2026-11-24",
     "topics": [
@@ -141,7 +246,7 @@
     "url": "https://www.producthunt.com/products/pinned?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/ROD5UEJ4UIO57F?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Ask the city where to go tonight with your friends - Ask Pinned where to go tonight, the way you'd text a friend who knows the city. Pinned AI reads every spot nearby and brings back the three that fit your whole crew, with a reason for each. Then drop a pin with the plan, and your friends say \"I'm dow",
-    "votes": 92,
+    "votes": 93,
     "thumbnail": "https://ph-files.imgix.net/18aa20cc-790a-46ea-aa87-c7efda46ab4d.png?auto=format",
     "created": "2026-11-24",
     "topics": [
@@ -149,6 +254,53 @@
       "Social Network",
       "Artificial Intelligence",
       "Maps"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Fleetify",
+    "url": "https://www.producthunt.com/products/fleetify?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/SNVDYIJMUO7KOG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Open-source command center for your AI coding agents - Fleetify is a free, open-source desktop app for running AI coding agents side by side. Start sessions with Claude Code, Codex, OpenCode and seven more agents, or with OpenAI, Anthropic, Gemini, OpenRouter and local Ollama models. Watch them all from ",
+    "votes": 88,
+    "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/18147c3c-9cef-42f6-b91e-da9eca7de9ad/8986aa468ec84c35e28df0b8166dc3638771e924f695a7369a7e9cab3751a0f8.png?auto=format",
+    "created": "2026-11-24",
+    "topics": [
+      "Open Source",
+      "Developer Tools",
+      "Artificial Intelligence",
+      "GitHub"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "Astor",
+    "url": "https://www.producthunt.com/products/astor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/AU3ZWCZDGOJNDH?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "AI Thesis Investing - Astor is the personal investing agent for thesis-driven investors. Tell Astor what you believe in, e.g. “the grid is AI’s bottleneck.” Astor builds the portfolio and explains every pick. It monitors your thesis every market day, and when the story ch",
+    "votes": 86,
+    "thumbnail": "https://ph-files.imgix.net/a0d4b302-c933-4c97-8ae1-bd49a84de0e5.png?auto=format",
+    "created": "2026-11-24",
+    "topics": [
+      "Fintech",
+      "Investing",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "HeroUI Pro 1.0",
+    "url": "https://www.producthunt.com/products/heroui-pro-1-0?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/BSJPX7YJYPQI5B?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "Premium UI components, templates, and AI tooling for React - HeroUI Pro is the premium tier of HeroUI (formerly NextUI). 118+ production-ready Pro components with 900+ examples: 65+ for React, built on Tailwind CSS v4 and React Aria (data grid, charts, kanban, agenda, rich text editor, maps, and a full AI chat",
+    "votes": 86,
+    "thumbnail": "https://ph-files.imgix.net/f813d7d3-87d9-468d-9cff-f6e707657ebe.png?auto=format",
+    "created": "2026-11-24",
+    "topics": [
+      "Design Tools",
+      "Developer Tools",
+      "Artificial Intelligence",
+      "GitHub"
     ]
   },
   {
