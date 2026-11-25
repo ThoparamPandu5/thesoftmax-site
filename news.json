@@ -1,6 +1,92 @@
 [
   {
     "date": "2026-11-25",
+    "title": "OpenAI: Matrix Multiplication Exponent Proven to Be 9/4 (n^2.25)",
+    "what": "OpenAI published a mathematical preprint and Lean formalization proving that the exponent of square matrix multiplication is 9/4 (2.25) over every field, refuting the long-standing conjecture that it equals 2. The paper proves at least ceil(n^(9/4)/2) nonscalar multiplication or division gates are required for n >= 2.",
+    "free": "Free & open-access on GitHub (LaTeX source, PDF instructions, and Lean formalization in openai/math)",
+    "why": "CS, algorithms, and math students can study a historic theoretical computer science breakthrough—since matrix multiplication underpins all neural networks—and inspect its Lean formalization.",
+    "steps": [
+      "Open the README in openai/math on GitHub",
+      "Read the overview and rebuild paper.pdf from build/main.tex with latexmk",
+      "Explore the linked Lean formalization for division-free circuits over every field"
+    ],
+    "link": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/README.md",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "OpenAI"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "PenGPT: Tiny 6M & 54M Open-Source Transformers for Handwriting and Sketches",
+    "what": "ML researcher Sam Greydanus released PenGPT, two small generative transformers: a 6M-parameter model that writes print and cursive in a new writer's style from a few sample words, and a 54M-parameter model that sketches from text prompts using SigLIP 2 vectors. Both snap pen strokes onto an 8-direction grid with BPE merging.",
+    "free": "Free & open-source (free blog post, paper, GitHub code at greydanus/pengpt, downloadable weights, and interactive browser demo)",
+    "why": "Deep learning students can train and inspect real generative transformers on an 8xA100 in 8–35 minutes (or run the 6 MB handwriting model in a browser) and see why clean data matters more than clever architecture.",
+    "steps": [
+      "Open greydanus.github.io/2026/11/12/pengpt/ to try the interactive browser demo",
+      "Click Get the code (github.com/greydanus/pengpt) and Download weights",
+      "Read the ablation tables comparing LSTMs, BPE merges, and data augmentation"
+    ],
+    "link": "https://greydanus.github.io/2026/11/12/pengpt/",
+    "linkText": "Official post",
+    "tags": [
+      "free",
+      "models",
+      "coding",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "Sam Greydanus / PenGPT"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "ProofAtlas: Top 500 Open Math & CS Problems Ranked by LLMs",
+    "what": "ProofAtlas is a free directory of 500 open problems across 17 subjects in mathematics, theoretical computer science, and physics, ranked by pairwise LLM importance comparisons (OpenAI, Claude, GLM, DeepSeek). Each entry includes the exact mathematical statement, status notes, primary sources, and bootstrap uncertainty ranges.",
+    "free": "Free to browse online with no account required; full ranking and edition changes are downloadable as JSON",
+    "why": "CS theory, math, and AI-for-math students can explore landmark open problems (like P vs NP and Riemann Hypothesis) with exact formal statements and up-to-date resolution notes.",
+    "steps": [
+      "Open proofatlas.ai/open-problems/",
+      "Filter by subject (e.g., Theoretical computer science or Number theory) or status",
+      "Click any problem to view its exact statement, sources, and Download ranking (JSON)"
+    ],
+    "link": "https://www.proofatlas.ai/open-problems/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "students",
+      "learning"
+    ],
+    "source": "ProofAtlas"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Serving Qwen3.5-4B Across 5,600 AWS Lambdas: Systems & Cost Case Study",
+    "what": "Engineer Noah Lindner documented his experiment splitting a 9.3 GB Qwen3.5-4B fine-tune (32 layers, ~225 MB per layer) across 5,600 parallel AWS Lambda CPU jobs under a 3 GB memory cap using S3. He explains the staircase pipeline math (92% parallel, 8% serial) and why it ended up costing 80x more than GPU cloud inference.",
+    "free": "Free to read online on noahbuilt.it; no account required",
+    "why": "Cloud and ML systems students learn a concrete lesson on GPU vs. serverless CPU economics, S3 I/O bottlenecks, and pipeline parallelism in distributed LLM inference.",
+    "steps": [
+      "Read the write-up at noahbuilt.it/writing/qwen-on-5600-lambdas",
+      "Study the S3-backed layer-by-block staircase execution diagram",
+      "Compare the serverless CPU cost breakdown against standard GPU cloud inference"
+    ],
+    "link": "https://noahbuilt.it/writing/qwen-on-5600-lambdas",
+    "linkText": "Official post",
+    "tags": [
+      "free",
+      "models",
+      "coding",
+      "students",
+      "learning"
+    ],
+    "source": "Noah Lindner"
+  },
+  {
+    "date": "2026-11-25",
     "title": "Fleetify: Open-Source Desktop Command Center for AI Coding Agents",
     "what": "Fleetify is an Apache-2.0 Tauri/Rust desktop app that runs Claude Code, Codex, OpenCode, Cursor CLI, GitHub Copilot CLI, and local Ollama models side by side in separate git worktrees. It includes a live dev-server preview, built-in browser, and MCP sidecars.",
     "free": "Free & open-source (Apache-2.0 license); release builds use a free Fleetify account, or run npm run dev:tauri:wt from source to skip sign-in; requires macOS 11+, Windows 10/11, or Linux",
