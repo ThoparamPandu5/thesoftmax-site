@@ -1,5 +1,70 @@
 [
   {
+    "date": "2026-11-26",
+    "title": "Agentic Algorithm Engineering: Skill That Optimizes Code with Falsifiable Hypotheses",
+    "what": "Heidelberg University's CHSZLab released an MIT-licensed skill for Claude Code and Codex that turns coding agents into performance engineers. Before each edit, the agent writes a falsifiable hypothesis, runs benchmarks and correctness checks, and outputs numbered git patches plus a PDF report.",
+    "free": "Free & open-source (MIT license); runs inside Claude Code or Codex (requires Python 3 and optional TeX Live/latexmk for PDF reports)",
+    "why": "CS and systems students can speed up C++, Python, or graph algorithms (like the included 10-minute shortest-path example) while keeping outputs verified and learning structured profiling.",
+    "steps": [
+      "Install in Claude Code with /plugin install aae --marketplace CHSZLab/AgenticAlgorithmEngineering (or scripts/install_codex_skill.py for Codex)",
+      "Try the 10-minute shortest-path example or point /aae:aae at your benchmark",
+      "Review the accepted git patches in patches/ and the hypothesis PDF in report/"
+    ],
+    "link": "https://github.com/CHSZLab/AgenticAlgorithmEngineering",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "CHSZLab / Heidelberg University"
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Predicting LoRA Size for Any Dataset: Information Theory Guide for Fine-Tuning",
+    "what": "Engram published a theory and practical method to pick the exact LoRA rank for any SFT dataset by measuring its size in bits under the base model. Tested on real datasets, their predicted rank landed within 5% of the smallest rank that stores 95% of the dataset.",
+    "free": "Free to read online on Engram's blog (with an interactive SmolLM2-135M bit-decoding demo); no account required",
+    "why": "ML students fine-tuning Qwen or Llama models with LoRA can stop guessing ranks (like r=8 or r=64) and understand the exact trade-off between adapter size and forgetting.",
+    "steps": [
+      "Open engram.com/blog/lora-size and test the interactive SmolLM2-135M bit-decoding widget",
+      "Compute your dataset's negative log-likelihood in bits under your base model",
+      "Use the capacity curve in Section 3 to pick the smallest LoRA rank that fits your dataset"
+    ],
+    "link": "https://engram.com/blog/lora-size",
+    "linkText": "Engram blog",
+    "tags": [
+      "free",
+      "models",
+      "students",
+      "learning"
+    ],
+    "source": "Engram"
+  },
+  {
+    "date": "2026-11-26",
+    "title": "OpenAI: Polynomial Hirsch Conjecture Disproved in New Optimization Preprints",
+    "what": "OpenAI added two optimization-theory manuscripts to openai/math: one disproving the polynomial Hirsch conjecture for bounded simple rational polytopes, and a companion paper giving a deterministic strongly polynomial linear programming algorithm. Both include Lean formalizations of selected results.",
+    "free": "Free & open-access on GitHub (openai/math); no account required",
+    "why": "Algorithms, operations research, and CS theory students can study AI-generated proofs on linear programming and polytope diameters—core topics in advanced algorithms courses.",
+    "steps": [
+      "Open the paper PDF in openai/math on GitHub",
+      "Read the November 24, 2026 entry in history.md for Family 380 context",
+      "Inspect the accompanying Lean formalizations in the repository"
+    ],
+    "link": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
+    "linkText": "GitHub PDF",
+    "tags": [
+      "free",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "OpenAI"
+  },
+  {
     "date": "2026-11-25",
     "title": "OpenAI: Matrix Multiplication Exponent Proven to Be 9/4 (n^2.25)",
     "what": "OpenAI published a mathematical preprint and Lean formalization proving that the exponent of square matrix multiplication is 9/4 (2.25) over every field, refuting the long-standing conjecture that it equals 2. The paper proves at least ceil(n^(9/4)/2) nonscalar multiplication or division gates are required for n >= 2.",
