@@ -1,6 +1,68 @@
 [
   {
     "date": "2026-11-26",
+    "title": "Anthropic Releases 99.5% Shorter Lean 4 Proof of Generalized Riemann Hypothesis",
+    "what": "Anthropic researcher Luke Sernau published grh-lean, a much shorter Lean 4 formalization of the Riemann Hypothesis and Generalized Riemann Hypothesis for Dirichlet L-functions produced with Claude. It offers a readable ~300,000-line edition (grh/) and a compact ~76,000-line edition (grh-compact/) built on Mathlib.",
+    "free": "Free & open-source (Apache-2.0 license); requires Lean v4.35.0 (build takes 1–2 hours on 12 cores with 24 GB RAM)",
+    "why": "Math, CS theory, and formal-methods students can actually read and verify a compressed Lean 4 proof (down from ~17M lines) using standard Mathlib axioms.",
+    "steps": [
+      "Open github.com/lsernau/grh-lean and start with grh/GUIDE.md",
+      "Install Lean v4.35.0 and run lake exe cache get inside grh/ or grh-compact/",
+      "Run lake build and lake env lean scripts/PrintAxioms.lean to verify the axioms"
+    ],
+    "link": "https://github.com/lsernau/grh-lean",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "Anthropic / Luke Sernau"
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Modaic: How Latency & Tokenizer Fingerprinting Identifies Hidden LLM Backbones",
+    "what": "ML engineers at Modaic published a study timing 9,984 prompts against TypeSafe's closed Jev API to deduce its underlying open-weight model. By correlating prompt token counts with API latency (Spearman rho = 0.805) and comparing prefill throughput against B200 baselines, they show Jev is likely derived from Qwen3.5-35B-A3B.",
+    "free": "Free to read online on modaic.dev; no account required",
+    "why": "ML systems students learn how sparse MoE prefill speed, tokenizers, and statistical latency probing work in real-world model auditing and inference engineering.",
+    "steps": [
+      "Read the full study at modaic.dev/blog/latency-doesnt-lie",
+      "Study Figure 5 and 6 to see how tokenizer counts correlate with API latency",
+      "Compare the MoE prefill throughput curve in Figure 7 against dense 9B and 27B Qwen baselines"
+    ],
+    "link": "https://modaic.dev/blog/latency-doesnt-lie",
+    "linkText": "Modaic blog",
+    "tags": [
+      "free",
+      "models",
+      "students",
+      "learning"
+    ],
+    "source": "Modaic"
+  },
+  {
+    "date": "2026-11-26",
+    "title": "What Anthropic's VP ≠ VNP Proof Actually Means (In 3 Minutes)",
+    "what": "A clear 3-minute explainer breaking down Anthropic's VP ≠ VNP proof using basic linear algebra: determinants vs. permanents. It shows why proving permanents cannot be computed by polynomial-size arithmetic circuits (+ and *) still leaves open whether Boolean bit-tricks (AND/OR/NOT) could ever solve P = NP.",
+    "free": "Free to read online on friedgil.com (no rights reserved, no account required)",
+    "why": "CS undergrads who know linear algebra and P vs. NP can grasp the exact difference between arithmetic complexity (VP vs. VNP) and Boolean complexity (P vs. NP) in minutes.",
+    "steps": [
+      "Open friedgil.com/vpvnp",
+      "Work through the 3x3 determinant vs. permanent example",
+      "Read how arithmetic circuit bounds connect to the #P-complete permanent and P vs. NP"
+    ],
+    "link": "https://www.friedgil.com/vpvnp",
+    "linkText": "Read explainer",
+    "tags": [
+      "free",
+      "students",
+      "learning"
+    ],
+    "source": "Gil (friedgil.com)"
+  },
+  {
+    "date": "2026-11-26",
     "title": "Canva MCP & AI Connector Now Open Without Waitlist",
     "what": "Canva opened its Model Context Protocol (MCP) server to everyone, letting you connect ChatGPT, Claude, Gemini, Cursor, or VS Code directly to Canva. It also adds Canva Craft image generation and Magic Layers to turn flat images into editable designs.",
     "free": "Available on Canva Free using your existing Canva AI allowance. Removing backgrounds or creating videos requires Canva Pro and above, and autofilling templates is excluded on Canva Free and Pro Lite.",
