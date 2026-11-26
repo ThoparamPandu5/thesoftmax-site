@@ -1,6 +1,91 @@
 [
   {
     "date": "2026-11-26",
+    "title": "Canva MCP & AI Connector Now Open Without Waitlist",
+    "what": "Canva opened its Model Context Protocol (MCP) server to everyone, letting you connect ChatGPT, Claude, Gemini, Cursor, or VS Code directly to Canva. It also adds Canva Craft image generation and Magic Layers to turn flat images into editable designs.",
+    "free": "Available on Canva Free using your existing Canva AI allowance. Removing backgrounds or creating videos requires Canva Pro and above, and autofilling templates is excluded on Canva Free and Pro Lite.",
+    "why": "Students can generate, edit, and organize presentations, posters, and project visuals right from their AI coding or chat tool without switching tabs.",
+    "steps": [
+      "Open your AI assistant or editor (ChatGPT, Claude, Gemini, Cursor, or VS Code)",
+      "Connect the Canva MCP server using your Canva account",
+      "Ask the AI to create or edit a design using Canva Craft or Magic Layers"
+    ],
+    "link": "https://www.canva.com/newsroom/news/canva-mcp-update/",
+    "linkText": "Read Canva Newsroom",
+    "tags": [
+      "free",
+      "tools",
+      "students",
+      "coding"
+    ],
+    "source": "Canva"
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Google DeepMind Releases Mass Spec Skills for Google Antigravity",
+    "what": "Google DeepMind introduced domain skills for Google Antigravity that pair Gemini's chemical reasoning with open mass spectrometry tools like matchms, SIRIUS, MAGMa, MetFrag, and RDKit. The workflow cleans raw spectra, searches public databases (GNPS, MoNA, PubChem), and draws 2D molecule structures with bond-break sites.",
+    "free": "Free to read on Google DeepMind's blog; built on open-source chemistry tools (matchms, SIRIUS, MAGMa, MetFrag, RDKit) and public databases (GNPS, MoNA, PubChem).",
+    "why": "Great example for science and AI students of how combining an LLM with specialized open-source tools achieves over 90% accuracy in most evaluations.",
+    "steps": [
+      "Read the Google DeepMind blog post on Mass Spec Skills",
+      "Explore the open-source tools used (matchms, SIRIUS, RDKit)",
+      "Try building a tool-calling agent in Google Antigravity for your lab or science project"
+    ],
+    "link": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+    "linkText": "Read DeepMind Blog",
+    "tags": [
+      "free",
+      "learning",
+      "tools",
+      "students"
+    ],
+    "source": "Google DeepMind"
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Continual-ARC Open-Source Benchmark for Lifelong AI Learning",
+    "what": "UnifyAI released Continual-ARC, an open-source benchmark built on ARC-AGI-1, ARC-AGI-2, and ARC-AGI-3 that tests whether AI agents can learn new tasks over time without forgetting old ones. It includes baseline adapters for Prime Agent, Hermes Agent, and OpenClaw, plus Qwen3.5-9B training scripts.",
+    "free": "Free and open-source under the Apache-2.0 license (run records under CC BY 4.0); runs locally with Python 3.12 or 3.13. Optional hosted verification on UnifyAI's private set uses $5 to $1,000 in OpenRouter credits.",
+    "why": "AI and ML students researching continual learning or agent memory get a ready-to-run local benchmark, trajectories, and Qwen3.5-9B training code.",
+    "steps": [
+      "Clone the Continual-ARC repository from GitHub",
+      "Install locally with Python 3.12 or 3.13 using uv pip install -e \".[dev]\"",
+      "Run or adapt the included agent baselines on the continual task stream"
+    ],
+    "link": "https://github.com/unifyai/continual-arc",
+    "linkText": "View on GitHub",
+    "tags": [
+      "free",
+      "open-source",
+      "coding",
+      "learning",
+      "students"
+    ],
+    "source": "UnifyAI"
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Sand AI Open-Sources MAGI-2 Preview Audio-Video MoE Model",
+    "what": "Sand AI released MAGI-2 Preview on Hugging Face, a 114B-parameter Mixture-of-Experts model that activates 6B parameters per token to generate 10-second clips with synchronized audio up to 1080p. It supports both text-to-video and image-to-video in two stages.",
+    "free": "Free and open-source under the Apache-2.0 license on Hugging Face (no API fee, though running locally requires ~307 GB of weights and 8 NVIDIA Hopper GPUs).",
+    "why": "ML students studying multimodal or Mixture-of-Experts architectures can inspect the full inference pipeline, prompt-enhancement templates, and weights.",
+    "steps": [
+      "Open the sand-ai/MAGI-2-preview model card on Hugging Face",
+      "Read the architecture notes and prompts/t2v.md or prompts/i2v.md templates",
+      "Pull the Docker image or download weights if you have multi-GPU lab access"
+    ],
+    "link": "https://huggingface.co/sand-ai/MAGI-2-preview",
+    "linkText": "View on Hugging Face",
+    "tags": [
+      "free",
+      "open-source",
+      "models",
+      "learning"
+    ],
+    "source": "Sand AI"
+  },
+  {
+    "date": "2026-11-26",
     "title": "Agentic Algorithm Engineering: Skill That Optimizes Code with Falsifiable Hypotheses",
     "what": "Heidelberg University's CHSZLab released an MIT-licensed skill for Claude Code and Codex that turns coding agents into performance engineers. Before each edit, the agent writes a falsifiable hypothesis, runs benchmarks and correctness checks, and outputs numbered git patches plus a PDF report.",
     "free": "Free & open-source (MIT license); runs inside Claude Code or Codex (requires Python 3 and optional TeX Live/latexmk for PDF reports)",
