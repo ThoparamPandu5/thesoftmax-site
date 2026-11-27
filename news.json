@@ -1,6 +1,139 @@
 [
   {
     "date": "2026-11-27",
+    "title": "Hub by Icons8: Open-Source Dispatcher for Parallel Claude Code & Codex Sessions",
+    "what": "Icons8 open-sourced Hub (github.com/icons8/hub), a self-hosted coordinator that runs parallel Claude Code and Codex sessions in isolated git worktrees and sends only yes/no decision cards to your browser or Telegram. It supports macOS 13.5+, Linux, and Windows 10/11, and uses a second critic model to check results before showing you screenshots or diffs.",
+    "free": "Free & open-source (Apache-2.0 license, no paid tier or hosted version); you use your own Claude or ChatGPT subscription",
+    "why": "Student developers running multiple coding agents on group projects or hackathons can steer sessions from their phone or browser without juggling ten terminal windows.",
+    "steps": [
+      "Install on macOS/Linux with curl -fsSL https://icons8.github.io/hub/install.sh",
+      "bash (or irm https://icons8.github.io/hub/install.ps1",
+      "iex on Windows PowerShell)",
+      "Open http://127.0.0.1:8787/ and sign in to your Claude or Codex account",
+      "Read SECURITY.md first (agents run without permission prompts) and assign a task from the web UI or Telegram"
+    ],
+    "link": "https://usehub.dev/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "Icons8 / Hub"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "An Introduction to Uncertainty in Machine Learning (Visual Guide)",
+    "what": "ML researcher Christian Henning published an intuitive guide explaining why single-number predictions hide risk and how to model aleatoric vs. epistemic (approximation and model) uncertainty. Using a self-driving lane-split example, it connects MSE/NLL, KL divergence, Bayesian posteriors, and split conformal prediction.",
+    "free": "Free to read online on chrhenning.com (includes linked slides and PhD thesis PDF); no account required",
+    "why": "ML and data science students learn why MSE regression averages bimodal choices into wrong answers and how Bayesian inference and conformal prediction give reliable uncertainty bounds.",
+    "steps": [
+      "Open chrhenning.com/blog/2026/introduction-to-uncertainty/",
+      "Work through the lane-split example showing why a single Gaussian steers into the divider",
+      "Try the 4-step split conformal prediction recipe in the Getting a Guarantee section"
+    ],
+    "link": "https://chrhenning.com/blog/2026/introduction-to-uncertainty/",
+    "linkText": "Read guide",
+    "tags": [
+      "free",
+      "models",
+      "students",
+      "learning"
+    ],
+    "source": "Christian Henning"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Novita, StreamLake & Ant Digital Are ByteDance Ark Wrappers (API Audit)",
+    "what": "Researcher Kendell published an OpenRouter-grant-backed investigation showing how inference resellers like Novita, StreamLake, SiliconFlow, and Ant Digital routed DeepSeek and GLM API calls through ByteDance's Volcano Engine / BytePlus Ark. The audit traces upstream request IDs, tool-call IDs, image-download IPs, and ZDR removals.",
+    "free": "Free to read online on kendell.dev (with attested verification run logs); no account required",
+    "why": "Student developers using third-party LLM API routers learn how to audit Zero Data Retention (ZDR) claims and spot hidden upstream routing before sending sensitive project data.",
+    "steps": [
+      "Read the investigation at kendell.dev/blog/arkwrapper/",
+      "Check the request ID, tool-call ID, and image-fetch fingerprinting methods",
+      "Verify your OpenRouter provider's ZDR status and upstream subprocessors before shipping apps"
+    ],
+    "link": "https://kendell.dev/blog/arkwrapper/",
+    "linkText": "Read audit",
+    "tags": [
+      "free",
+      "coding",
+      "models",
+      "students",
+      "learning"
+    ],
+    "source": "Kendell"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "AI Made Self-Hosting Fun Again: Practical DevOps & Home-Server Workflow",
+    "what": "Developer Jan-Lukas Else shared how AI coding agents and open-weight models lowered the barrier to managing NixOS, Debian bootc images, Docker Compose repos, Renovate updates, and custom Go utilities on a home server. He also warns that AI-generated configs still require human review for security and maintenance.",
+    "free": "Free to read online on janlukas.blog; no account required",
+    "why": "Students curious about Linux, NixOS, Docker, and CI/CD can see a realistic workflow for using AI agents to learn unfamiliar infrastructure tools without losing control.",
+    "steps": [
+      "Read the post at janlukas.blog/posts/ai-self-hosting",
+      "Keep Docker Compose or NixOS configs in Git so an AI agent can edit and test them via PRs",
+      "Pair Renovate with GitHub or Forgejo Actions to automate updates while reviewing every change"
+    ],
+    "link": "https://janlukas.blog/posts/ai-self-hosting",
+    "linkText": "Read post",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "students",
+      "learning"
+    ],
+    "source": "Jan-Lukas Else"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Bare Metal Qwen: Run & Train LLMs in Pure x86-64 Assembly",
+    "what": "Developer Alexey Fateev released llm.asm, three LLM projects written in 100% pure x86-64 NASM assembly with zero C or runtime dependencies. It includes a 14.7 KB Linux binary for Qwen3-0.6B inference, a 24.2 KB bootable bare-metal OS, and a 32.9 KB Mini-GPT trainer with a live Braille TUI.",
+    "free": "Free and open-source under the MIT License on GitHub; runs on x86-64 Linux CPUs with AVX2, FMA, and F16C (or inside QEMU).",
+    "why": "Systems, OS, and ML students can inspect how matrix multiplication, RoPE, Softmax, BPE tokenization, and AdamW work at the raw CPU instruction level—even booting an LLM without an OS.",
+    "steps": [
+      "Clone github.com/alesha-pro/llm.asm and install nasm and binutils",
+      "Build with make all and export Qwen3-0.6B weights using scripts/export_weights.py",
+      "Run ./build/asm-llm --chat or train Mini-GPT with ./build/asm-gpt-train"
+    ],
+    "link": "https://github.com/alesha-pro/llm.asm",
+    "linkText": "View on GitHub",
+    "tags": [
+      "free",
+      "open-source",
+      "coding",
+      "models",
+      "learning",
+      "students"
+    ],
+    "source": "alesha-pro / llm.asm"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Tencent Open-Sources Hy4 Flash & DFly2 Speculative Decoding",
+    "what": "Tencent released Hy4 Flash, an open-weight 220B multimodal MoE model (~12B active per token) with a 1M-token context window and a built-in 0.85B speculative drafter called DFly2. DFly2 reuses the target model's sparse KV cache so it adds zero extra KV memory and pushes decoding past 150 tokens/s.",
+    "free": "Free and open-weight under the Tencent Hy License on Hugging Face, ModelScope, and AtomGit (Instruct, FP8, Base, and GGUF versions available).",
+    "why": "AI and systems students studying fast LLM inference can inspect how sparse KV-cache sharing and speculative decoding cut serving costs without extra memory.",
+    "steps": [
+      "Open Tencent-Hunyuan/Hy4-flash on GitHub to read the DFly2 and LatentMoE architecture",
+      "Check the Hugging Face links for Instruct, FP8, or GGUF weights",
+      "Run via Transformers or the official vLLM and SGLang Docker recipes"
+    ],
+    "link": "https://github.com/Tencent-Hunyuan/Hy4-flash",
+    "linkText": "View on GitHub",
+    "tags": [
+      "free",
+      "open-source",
+      "models",
+      "learning"
+    ],
+    "source": "Tencent Hunyuan"
+  },
+  {
+    "date": "2026-11-27",
     "title": "Pax by Pydantic: Open-Source Modular Terminal Coding Agent and Harness SDK",
     "what": "Pydantic released Pax (pydantic-ai-pax) and the Pydantic AI Harness beta, a plugin-based terminal coding agent that runs any model, swaps local or cloud sandboxes, and lets you plug in your own Python agent with --agent. On Harness-Bench SWE81 across eight models, Pax averaged 58.5 while costing less than half of Codex on GPT-6.2 Sol.",
     "free": "Free & open-source (pydantic-ai-pax via uvx or uv tool install); bring your own model/API keys; optional Pydantic Logfire free tier includes up to 10M records/month (no card needed)",
