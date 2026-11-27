@@ -1,5 +1,114 @@
 [
   {
+    "date": "2026-11-27",
+    "title": "Pax by Pydantic: Open-Source Modular Terminal Coding Agent and Harness SDK",
+    "what": "Pydantic released Pax (pydantic-ai-pax) and the Pydantic AI Harness beta, a plugin-based terminal coding agent that runs any model, swaps local or cloud sandboxes, and lets you plug in your own Python agent with --agent. On Harness-Bench SWE81 across eight models, Pax averaged 58.5 while costing less than half of Codex on GPT-6.2 Sol.",
+    "free": "Free & open-source (pydantic-ai-pax via uvx or uv tool install); bring your own model/API keys; optional Pydantic Logfire free tier includes up to 10M records/month (no card needed)",
+    "why": "Python and AI engineering students can run a fast terminal coding agent, resume Claude Code or Codex sessions, and build custom agents with reusable capabilities.",
+    "steps": [
+      "Try without installing via uvx pydantic-ai-pax (or install with uv tool install pydantic-ai-pax)",
+      "Toggle plugins with /plugins or swap sandboxes with /sandbox",
+      "Point Pax at your own Pydantic AI agent using pax --agent my_agents:reviewer"
+    ],
+    "link": "https://pydantic.dev/articles/pax-harness-beta",
+    "linkText": "Pydantic blog",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "Pydantic"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "llama-cpp-rdna-boosts: Open-Source AMD Radeon & Ryzen AI Patches for llama.cpp",
+    "what": "An MIT-licensed set of 19 AMD RDNA3/3.5/4 (and best-effort RDNA2) patches for llama.cpp adding WMMA flash-attention, fused MoE kernels, and TQ1_0/TQ2_0 ternary GPU support. It lifts Qwen3.8-27B prefill from ~700 to ~1,300 tokens/s and generation from ~35 to ~55 tokens/s on an AMD R9700.",
+    "free": "Free & open-source (MIT license, with block 03 libr4d kernels under Apache-2.0); pre-built ROCm container images on ghcr.io/stew675/llama-cpp-rdna-boosts or build from source",
+    "why": "Students with AMD Radeon GPUs or Ryzen AI APUs (Strix Point / Strix Halo) can run large local coding and ternary models far faster without buying an NVIDIA card.",
+    "steps": [
+      "Clone llama.cpp at the fork point in release.json and run scripts/apply-all.sh .",
+      "Or pull the pre-built ROCm container image from ghcr.io/stew675/llama-cpp-rdna-boosts",
+      "Run ./build/bin/llama-cli or llama-server with -ngl 99"
+    ],
+    "link": "https://github.com/stew675/llama-cpp-rdna-boosts",
+    "linkText": "GitHub repo",
+    "tags": [
+      "free",
+      "coding",
+      "models",
+      "tools",
+      "open-source",
+      "students"
+    ],
+    "source": "stew675 / llama-cpp-rdna-boosts"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Meboki: Open-Source Offline AI Grammar Checker for Any Mac App",
+    "what": "Meboki is a GPL-3.0 macOS (Apple Silicon, macOS 14+) grammar checker that runs local open models (Gemma 4 E4B/E2B, Qwen3.5, Llama 3.1) via bundled llama.cpp or Apple Intelligence with zero cloud uploads. It checks English as you type in Mail, Docs, Slack, Notion, and browsers while protecting code, URLs, and names.",
+    "free": "Free 7-day full trial (counting only active days), then a free offline hotkey mode (Ctrl+Opt+G) forever with every local model; optional $39 one-time license per Mac, or build from GPL-3.0 source on GitHub",
+    "why": "Students on MacBooks can proofread assignments, emails, and lab reports completely offline on trains or spotty campus Wi-Fi without paying Grammarly's $144/year subscription.",
+    "steps": [
+      "Download Meboki for Apple Silicon (macOS 14+) from meboki.com",
+      "Pick Gemma 4 E2B (2.8 GB), Gemma 4 E4B (4.6 GB), or Apple Intelligence",
+      "Press Ctrl+Opt+G in any app to check grammar offline"
+    ],
+    "link": "https://meboki.com/offline-grammar-checker",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "tools",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "Meboki"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Google Requires AI Agents to Use Workspace MCP Servers Starting Feb 1, 2027",
+    "what": "Google made its eight Workspace MCP servers generally available and updated its API terms: from February 1, 2027, any AI agent accessing Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat, or Tasks must use Google's MCP servers instead of direct REST APIs. Public Gmail MCP can search, read, and create drafts, while send/reply/forward remain partner-only.",
+    "free": "Free Standard tier gives 5,000 MCP requests per day per project per product (some search calls cost 10 requests); paid Scaled tier billing begins April 1, 2027",
+    "why": "Student developers building AI assistants or hackathon projects with Gmail and Drive integrations need to mark OAuth clients as agentic, budget within the 5,000/day MCP quota, and handle the 30-day data retention cap.",
+    "steps": [
+      "Read the Workspace MCP breakdown at techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "Mark new OAuth clients as AI-powered agents in Google Cloud Console",
+      "Migrate agent workflows to Google's official MCP servers or gwscli before Feb 1, 2027"
+    ],
+    "link": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+    "linkText": "Tech Stackups guide",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "students",
+      "learning"
+    ],
+    "source": "Tech Stackups / Google Workspace"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Tracking Diseases Cured by AI: Public Reality-Check Ledger (Nov 2026 Snapshot)",
+    "what": "A public, source-cited tracker measuring how many diseases have actually been cured by an AI-discovered target and molecule with FDA/EMA approval—currently 0 as of November 26, 2026. It tracks the closest candidates: Insilico Medicine's Rentosertib (Phase III), Takeda/Nimbus's Zasocitinib (NDA Q1 2027), and Isomorphic Labs (pre-clinical).",
+    "free": "Free to browse online; no account required",
+    "why": "Biotech, bioinformatics, and AI students get a clear, source-backed benchmark distinguishing protein folding (AlphaFold) and diagnostic scans (1,614 FDA AI devices) from approved clinical cures.",
+    "steps": [
+      "Open diseasescuredbyai.com",
+      "Review the three criteria under What would actually move this to 1?",
+      "Compare the clinical trial progress of Rentosertib, Zasocitinib, and Isomorphic Labs"
+    ],
+    "link": "https://diseasescuredbyai.com/",
+    "linkText": "Official tracker",
+    "tags": [
+      "free",
+      "students",
+      "learning"
+    ],
+    "source": "Diseases Cured by AI"
+  },
+  {
     "date": "2026-11-26",
     "title": "Anthropic Releases 99.5% Shorter Lean 4 Proof of Generalized Riemann Hypothesis",
     "what": "Anthropic researcher Luke Sernau published grh-lean, a much shorter Lean 4 formalization of the Riemann Hypothesis and Generalized Riemann Hypothesis for Dirichlet L-functions produced with Claude. It offers a readable ~300,000-line edition (grh/) and a compact ~76,000-line edition (grh-compact/) built on Mathlib.",
