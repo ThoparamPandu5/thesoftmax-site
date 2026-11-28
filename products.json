@@ -5,7 +5,7 @@
     "url": "https://www.producthunt.com/products/wizstar?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/MFADSN4RJLJCWY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Seedance 2.0-level product videos at a lower cost - Wizstar R1 is an in-house AI video model built for affordable, everyday creation. Combine up to nine reference images and videos to generate 5–15-second videos with native audio, guided by your products, characters, scenes, and styles. R1 excels at a",
-    "votes": 222,
+    "votes": 259,
     "thumbnail": "https://ph-files.imgix.net/48fcdfd0-2d2b-40de-a964-f8e406bd9753.svg?auto=format",
     "created": "2026-11-27",
     "topics": [
@@ -20,7 +20,7 @@
     "url": "https://www.producthunt.com/products/depost-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/32DE54NLUY7ZZ4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "The LinkedIn AI agent that learns what works for your brand - Depost AI scores every LinkedIn post you've published against your own average, finds what's winning in your niche, then plans the month, writes in your voice, and designs the graphics. You approve every post, and it publishes through LinkedIn's offi",
-    "votes": 170,
+    "votes": 197,
     "thumbnail": "https://ph-files.imgix.net/95fadcbf-742b-4ef1-ae25-0e39881484ed.png?auto=format",
     "created": "2026-11-27",
     "topics": [
@@ -35,7 +35,7 @@
     "url": "https://www.producthunt.com/products/contral?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/O345273IOJN5AK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "The AI coding agent that checks its work and teaches you - Contral is out of beta. Use Claude Code, Codex, Cursor, OpenCode, Gemini CLI or Copilot CLI inside Contral, on your own account. Contral checks every turn against what you asked for and sends smaller models a specific correction, explains every chang",
-    "votes": 145,
+    "votes": 171,
     "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/0b641793-5cc4-47f1-882e-410707c12ce9/d540f0b18265279afd0ae243aaf2a47794fb09ed769b70b292a6a25f769493cc.gif?auto=format",
     "created": "2026-11-27",
     "topics": [
@@ -50,7 +50,7 @@
     "url": "https://www.producthunt.com/products/periscope-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/MKDWAD6MXFEF3A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Turn any work into an API - Describe a task and get an endpoint for it. An agent does the work through the screen on its own cloud desktop, in any software, however old. Call it over REST, or from Claude, ChatGPT or Cursor over MCP. The Free plan needs no card.",
-    "votes": 129,
+    "votes": 154,
     "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/4b7b9d4e-5dd9-4c08-a93e-8170e36d3581/ede18927d229dd57605d871697a8d50c78c2075e7aea00ef09bcdfb55b2a0897.png?auto=format",
     "created": "2026-11-27",
     "topics": [
@@ -65,7 +65,7 @@
     "url": "https://www.producthunt.com/products/pushary?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/KPT5IG56HJWKXE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Miss your AI agent’s ping? Pushary calls you. - Your AI agent stops to ask before it does anything big. If you're at lunch, it sits there until you're back. Pushary sends the question to your phone. Miss it, and Pushary calls you. You hear what the agent wants and say yes, no, or what to do instea",
-    "votes": 122,
+    "votes": 131,
     "thumbnail": "https://ph-files.imgix.net/93ca09eb-0ef0-4da7-80fd-cdc290e30ede.png?auto=format",
     "created": "2026-11-27",
     "topics": [
@@ -82,7 +82,7 @@
     "url": "https://www.producthunt.com/products/snibl?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/IET2H5J64ZBLDK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Save highlighted text from any app, then ask AI about it - Stop losing the things you read. Highlight text in any app on Mac or Windows and Snibl saves it with its source and context, so you can find it later. Then just ask: Snibl AI answers your questions using your own saved snippets. Software you actually",
-    "votes": 94,
+    "votes": 99,
     "thumbnail": "https://ph-files.imgix.net/0c595222-a1ee-4084-963b-00e8dceff174.png?auto=format",
     "created": "2026-11-27",
     "topics": [
@@ -93,26 +93,11 @@
   },
   {
     "source": "Product Hunt",
-    "name": "Onset",
-    "url": "https://www.producthunt.com/products/onset?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-    "website": "https://www.producthunt.com/r/R5R2P35SGKOPBT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-    "description": "AI reviews, titles and thumbnails for YouTube creators - Onset reads your own YouTube Analytics and reviews each upload 48 hours after it goes live, then drafts titles in your voice and thumbnails in your channel's style. Read-only: it never posts. We're letting creators in from the waitlist, a few at a ti",
-    "votes": 88,
-    "thumbnail": "https://ph-files.imgix.net/ce021fdf-22b3-4d0c-979a-cd3102004bad.png?auto=format",
-    "created": "2026-11-27",
-    "topics": [
-      "Productivity",
-      "Artificial Intelligence",
-      "YouTube"
-    ]
-  },
-  {
-    "source": "Product Hunt",
     "name": "Woomool",
     "url": "https://www.producthunt.com/products/woomool?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/Y5ICTAOJGXUV2K?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "AI Canvas where thinking becomes tangible - Woomool is a AI canvas tastefully designed for ideation, knowledge management, and live collaboration. Clean, unobtrusive, and beautiful, it inspires you to focus and go deep into your thinking.",
-    "votes": 88,
+    "votes": 95,
     "thumbnail": "https://ph-files.imgix.net/52522a97-84f8-4dbd-affe-494940e91a97.png?auto=format",
     "created": "2026-11-27",
     "topics": [
@@ -123,26 +108,11 @@
   },
   {
     "source": "Product Hunt",
-    "name": "gpyou",
-    "url": "https://www.producthunt.com/products/gpyou?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-    "website": "https://www.producthunt.com/r/ZUD3HJIGUCLI3N?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-    "description": "The OpenRouter for compute for the cheapest GPU in stock - One CLI for GPU clouds worldwide. gpyou rents the cheapest GPU in stock, moves to the next offer when one is sold out, and bills per second from prepaid credit. Run containers, fine-tune, serve models or a coding model of your own.",
-    "votes": 85,
-    "thumbnail": "https://ph-files.imgix.net/f29eabac-b156-4fd1-beea-f17248eb5df8.gif?auto=format",
-    "created": "2026-11-27",
-    "topics": [
-      "API",
-      "Developer Tools",
-      "Artificial Intelligence"
-    ]
-  },
-  {
-    "source": "Product Hunt",
     "name": "slay",
     "url": "https://www.producthunt.com/products/slay-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/XVZL46OAKSN6YJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "AI composition guide camera app for iPhone - slay is an iPhone camera app that overlays 14 composition guides directly on your live camera view — Portrait 1, Portrait 2, Close Up, Side Chick, Travel Shot, One-Third, Two-Third, Vanishing Point, One-Point Vertex, Two-Point Vertex, Triangle 1, Tri",
-    "votes": 85,
+    "votes": 94,
     "thumbnail": "https://ph-files.imgix.net/6cddbd11-a4fa-4c96-9614-5c1354842014.jpeg?auto=format",
     "created": "2026-11-27",
     "topics": [
@@ -153,11 +123,41 @@
   },
   {
     "source": "Product Hunt",
+    "name": "Onset",
+    "url": "https://www.producthunt.com/products/onset?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/R5R2P35SGKOPBT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "AI reviews, titles and thumbnails for YouTube creators - Onset reads your own YouTube Analytics and reviews each upload 48 hours after it goes live, then drafts titles in your voice and thumbnails in your channel's style. Read-only: it never posts. We're letting creators in from the waitlist, a few at a ti",
+    "votes": 89,
+    "thumbnail": "https://ph-files.imgix.net/ce021fdf-22b3-4d0c-979a-cd3102004bad.png?auto=format",
+    "created": "2026-11-27",
+    "topics": [
+      "Productivity",
+      "Artificial Intelligence",
+      "YouTube"
+    ]
+  },
+  {
+    "source": "Product Hunt",
+    "name": "gpyou",
+    "url": "https://www.producthunt.com/products/gpyou?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "website": "https://www.producthunt.com/r/ZUD3HJIGUCLI3N?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+    "description": "The OpenRouter for compute for the cheapest GPU in stock - One CLI for GPU clouds worldwide. gpyou rents the cheapest GPU in stock, moves to the next offer when one is sold out, and bills per second from prepaid credit. Run containers, fine-tune, serve models or a coding model of your own.",
+    "votes": 89,
+    "thumbnail": "https://ph-files.imgix.net/f29eabac-b156-4fd1-beea-f17248eb5df8.gif?auto=format",
+    "created": "2026-11-27",
+    "topics": [
+      "API",
+      "Developer Tools",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "source": "Product Hunt",
     "name": "Hub",
     "url": "https://www.producthunt.com/products/hub-20?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/SKCIVKZDKR5QGT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Run 100 Claude Code or Codex sessions like 5 - Open-source dispatcher for Claude Code and Codex sessions. Write a goal in your browser or Telegram, a coordinator hands it to agents, and only the decisions come back. Self-hosted, Apache-2.0, on your own Claude or ChatGPT subscription. One-line ins",
-    "votes": 413,
+    "votes": 423,
     "thumbnail": "https://ph-files.imgix.net/bb93b891-9106-4e73-a7f5-3b6c3d67a5b3.png?auto=format",
     "created": "2026-11-26",
     "topics": [
@@ -172,7 +172,7 @@
     "url": "https://www.producthunt.com/products/qa-tech?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/AAE5I2SEYZUMZR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "Verify every change from your IDE with QA agents - QA.tech MCP gives Claude Code, Cursor or Codex an external QA agent to check their work. It runs E2E tests on what each change does to your product and finds the bugs and edge cases your coding agent missed, so they get fixed before the PR goes to re",
-    "votes": 216,
+    "votes": 218,
     "thumbnail": "https://ph-files.imgix.net/5497c34b-ef45-4ee2-8576-3a1b105771b3.gif?auto=format",
     "created": "2026-11-26",
     "topics": [
@@ -187,7 +187,7 @@
     "url": "https://www.producthunt.com/products/bifura?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/LEZHQJUHVZTF4Q?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "See your website the way AI agents do - AI assistants now read websites for your buyers. Bifura fetches your page the way AI crawlers do, shows what they get and get wrong, and lets you test fixes in a sandbox before you ship. Free Agent readiness score in under a minute, no signup.",
-    "votes": 170,
+    "votes": 172,
     "thumbnail": "https://ph-files.imgix.net/25d6b7ee-5448-45cc-8736-ebb4c5318df4.png?auto=format",
     "created": "2026-11-26",
     "topics": [
@@ -202,7 +202,7 @@
     "url": "https://www.producthunt.com/products/pydantic?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "website": "https://www.producthunt.com/r/NMB6ADZU5ATEMZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
     "description": "A coding agent where even coding is a plugin - Pax is the official Pydantic AI coding agent for your terminal. Every part is a plugin, it runs any model, and --agent runs your own Pydantic AI agent in it.",
-    "votes": 130,
+    "votes": 131,
     "thumbnail": "https://ph-files.imgix.net/97b06739-2766-4ca5-bd43-866a3bf521a1.png?auto=format",
     "created": "2026-11-26",
     "topics": [
