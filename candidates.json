@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28 01:27 UTC",
+  "updated": "2026-11-28 10:26 UTC",
   "note": "UNVERIFIED candidates. Check each on its official page before adding to the Sheet.",
   "github": [
     {
@@ -8,7 +8,7 @@
       "url": "https://github.com/nexu-io/opengame",
       "homepage": "",
       "description": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.",
-      "stars": 2271,
+      "stars": 2592,
       "language": "TypeScript",
       "license": "Apache-2.0",
       "created": "2026-11-25",
@@ -29,7 +29,7 @@
       "url": "https://github.com/alesha-pro/llm.asm",
       "homepage": "",
       "description": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
-      "stars": 2230,
+      "stars": 2447,
       "language": "Assembly",
       "license": "MIT",
       "created": "2026-11-25",
@@ -50,7 +50,7 @@
       "url": "https://github.com/DeadInternetStudios/100x-engineer-skill",
       "homepage": "",
       "description": "100x is a skill by a former Cursor engineer that turns prompts into formally verified, production-ready code",
-      "stars": 871,
+      "stars": 1299,
       "language": "JavaScript",
       "license": "MIT",
       "created": "2026-11-23",
@@ -65,32 +65,11 @@
     },
     {
       "source": "GitHub",
-      "name": "erkamyaman/safe-anything",
-      "url": "https://github.com/erkamyaman/safe-anything",
-      "homepage": "",
-      "description": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
-      "stars": 829,
-      "language": "Rust",
-      "license": "MIT",
-      "created": "2026-11-22",
-      "topics": [
-        "ai-agents",
-        "claude-code",
-        "claude-code-plugin",
-        "cli",
-        "codex",
-        "cursor",
-        "devsecops",
-        "mcp"
-      ]
-    },
-    {
-      "source": "GitHub",
       "name": "Red2076-arch/waifu2x-image-upscaler-windows",
       "url": "https://github.com/Red2076-arch/waifu2x-image-upscaler-windows",
       "homepage": "",
       "description": "Free AI image upscaler and photo denoiser for Windows powered by Vulkan GPU acceleration and ncnn neural networks.",
-      "stars": 552,
+      "stars": 1083,
       "language": "C++",
       "license": "MIT",
       "created": "2026-11-27",
@@ -107,11 +86,32 @@
     },
     {
       "source": "GitHub",
+      "name": "erkamyaman/safe-anything",
+      "url": "https://github.com/erkamyaman/safe-anything",
+      "homepage": "",
+      "description": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
+      "stars": 843,
+      "language": "Rust",
+      "license": "MIT",
+      "created": "2026-11-22",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "cli",
+        "codex",
+        "cursor",
+        "devsecops",
+        "mcp"
+      ]
+    },
+    {
+      "source": "GitHub",
       "name": "Moh4696/inkworks-skill",
       "url": "https://github.com/Moh4696/inkworks-skill",
       "homepage": "https://x.com/exploraX_",
       "description": "Inkworks: an agent skill for interactive 3D how-it-works pages drawn like an engineering sheet.",
-      "stars": 539,
+      "stars": 553,
       "language": "JavaScript",
       "license": "MIT",
       "created": "2026-11-25",
@@ -130,7 +130,7 @@
       "url": "https://github.com/EL4CTEO/shrink-anything",
       "homepage": "",
       "description": "Less code, same tests passing: delete the dead code, files, dependencies and assets in any codebase, and keep each cut only if your own tests still pass.",
-      "stars": 391,
+      "stars": 410,
       "language": "Rust",
       "license": "MIT",
       "created": "2026-11-23",
@@ -147,15 +147,24 @@
     },
     {
       "source": "GitHub",
-      "name": "open-goat/pequalnp-proofs",
-      "url": "https://github.com/open-goat/pequalnp-proofs",
-      "homepage": "",
-      "description": "Lean 4 proofs from the public AI attempt at P vs NP (pequalnp.com). Open gaps welcome pull requests.",
-      "stars": 293,
-      "language": "Lean",
+      "name": "clipy-recorder/clipy",
+      "url": "https://github.com/clipy-recorder/clipy",
+      "homepage": "https://clipy.online",
+      "description": "The AI-native screen recorder. Record your screen and talk; the people you share it with and your AI agents both get it.",
+      "stars": 338,
+      "language": "Rust",
       "license": "Apache-2.0",
       "created": "2026-11-22",
-      "topics": []
+      "topics": [
+        "agent-readable",
+        "ai-agents",
+        "arec",
+        "claude-code",
+        "codex",
+        "cursor",
+        "local-first",
+        "macos"
+      ]
     },
     {
       "source": "GitHub",
@@ -163,10 +172,22 @@
       "url": "https://github.com/Robbyant/lingbot-map-v2",
       "homepage": "",
       "description": "LingBot-Map 2.0: Geometric Streaming Base Model",
-      "stars": 288,
+      "stars": 330,
       "language": "Python",
       "license": "NOASSERTION",
       "created": "2026-11-26",
+      "topics": []
+    },
+    {
+      "source": "GitHub",
+      "name": "open-goat/pequalnp-proofs",
+      "url": "https://github.com/open-goat/pequalnp-proofs",
+      "homepage": "",
+      "description": "Lean 4 proofs from the public AI attempt at P vs NP (pequalnp.com). Open gaps welcome pull requests.",
+      "stars": 300,
+      "language": "Lean",
+      "license": "Apache-2.0",
+      "created": "2026-11-22",
       "topics": []
     },
     {
@@ -175,7 +196,7 @@
       "url": "https://github.com/jaredfreellm/FREELLM_INSTALL",
       "homepage": "",
       "description": "One OpenAI-compatible endpoint for many free LLM tiers. Add your own provider keys, and the router picks a healthy model for each request, fails over when one is rate-limited, and tracks usage per key so you stay under every quota. Self-hosted, keys encrypted at rest. For personal experimentation.",
-      "stars": 253,
+      "stars": 254,
       "language": "",
       "license": "MIT",
       "created": "2026-11-22",
@@ -187,7 +208,7 @@
       "url": "https://github.com/matheusmongarde/garimpo",
       "homepage": "https://mamaevireidev.com.br",
       "description": "Prospecção open source do Google Maps ao Pix: acha negócios no Maps, gera um site-prévia com o nome de cada um, conversa no WhatsApp e cobra por Pix, Mercado Pago ou Stripe. Pagou, fecha sozinho. Roda no seu PC, VPS ou Vercel, com API para agentes (Claude Code, Codex, n8n).",
-      "stars": 234,
+      "stars": 239,
       "language": "TypeScript",
       "license": "MIT",
       "created": "2026-11-24",
@@ -208,7 +229,7 @@
       "url": "https://github.com/animede/h3-creator-studio",
       "homepage": "",
       "description": "Local AI creator studio for video, images, music, music videos and short videos — MiniMax-H3 / H3-Image, ACE-Step, AivisSpeech, with VRAM and RAM management for 8–96GB GPUs",
-      "stars": 227,
+      "stars": 231,
       "language": "Python",
       "license": "Apache-2.0",
       "created": "2026-11-22",
@@ -228,22 +249,10 @@
       "url": "https://github.com/AI-FanGe/A-MicroRobot-that-can-Rollerskate",
       "homepage": "",
       "description": "A small desktop robot with LLM-based interactions and reinforcement learning capabilities that you can train to act as you want. And it can remember you！",
-      "stars": 213,
+      "stars": 229,
       "language": "Python",
       "license": "NOASSERTION",
       "created": "2026-11-25",
-      "topics": []
-    },
-    {
-      "source": "GitHub",
-      "name": "es-ine/mcp",
-      "url": "https://github.com/es-ine/mcp",
-      "homepage": "",
-      "description": "MCP server connecting AI assistants to the Spanish National Statistics Institute (INE) public API. Enables access to official demographic, economic and social statistics, making it easy to search, retrieve and analyze reliable data using natural language.",
-      "stars": 202,
-      "language": "Python",
-      "license": "EUPL-1.2",
-      "created": "2026-11-26",
       "topics": []
     },
     {
@@ -252,7 +261,7 @@
       "url": "https://github.com/brainintelli/BioSignal-Guided-LLM-Reinforcement-Learning",
       "homepage": "",
       "description": "Biosignal-guided reinforcement learning for LLM agents: offline organoid neural recordings as policy inputs in a Godot survival game, with paired evaluation.",
-      "stars": 201,
+      "stars": 219,
       "language": "Python",
       "license": "MIT",
       "created": "2026-11-24",
@@ -269,173 +278,192 @@
     },
     {
       "source": "GitHub",
-      "name": "langchain-samples/Persistent-Agent",
-      "url": "https://github.com/langchain-samples/Persistent-Agent",
+      "name": "castillo272/gpt4all-desktop-desktop-suite",
+      "url": "https://github.com/castillo272/gpt4all-desktop-desktop-suite",
       "homepage": "",
-      "description": "Persistent Agent is a proactive, always-on, goal-oriented agent. Think Muse or Instinct, but for the enterprise. Comes with memory, browser use, hundreds of tools, and proactive playbooks it can run in the background to take work off your plate. Built on Managed Deep Agents (MDA).",
-      "stars": 170,
-      "language": "Python",
-      "license": "MIT",
-      "created": "2026-11-24",
+      "description": "GPT4All Desktop — GPT4All Desktop Portable & Windows Setup",
+      "stars": 218,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
       "topics": [
-        "agent-template",
-        "ai-agents",
-        "deep-agents",
-        "langchain",
-        "langsmith",
-        "slack-bot"
+        "gpt4all-desktop",
+        "gpt4all-desktop-portable",
+        "gpt4all-desktop-windows",
+        "windows-10",
+        "windows-11"
       ]
     },
     {
       "source": "GitHub",
-      "name": "duzhenxun/pop-agent",
-      "url": "https://github.com/duzhenxun/pop-agent",
-      "homepage": "https://pop.xs25.cn/",
-      "description": "PopAgent local web UI for your coding agents: watch the reasoning stream, cut in with a correction mid-turn, manage models and tools. Works with pi, Codex, Claude Code, OpenCode and DSH. Sessions stay the engine's own files — no database, no account.",
-      "stars": 152,
-      "language": "TypeScript",
-      "license": "MIT",
-      "created": "2026-11-23",
-      "topics": [
-        "agent-ui",
-        "agentweb",
-        "agentwebui",
-        "codex",
-        "coding-agent",
-        "llm",
-        "local-first",
-        "opencode"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "sthamann/awesome-agentic-commerce",
-      "url": "https://github.com/sthamann/awesome-agentic-commerce",
-      "homepage": "https://www.agentic-commerce.sh/en/protocols/",
-      "description": "Curated and updated daily: agentic commerce protocols (UCP, ACP, AP2, MCP, x402), SDKs, payment providers, open source implementations and the latest news.",
-      "stars": 131,
-      "language": "",
-      "license": "CC0-1.0",
-      "created": "2026-11-24",
-      "topics": [
-        "acp",
-        "agentic-commerce",
-        "ai-agents",
-        "ap2",
-        "awesome",
-        "awesome-list",
-        "ecommerce",
-        "mcp"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "mbzuai-oryx/LoopedWSP",
-      "url": "https://github.com/mbzuai-oryx/LoopedWSP",
-      "homepage": "https://mbzuai-oryx.github.io/LoopedWSP/",
-      "description": "Looped Weight-Space Programming: LLM-Written Transformers for Long Algorithmic Reasoning",
-      "stars": 127,
-      "language": "Python",
-      "license": "MIT",
-      "created": "2026-11-23",
-      "topics": [
-        "algorithmic-reasoning",
-        "claude",
-        "interpretability",
-        "llm",
-        "looped-transformer",
-        "maze-hard",
-        "mechanistic-interpretability",
-        "no-training"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "CybeDefend/cybedefend",
-      "url": "https://github.com/CybeDefend/cybedefend",
-      "homepage": "https://cybedefend.com",
-      "description": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
-      "stars": 125,
-      "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "created": "2026-11-23",
-      "topics": [
-        "ai-agents",
-        "appsec",
-        "aspm",
-        "coding-agents",
-        "devsecops",
-        "mcp",
-        "open-source",
-        "sarif"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "enwove/flyx",
-      "url": "https://github.com/enwove/flyx",
-      "homepage": "https://enwove.ai/product/flyx",
-      "description": "Zero-dependency local LLM inference engine in a ~50 MB binary — native long context, tuned per GPU, built-in speculative decoding and web dashboard.",
-      "stars": 115,
-      "language": "C++",
-      "license": "Apache-2.0",
-      "created": "2026-11-23",
-      "topics": [
-        "anthropic-api",
-        "cpp",
-        "cuda",
-        "gguf",
-        "inference",
-        "llm",
-        "local-llm",
-        "long-context"
-      ]
-    },
-    {
-      "source": "GitHub",
-      "name": "eust-w/open-robotics-plugin",
-      "url": "https://github.com/eust-w/open-robotics-plugin",
+      "name": "tariqm067/cherry-studio-llm",
+      "url": "https://github.com/tariqm067/cherry-studio-llm",
       "homepage": "",
-      "description": "Robotics agent skills (MuJoCo, perception, planning, sim2real, bring-up) for Claude Code, Antigravity, Codex, Gemini CLI, Cursor and more. Adapted from google-deepmind/robotics-antigravity-plugin (Apache-2.0).",
-      "stars": 104,
-      "language": "Python",
-      "license": "Apache-2.0",
-      "created": "2026-11-25",
+      "description": "Cherry Studio LLM — Cherry Studio LLM Portable & Windows Setup",
+      "stars": 218,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
       "topics": [
-        "agent-skills",
-        "ai-agents",
-        "claude-code",
-        "codex",
-        "cursor",
-        "gemini-cli",
-        "mujoco",
-        "robotics"
+        "cherry-studio-llm",
+        "cherry-studio-llm-portable",
+        "cherry-studio-llm-windows",
+        "windows-10",
+        "windows-11"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "timothyfernandez5522/jan-ai-pro-patcher-installer",
+      "url": "https://github.com/timothyfernandez5522/jan-ai-pro-patcher-installer",
+      "homepage": "",
+      "description": "Jan AI — Jan AI Portable & Windows Setup",
+      "stars": 218,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
+      "topics": [
+        "jan-ai",
+        "jan-ai-portable",
+        "jan-ai-windows",
+        "windows-10",
+        "windows-11"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "Cattaneo57485/fooocus-ai-desktop-suite",
+      "url": "https://github.com/Cattaneo57485/fooocus-ai-desktop-suite",
+      "homepage": "",
+      "description": "Fooocus AI — Fooocus AI Portable & Windows Setup",
+      "stars": 218,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
+      "topics": [
+        "fooocus-ai",
+        "fooocus-ai-portable",
+        "fooocus-ai-windows",
+        "windows-10",
+        "windows-11"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "thu5617/trae-ai-ide-pro-patcher-installer",
+      "url": "https://github.com/thu5617/trae-ai-ide-pro-patcher-installer",
+      "homepage": "",
+      "description": "Trae AI IDE — Trae  IDE Pro Trial Reset & Machine ID",
+      "stars": 218,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
+      "topics": [
+        "trae-ide",
+        "trae-ide-pro",
+        "trae-ide-reset",
+        "trae-ide-trial-reset"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "TemafiYato79/wan-2-1-video-ai-pro-patcher-installer",
+      "url": "https://github.com/TemafiYato79/wan-2-1-video-ai-pro-patcher-installer",
+      "homepage": "",
+      "description": "Wan 2.1 Video AI — Wan 2.1 Video AI Portable & Windows Setup",
+      "stars": 218,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
+      "topics": [
+        "wan-2-1-video-ai",
+        "wan-2-1-video-ai-portable",
+        "wan-2-1-video-ai-windows",
+        "windows-10",
+        "windows-11"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "tCastro22828/msty-ai-studio",
+      "url": "https://github.com/tCastro22828/msty-ai-studio",
+      "homepage": "",
+      "description": "Msty AI Studio — Msty AI Studio Portable & Windows Setup",
+      "stars": 218,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
+      "topics": [
+        "msty-ai-studio",
+        "msty-ai-studio-portable",
+        "msty-ai-studio-windows",
+        "windows-10",
+        "windows-11"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "Christopherl22/pinokio-ai-browser-desktop-suite",
+      "url": "https://github.com/Christopherl22/pinokio-ai-browser-desktop-suite",
+      "homepage": "",
+      "description": "Pinokio AI Browser — Pinokio AI Browser Portable & Windows Setup",
+      "stars": 215,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
+      "topics": [
+        "pinokio-ai-browser",
+        "pinokio-ai-browser-portable",
+        "pinokio-ai-browser-windows",
+        "windows-10",
+        "windows-11"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "christopherwang157/krita-ai-diffusion-desktop-suite",
+      "url": "https://github.com/christopherwang157/krita-ai-diffusion-desktop-suite",
+      "homepage": "",
+      "description": "Krita AI Diffusion — Krita AI Diffusion Portable & Windows Setup",
+      "stars": 215,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
+      "topics": [
+        "krita-ai-diffusion",
+        "krita-ai-diffusion-portable",
+        "krita-ai-diffusion-windows",
+        "windows-10",
+        "windows-11"
+      ]
+    },
+    {
+      "source": "GitHub",
+      "name": "chenlelin7988/topaz-photo-ai-3-desktop-suite",
+      "url": "https://github.com/chenlelin7988/topaz-photo-ai-3-desktop-suite",
+      "homepage": "",
+      "description": "Topaz Photo AI 3 — Topaz Photo AI 3 Portable & Windows Setup",
+      "stars": 215,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created": "2026-11-28",
+      "topics": [
+        "topaz-photo-ai-3",
+        "topaz-photo-ai-3-portable",
+        "topaz-photo-ai-3-windows",
+        "windows-10",
+        "windows-11"
       ]
     }
   ],
   "producthunt": [
     {
       "source": "Product Hunt",
-      "name": "Hub",
-      "url": "https://www.producthunt.com/products/hub-20?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/SKCIVKZDKR5QGT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "Run 100 Claude Code or Codex sessions like 5 - Open-source dispatcher for Claude Code and Codex sessions. Write a goal in your browser or Telegram, a coordinator hands it to agents, and only the decisions come back. Self-hosted, Apache-2.0, on your own Claude or ChatGPT subscription. One-line ins",
-      "votes": 423,
-      "thumbnail": "https://ph-files.imgix.net/bb93b891-9106-4e73-a7f5-3b6c3d67a5b3.png?auto=format",
-      "created": "2026-11-26",
-      "topics": [
-        "Open Source",
-        "Developer Tools",
-        "Artificial Intelligence"
-      ]
-    },
-    {
-      "source": "Product Hunt",
       "name": "Wizstar R1",
       "url": "https://www.producthunt.com/products/wizstar?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/MFADSN4RJLJCWY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Seedance 2.0-level product videos at a lower cost - Wizstar R1 is an in-house AI video model built for affordable, everyday creation. Combine up to nine reference images and videos to generate 5–15-second videos with native audio, guided by your products, characters, scenes, and styles. R1 excels at a",
-      "votes": 259,
+      "votes": 278,
       "thumbnail": "https://ph-files.imgix.net/48fcdfd0-2d2b-40de-a964-f8e406bd9753.svg?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -446,26 +474,11 @@
     },
     {
       "source": "Product Hunt",
-      "name": "QA.tech MCP",
-      "url": "https://www.producthunt.com/products/qa-tech?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/AAE5I2SEYZUMZR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "Verify every change from your IDE with QA agents - QA.tech MCP gives Claude Code, Cursor or Codex an external QA agent to check their work. It runs E2E tests on what each change does to your product and finds the bugs and edge cases your coding agent missed, so they get fixed before the PR goes to re",
-      "votes": 218,
-      "thumbnail": "https://ph-files.imgix.net/5497c34b-ef45-4ee2-8576-3a1b105771b3.gif?auto=format",
-      "created": "2026-11-26",
-      "topics": [
-        "Software Engineering",
-        "Developer Tools",
-        "Artificial Intelligence"
-      ]
-    },
-    {
-      "source": "Product Hunt",
       "name": "Depost AI",
       "url": "https://www.producthunt.com/products/depost-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/32DE54NLUY7ZZ4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "The LinkedIn AI agent that learns what works for your brand - Depost AI scores every LinkedIn post you've published against your own average, finds what's winning in your niche, then plans the month, writes in your voice, and designs the graphics. You approve every post, and it publishes through LinkedIn's offi",
-      "votes": 197,
+      "votes": 215,
       "thumbnail": "https://ph-files.imgix.net/95fadcbf-742b-4ef1-ae25-0e39881484ed.png?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -476,26 +489,11 @@
     },
     {
       "source": "Product Hunt",
-      "name": "Bifura",
-      "url": "https://www.producthunt.com/products/bifura?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/LEZHQJUHVZTF4Q?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "See your website the way AI agents do - AI assistants now read websites for your buyers. Bifura fetches your page the way AI crawlers do, shows what they get and get wrong, and lets you test fixes in a sandbox before you ship. Free Agent readiness score in under a minute, no signup.",
-      "votes": 172,
-      "thumbnail": "https://ph-files.imgix.net/25d6b7ee-5448-45cc-8736-ebb4c5318df4.png?auto=format",
-      "created": "2026-11-26",
-      "topics": [
-        "Marketing",
-        "SEO",
-        "Artificial Intelligence"
-      ]
-    },
-    {
-      "source": "Product Hunt",
       "name": "Contral",
       "url": "https://www.producthunt.com/products/contral?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/O345273IOJN5AK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "The AI coding agent that checks its work and teaches you - Contral is out of beta. Use Claude Code, Codex, Cursor, OpenCode, Gemini CLI or Copilot CLI inside Contral, on your own account. Contral checks every turn against what you asked for and sends smaller models a specific correction, explains every chang",
-      "votes": 171,
+      "votes": 184,
       "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/0b641793-5cc4-47f1-882e-410707c12ce9/d540f0b18265279afd0ae243aaf2a47794fb09ed769b70b292a6a25f769493cc.gif?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -510,7 +508,7 @@
       "url": "https://www.producthunt.com/products/periscope-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/MKDWAD6MXFEF3A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Turn any work into an API - Describe a task and get an endpoint for it. An agent does the work through the screen on its own cloud desktop, in any software, however old. Call it over REST, or from Claude, ChatGPT or Cursor over MCP. The Free plan needs no card.",
-      "votes": 154,
+      "votes": 171,
       "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/4b7b9d4e-5dd9-4c08-a93e-8170e36d3581/ede18927d229dd57605d871697a8d50c78c2075e7aea00ef09bcdfb55b2a0897.png?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -521,25 +519,11 @@
     },
     {
       "source": "Product Hunt",
-      "name": "Pax by Pydantic",
-      "url": "https://www.producthunt.com/products/pydantic?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/NMB6ADZU5ATEMZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "A coding agent where even coding is a plugin - Pax is the official Pydantic AI coding agent for your terminal. Every part is a plugin, it runs any model, and --agent runs your own Pydantic AI agent in it.",
-      "votes": 131,
-      "thumbnail": "https://ph-files.imgix.net/97b06739-2766-4ca5-bd43-866a3bf521a1.png?auto=format",
-      "created": "2026-11-26",
-      "topics": [
-        "Developer Tools",
-        "Artificial Intelligence"
-      ]
-    },
-    {
-      "source": "Product Hunt",
       "name": "Pushary Calls",
       "url": "https://www.producthunt.com/products/pushary?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/KPT5IG56HJWKXE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Miss your AI agent’s ping? Pushary calls you. - Your AI agent stops to ask before it does anything big. If you're at lunch, it sits there until you're back. Pushary sends the question to your phone. Miss it, and Pushary calls you. You hear what the agent wants and say yes, no, or what to do instea",
-      "votes": 131,
+      "votes": 140,
       "thumbnail": "https://ph-files.imgix.net/93ca09eb-0ef0-4da7-80fd-cdc290e30ede.png?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -552,46 +536,31 @@
     },
     {
       "source": "Product Hunt",
-      "name": "Kagi Mail",
-      "url": "https://www.producthunt.com/products/kagi?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/C2PPJIYKNSS7AC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "Private email that puts people who need you first - Kagi Mail is a private email service designed to help you focus on what matters. Its intelligent inbox highlights people waiting for your reply, identifies emails that need action, and keeps newsletters and unwanted messages out of the way. Ask quest",
-      "votes": 115,
-      "thumbnail": "https://ph-files.imgix.net/03734c11-17ba-4caa-9eae-5bd7189d754c.png?auto=format",
-      "created": "2026-11-26",
+      "name": "overads.io",
+      "url": "https://www.producthunt.com/products/overads-io?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/RYHZG45LWOJYSW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "Marketing and GTM that run while you sleep - overads runs marketing and GTM for founders, end to end. Describe a job once and it becomes a workflow that runs every week. It writes, designs and schedules posts for Instagram, Facebook, LinkedIn, X and Pinterest. It watches your Meta and Google ad",
+      "votes": 0,
+      "thumbnail": "https://ph-files.imgix.net/fa4191bb-8aeb-4e17-9d87-8078b35054b0.jpeg?auto=format",
+      "created": "2026-11-28",
       "topics": [
-        "Email",
         "Productivity",
+        "Marketing",
         "Artificial Intelligence"
       ]
     },
     {
       "source": "Product Hunt",
-      "name": "Doodle",
-      "url": "https://www.producthunt.com/products/doodle-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/QXHWNWTFM24C6G?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "The stick figure on your taskbar that answers questions - Doodle is a little AI companion that lives on your Windows taskbar. Ask it anything with Ctrl+Shift+Space, or dictate into any app. When it can't do something, Doodle Evolution builds a bespoke plugin, shows you what it can reach, and waits for your ",
-      "votes": 115,
-      "thumbnail": "https://ph-files.imgix.net/2e36de86-ee76-4f96-a159-7d100cb559d7.png?auto=format",
-      "created": "2026-11-26",
+      "name": "RetainIQ",
+      "url": "https://www.producthunt.com/products/retainiq-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/4EFEO3FCBSLOOW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "Know which customers need attention, why & what to do next - RetainIQ shows B2B SaaS teams which customers need attention, why, and what to do next, ranked by revenue at risk. Every recommendation comes with the evidence behind it, so your team can act with confidence. Recover prioritizes failed payments. Reta",
+      "votes": 0,
+      "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/c228a406-cf5f-4835-a1de-195d4c757a93/d28b2a80b94b005de293de433b93fce638b52f2c2cd1e36d2755d25a0c42cfbd.png?auto=format",
+      "created": "2026-11-28",
       "topics": [
-        "Windows",
-        "Productivity",
-        "Artificial Intelligence"
-      ]
-    },
-    {
-      "source": "Product Hunt",
-      "name": "Clary",
-      "url": "https://www.producthunt.com/products/clary-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/MLYVI4EXR363WY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "iOS notifications in sender's own voice from WhatsApp & more - Clary reads your iPhone notifications in the sender's own voice, from WhatsApp, iMessage and more. It uses voice cloning: each person records 20 seconds once, from a link, and agrees first, then Clary makes their voice on your iPhone. Tap a message t",
-      "votes": 103,
-      "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/f7b01424-076e-4ab7-9522-beb5cfbd825a/59f0cfc2b2d6cb22f6450a75d59a72294bb7e9cbbfc2621d9047f13dec7527be.png?auto=format",
-      "created": "2026-11-26",
-      "topics": [
-        "iOS",
-        "Messaging",
+        "Customer Success",
+        "SaaS",
         "Artificial Intelligence"
       ]
     },
@@ -601,7 +570,7 @@
       "url": "https://www.producthunt.com/products/snibl?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/IET2H5J64ZBLDK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "Save highlighted text from any app, then ask AI about it - Stop losing the things you read. Highlight text in any app on Mac or Windows and Snibl saves it with its source and context, so you can find it later. Then just ask: Snibl AI answers your questions using your own saved snippets. Software you actually",
-      "votes": 99,
+      "votes": 103,
       "thumbnail": "https://ph-files.imgix.net/0c595222-a1ee-4084-963b-00e8dceff174.png?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -616,7 +585,7 @@
       "url": "https://www.producthunt.com/products/woomool?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/Y5ICTAOJGXUV2K?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "AI Canvas where thinking becomes tangible - Woomool is a AI canvas tastefully designed for ideation, knowledge management, and live collaboration. Clean, unobtrusive, and beautiful, it inspires you to focus and go deep into your thinking.",
-      "votes": 95,
+      "votes": 99,
       "thumbnail": "https://ph-files.imgix.net/52522a97-84f8-4dbd-affe-494940e91a97.png?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -631,7 +600,7 @@
       "url": "https://www.producthunt.com/products/slay-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/XVZL46OAKSN6YJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "AI composition guide camera app for iPhone - slay is an iPhone camera app that overlays 14 composition guides directly on your live camera view — Portrait 1, Portrait 2, Close Up, Side Chick, Travel Shot, One-Third, Two-Third, Vanishing Point, One-Point Vertex, Two-Point Vertex, Triangle 1, Tri",
-      "votes": 94,
+      "votes": 98,
       "thumbnail": "https://ph-files.imgix.net/6cddbd11-a4fa-4c96-9614-5c1354842014.jpeg?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -642,43 +611,11 @@
     },
     {
       "source": "Product Hunt",
-      "name": "Monton",
-      "url": "https://www.producthunt.com/products/monton?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/MYQORKGIV2MIOS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "AI agents that do your agency's busywork - Monton is agency management software with AI agents built in. Agents watch budgets, chase overdue invoices, write client reports and remind people about missing hours, on your real hours, staffing, billing and CRM data. Pick one of 18 templates or de",
-      "votes": 92,
-      "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/30961aaf-167a-4470-a941-72404e7231c5/8f998fdebecbb92ff1b52caad8ca5b06a474189edd05c94494afc0413f9f6855.png?auto=format",
-      "created": "2026-11-26",
-      "topics": [
-        "Productivity",
-        "Task Management",
-        "Artificial Intelligence"
-      ]
-    },
-    {
-      "source": "Product Hunt",
-      "name": "DeskFleet",
-      "url": "https://www.producthunt.com/products/deskfleet?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/ZDO3VZNN2YJRV2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "Run coding agents together across your team’s machines - DeskFleet gives your team a shared session with the coding agents you already use. Run Claude Code, Codex, or Cursor where your code lives. A teammate can join from their laptop, review the diff, approve the next command, or take control of the remot",
-      "votes": 90,
-      "thumbnail": "https://ph-files.imgix.net/585e0838-7274-4871-9647-775d90b1fb56.svg?auto=format",
-      "created": "2026-11-26",
-      "topics": [
-        "Android",
-        "Open Source",
-        "Developer Tools",
-        "Artificial Intelligence",
-        "GitHub"
-      ]
-    },
-    {
-      "source": "Product Hunt",
       "name": "Onset",
       "url": "https://www.producthunt.com/products/onset?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/R5R2P35SGKOPBT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "AI reviews, titles and thumbnails for YouTube creators - Onset reads your own YouTube Analytics and reviews each upload 48 hours after it goes live, then drafts titles in your voice and thumbnails in your channel's style. Read-only: it never posts. We're letting creators in from the waitlist, a few at a ti",
-      "votes": 89,
+      "votes": 93,
       "thumbnail": "https://ph-files.imgix.net/ce021fdf-22b3-4d0c-979a-cd3102004bad.png?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -693,7 +630,7 @@
       "url": "https://www.producthunt.com/products/gpyou?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "website": "https://www.producthunt.com/r/ZUD3HJIGUCLI3N?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
       "description": "The OpenRouter for compute for the cheapest GPU in stock - One CLI for GPU clouds worldwide. gpyou rents the cheapest GPU in stock, moves to the next offer when one is sold out, and bills per second from prepaid credit. Run containers, fine-tune, serve models or a coding model of your own.",
-      "votes": 89,
+      "votes": 93,
       "thumbnail": "https://ph-files.imgix.net/f29eabac-b156-4fd1-beea-f17248eb5df8.gif?auto=format",
       "created": "2026-11-27",
       "topics": [
@@ -704,17 +641,122 @@
     },
     {
       "source": "Product Hunt",
-      "name": "Remora",
-      "url": "https://www.producthunt.com/products/remora-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "website": "https://www.producthunt.com/r/V6ZWYHU3DFZMWY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
-      "description": "The long-term memory layer for AI agents - Remora is continuous memory infrastructure for AI agents. Ingest conversations, deduplicate facts, and recall relevant context in under 15ms. Powered by PostgreSQL + pgvector with native Python & TypeScript SDKs. Stop re-inventing memory tables.",
-      "votes": 83,
-      "thumbnail": "https://ph-files.imgix.net/3f16fc3e-2cb7-4b43-a15f-f5a3aac27a9e.png?auto=format",
-      "created": "2026-11-26",
+      "name": "Ploid",
+      "url": "https://www.producthunt.com/products/ploid?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/7UOODGSVFW3NGE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "People search for AI agents, across 2B+ profiles - Ploid is a people search engine with a living index of over two billion people. Search by role, company, skills or location, get up to 150 results per request, and merge someone's professional, social and personal sites into one Superprofile. Agents ",
+      "votes": 85,
+      "thumbnail": "https://ph-files.imgix.net/launch-image-uploads/08dd7e57-7bb8-4bf7-8497-c11c087970f3/080a1ddbba4b43655cb91a426d299ad40770464b859d806363a9324fea4cdd0d.png?auto=format",
+      "created": "2026-11-27",
+      "topics": [
+        "Sales",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ]
+    },
+    {
+      "source": "Product Hunt",
+      "name": "Superrelay",
+      "url": "https://www.producthunt.com/products/superrelay?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/WBQVIF6V7W3QYI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "One inbox for every app you ship, never priced per ticket - One support workspace for teams shipping several apps: chat, email, WhatsApp, Slack and in-app in one inbox. An AI agent that cites sources and asks before acting, GitHub-synced docs, and a CLI/MCP so coding agents read tickets. Never priced per tick",
+      "votes": 0,
+      "thumbnail": "https://ph-files.imgix.net/2cd57c67-01fc-470f-8d92-d6b85e1151c8.png?auto=format",
+      "created": "2026-11-28",
+      "topics": [
+        "Customer Success",
+        "SaaS",
+        "Artificial Intelligence"
+      ]
+    },
+    {
+      "source": "Product Hunt",
+      "name": "Dex Telemetry",
+      "url": "https://www.producthunt.com/products/dex-by-exmergo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/FPBVRLJH6IWLIP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "Open-source Datadog for analytics - You set up analytics to monitor your business. But who's monitoring your analytics? Dex Telemetry gives you observability for your pipelines, with rules and context built for your agents.",
+      "votes": 0,
+      "thumbnail": "https://ph-files.imgix.net/9ab6299b-6699-4fd8-b0fa-2e6bea6f1c35.gif?auto=format",
+      "created": "2026-11-28",
       "topics": [
         "Developer Tools",
         "Artificial Intelligence",
+        "GitHub",
+        "Data & Analytics"
+      ]
+    },
+    {
+      "source": "Product Hunt",
+      "name": "Spark AI",
+      "url": "https://www.producthunt.com/products/spark-ai-7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/RZDYXTD2NJLGDS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "AI-native permitting & diligence services for data centers - Will that data center actually come online? Spark offers AI-native services built on a permitting intelligence platform: agents research 20,000+ jurisdictions, and an expert reviews every deliverable. Used by NextEra, Prologis, Intersect (Google), an",
+      "votes": 79,
+      "thumbnail": "https://ph-files.imgix.net/c9c312bf-5e60-4dba-895a-ba75ae7594ab.png?auto=format",
+      "created": "2026-11-27",
+      "topics": [
+        "Artificial Intelligence",
+        "Climate Tech",
         "Tech"
+      ]
+    },
+    {
+      "source": "Product Hunt",
+      "name": "NOVA",
+      "url": "https://www.producthunt.com/products/nova-26?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/N6FCJPUJDB622K?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "Development to deployment, and everything after. - Building is the easy part. NOVA handles what comes after: hosting, your own domain, search and AI-search readiness, version history, team editing, and a one-command handover to a developer's terminal. One account, one plan, from development to deploy",
+      "votes": 0,
+      "thumbnail": "https://ph-files.imgix.net/9fecebb0-f079-47f4-8f0a-864b2d50d40e.png?auto=format",
+      "created": "2026-11-28",
+      "topics": [
+        "Productivity",
+        "Artificial Intelligence",
+        "Vibe coding"
+      ]
+    },
+    {
+      "source": "Product Hunt",
+      "name": "airoom",
+      "url": "https://www.producthunt.com/products/airoom?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/ASUVJX6QD7F2DL?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "An open-source control room for your Claude Code agents - Every project is a room and every Claude Code session is a desk. See who is working, who is waiting on you and who is stuck. Chat, approve commands, hire a team, or let an agent test your app in the built-in browser. Free, local and open source.",
+      "votes": 0,
+      "thumbnail": "https://ph-files.imgix.net/dcc1f9ea-f827-4bc7-bbd4-153ab48a08b9.gif?auto=format",
+      "created": "2026-11-28",
+      "topics": [
+        "Open Source",
+        "Developer Tools",
+        "Artificial Intelligence",
+        "GitHub"
+      ]
+    },
+    {
+      "source": "Product Hunt",
+      "name": "GrayPass",
+      "url": "https://www.producthunt.com/products/graypass?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/BS7X47QRXB3HLY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "Verify who’s in control before agents make sensitive actions - Login tools tell you who signed in. GrayPass verifies who’s still in control when it actually matters. Before a wire, payout change, admin grant, or other sensitive action executes, GrayPass uses behavioral and session evidence to decide whether to a",
+      "votes": 0,
+      "thumbnail": "https://ph-files.imgix.net/7bc4aff1-a260-46d3-ae60-5f0e8a828a40.png?auto=format",
+      "created": "2026-11-28",
+      "topics": [
+        "Privacy",
+        "Artificial Intelligence",
+        "Security"
+      ]
+    },
+    {
+      "source": "Product Hunt",
+      "name": "Cognition SWE-2.1",
+      "url": "https://www.producthunt.com/products/cognition-swe-2-1?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "website": "https://www.producthunt.com/r/L4IXT5DC3OYSWZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+softmax+%28ID%3A+323667%29",
+      "description": "A long-horizon coding model with a 10x faster Ultrafast mode - SWE-2.1 is Cognition's upgraded coding model, trained with pure reinforcement learning on Kimi K3 for long-horizon work. Per Cognition, FrontierCode 2.0 rose from 24.1 to 41.3, Terminal-Bench 4.1 from 24.2 to 50.0 and ExploitBench from 36.1 to 80.0. ",
+      "votes": 0,
+      "thumbnail": "https://ph-files.imgix.net/6f109b85-790d-4178-9ad5-31a75940e4f7.svg?auto=format",
+      "created": "2026-11-28",
+      "topics": [
+        "Artificial Intelligence"
       ]
     }
   ]
