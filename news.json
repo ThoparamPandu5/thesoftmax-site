@@ -1,6 +1,115 @@
 [
   {
     "date": "2026-11-28",
+    "title": "LLM.OS: 52 KB WebAssembly Engine Running Qwen3.5-2B in Any Browser Tab",
+    "what": "Tesseracted Labs released LLM.OS, a ~52 KB Zig-to-WebAssembly engine (ported from MIT-licensed llm.asm) that runs Qwen3.5-2B, Qwen3-1.7B, Qwen3.5-0.8B, and Qwen3-0.6B completely on your CPU inside a browser tab. It reaches ~39 tok/s on Qwen3.5-2B (8 threads, Apple M3 Max) and includes a /python command backed by offline Pyodide.",
+    "free": "Free to run in any browser tab with zero servers, GPUs, or API keys; Qwen3 models are Apache-2.0 (Unsloth Q4_K_M weights cached locally: 382 MiB to 1225 MiB; ~0.6–1.4 GB tab memory)",
+    "why": "Students without GPUs or paid APIs can run local Qwen models and a sandboxed Python interpreter in one tab, and benchmark quantization trade-offs (4-bit vs. 8-bit) with /bench and /numbers.",
+    "steps": [
+      "Open tesseracted.com/experiments-llm-os/ in your browser",
+      "Type 1–4 and press Enter to cache Qwen3.5-2B (1225 MiB) or Qwen3-0.6B (382 MiB) locally",
+      "Chat offline, type /python for sandboxed math/charts, or run /bench to measure your CPU speed"
+    ],
+    "link": "https://tesseracted.com/experiments-llm-os/",
+    "linkText": "Try in browser",
+    "tags": [
+      "free",
+      "models",
+      "coding",
+      "open-source",
+      "students",
+      "learning"
+    ],
+    "source": "Tesseracted Labs / LLM.OS"
+  },
+  {
+    "date": "2026-11-28",
+    "title": "SessionGraph: Local Graph Visualizer & MCP Search for Coding Agent History",
+    "what": "SessionGraph is a local desktop and CLI tool that indexes your chat histories across 35+ AI coding harnesses—including Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot CLI, Antigravity, OpenCode, and Cline—into one interactive branching graph. It also exposes an MCP server (search_sessions) and local REST API so agents can look up past sessions.",
+    "free": "Free to run locally with npx sessiongraph or native macOS, Windows, and Linux installers; all indexing and storage stay on your machine",
+    "why": "Students switching between multiple free/student coding agents on semester projects can search old fixes, recover context after rebuilds, and reuse past sessions via MCP.",
+    "steps": [
+      "Run npx sessiongraph in your terminal (or download the macOS/Windows/Linux installer from sessiongraph.ai)",
+      "Let it index your local coding agent session folders (custom paths supported in Settings -> Sources)",
+      "Explore the branching graph or connect the MCP server to query past sessions with search_sessions"
+    ],
+    "link": "https://sessiongraph.ai/",
+    "linkText": "Official site",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "students"
+    ],
+    "source": "SessionGraph"
+  },
+  {
+    "date": "2026-11-28",
+    "title": "False Computer-Checked Proofs: Soundness Bug Ledger for Lean, Coq & Isabelle",
+    "what": "Cryptographer Daniel J. Bernstein published a public catalog of documented soundness bugs in major proof assistants: HOL Light (3), Mizar (7), Metamath (9), Isabelle (20), Lean 3/4 (23), HOL98/HOL4 (24), and Coq/Rocq (111). He explains why minimizing the trusted computing base and running multiple independent checkers matter when verifying proofs.",
+    "free": "Free to read online on cr.yp.to with archived bug report links; no account required",
+    "why": "With AI labs publishing machine-checked Lean 4 proofs of major theorems, CS theory and formal-methods students learn why \"computer-checked\" is not infallible and how independent kernel verification works.",
+    "steps": [
+      "Open cr.yp.to/proofs/falseccp.html",
+      "Read the Advice section on trusted computing bases (like HOL Light's 400-line kernel) and multi-checker verification",
+      "Browse the documented soundness bug reports for Lean 3/4, Coq/Rocq, and Isabelle"
+    ],
+    "link": "https://cr.yp.to/proofs/falseccp.html",
+    "linkText": "Read ledger",
+    "tags": [
+      "free",
+      "students",
+      "learning"
+    ],
+    "source": "Daniel J. Bernstein (cr.yp.to)"
+  },
+  {
+    "date": "2026-11-28",
+    "title": "Contral: AI Coding Agent & IDE Extension That Teaches While You Build",
+    "what": "Contral launched out of beta as an AI IDE and extension (working with Cursor, Copilot, Claude Code, Codex CLI, Windsurf, and Antigravity) that explains every line and architectural choice in real time while your coding agent writes code. It includes a 5-language curriculum (Java, Python, JS, TS, Go), challenges, and Defense Mode drills.",
+    "free": "Free forever ($0, no credit card): 25 AI messages/day, 5 code explanations/day, 50 extension web searches/month, 1 codebase analysis, 3 codebase questions, 5 sessions, Basics module (13 topics), auto-fix, and BYOK (30 messages/day). Paid Pro starts at $9.99/mo billed annually.",
+    "why": "Students using AI coding agents can avoid copy-pasting blind code and instead learn concepts, debug faster, and practice defending architecture choices for technical interviews.",
+    "steps": [
+      "Sign up free at contral.ai (no credit card required) and download Contral IDE or the VS Code extension",
+      "Connect your existing coding agent or use Build mode to write code",
+      "Review real-time learning cards and test yourself in Defense Mode"
+    ],
+    "link": "https://contral.ai/",
+    "linkText": "Try Contral Free",
+    "tags": [
+      "free",
+      "coding",
+      "tools",
+      "students",
+      "learning"
+    ],
+    "source": "Contral"
+  },
+  {
+    "date": "2026-11-28",
+    "title": "Transluce PosteriorBench: Open-Source Benchmark for Rare LLM Behaviors",
+    "what": "AI research lab Transluce released PosteriorBench, an MIT-licensed benchmark that tests how well sampling methods surface rare LLM behaviors without distorting natural output distributions. It spans 21 tasks on Qwen3.5-0.8B backed by a corpus of 50 million labeled responses per prompt across 20 prompts.",
+    "free": "Free and open-source (code under MIT License on GitHub; dataset tables under Open Data Commons Attribution License 1.0 on Hugging Face). Evaluating a sampler runs on Qwen3.5-0.8B without needing to download the 146 GB corpus.",
+    "why": "ML and AI safety students can benchmark red-teaming, edge-case discovery, and posterior sampling algorithms on an 800M-parameter model without needing a multi-GPU cluster.",
+    "steps": [
+      "Clone TransluceAI/PosteriorBench from GitHub and run uv sync",
+      "Run a quickstart evaluation with posteriorbench evaluate --task wc_1853/goblin_mention --sampler instruction",
+      "Implement your own sampler subclassing pb.Sampler and measure hit rate and KL divergence"
+    ],
+    "link": "https://github.com/TransluceAI/PosteriorBench",
+    "linkText": "View on GitHub",
+    "tags": [
+      "free",
+      "open-source",
+      "coding",
+      "models",
+      "learning",
+      "students"
+    ],
+    "source": "Transluce"
+  },
+  {
+    "date": "2026-11-28",
     "title": "Kimi for Science: Up to $20,000 (~7B Tokens) in Free API Credits for Researchers",
     "what": "Moonshot AI opened applications for Kimi for Science, supporting researchers in natural sciences, engineering, and interdisciplinary fields. Selected applicants receive up to $20,000 in Kimi API credits (approx. 7B tokens), technical support from the Kimi team, and early access to new models.",
     "free": "Free API credits up to $20,000 (approx. 7B tokens) for selected teams (model usage only, not cash funding); first cohort deadline is December 8, 2026",
